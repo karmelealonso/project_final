@@ -1,0 +1,674 @@
+FaunaID,Fauna,TituloID
+0,Artrópodos (Filo: Arthropoda),3
+1,Lobo (Canis lupus),9
+2,Oveja (Ovis aries),9
+3,Ciervo (Cervus elaphus),10
+4,Cobaya común / Conejillo de Indias (Cavia porcelus),10
+5,Conejo (Oryctolagus cuniculus),10
+6,Herrerillo común (Parus caeruleus),10
+7,Jilguero (Carduelis carduelis),10
+8,Loro de cabeza roja (Psittacara erythrogenys),10
+9,Lémur de cola anillada (Lemur catta),10
+10,Mono (Primates),10
+11,Oropéndola (Oriolus oriolus),10
+0,Artrópodos (Filo: Arthropoda),11
+12,Gran pavón nocturno (Saturnia pyri),11
+13,Paloma (Columba ssp),15
+13,Paloma (Columba ssp),20
+14,Caballo (Equus ferus caballus),25
+15,Perro (Canis lupus familiaris),25
+0,Artrópodos (Filo: Arthropoda),29
+16,Escarabajo longicornio (Stictoleptura fulva),29
+17,Hormiga (Messor sp. o Aphaenogaster sp. o Goniomma sp.),29
+7,Jilguero (Carduelis carduelis),29
+18,Medioluto norteña (Melanargia galathea),29
+19,Cuervo (Corvus corax),32
+20,Garza (Ardea),32
+21,Garza real (Ardea cinerea),32
+22,León (Panthera leo),32
+2,Oveja (Ovis aries),32
+13,Paloma (Columba ssp),32
+23,Urraca (Pica pica),32
+13,Paloma (Columba ssp),35
+5,Conejo (Oryctolagus cuniculus),36
+0,Artrópodos (Filo: Arthropoda),37
+24,Libélula (Aeshna grandis),37
+25,Mariquita /mariquita de 7 puntos / mariquita común (Coccinella septempunctata),37
+26,Níspola / ocelada común (Coenonympha pamphilus),37
+13,Paloma (Columba ssp),41
+15,Perro (Canis lupus familiaris),41
+0,Artrópodos (Filo: Arthropoda),49
+27,Avispa alfarera (Eumenes sp.,49
+28,Caballito del diablo (Platycnemis pennipes),49
+29,Libélula (Aeshna cyanea),49
+30,Mariposa ícaro / Ícaro (Polyommatus icarus),49
+31,Mosca (Scaeva pyrastri),49
+32,Mosca cernidora (Episyriphus balteatus),49
+33,Saltamontes / Esperanzas (Tettigonia cantans),49
+34,Canario (Serinus canaria),58
+2,Oveja (Ovis aries),59
+15,Perro (Canis lupus familiaris),67
+19,Cuervo (Corvus corax),74
+35,Archibebe común (Tringa totanus),76
+36,Arrendajo común (Garrulus glandarius),76
+0,Artrópodos (Filo: Arthropoda),76
+37,Avefría (Vanellus vanellus),76
+14,Caballo (Equus ferus caballus),76
+38,Cabra (Capra aegagrus),76
+39,Cangrejo de río (Astacus astacus),76
+40,Centollo / cabra (Maja brachydactyla),76
+4,Cobaya común / Conejillo de Indias (Cavia porcelus),76
+41,Colia común (Colias crocea),76
+5,Conejo (Oryctolagus cuniculus),76
+42,Faisán vulgar (Phasianus colchicus),76
+43,Francolín negro (Francolinus francolinus),76
+44,Galera / langostino mantis (Rissoides desmaresti),76
+45,Gallina de Guinea (Numida meleagris),76
+46,Gallo / gallina (Gallus gallus),76
+47,Ganso / Oca / Ánsar doméstico (Anser anser),76
+48,Golondrina (Hirundo rustica),76
+49,Guacamayo rojo (Ara chloroptera),76
+8,Loro de cabeza roja (Psittacara erythrogenys),76
+10,Mono (Primates),76
+50,Morito (Plegadis falcinellus),76
+51,Pavo común (Meleagris gallopavo),76
+52,Pavo real (Pavo cristatus),76
+15,Perro (Canis lupus familiaris),76
+53,Picogordo (Coccothraustes coccothraustes),76
+54,Pinzón vulgar (Fringilla coelebs),76
+55,Pito real (Picus viridis),76
+56,Podalirio / cuajaleches (Iphiclides podalirius subsp. Podalirius),76
+57,Porrón moñudo (Aythya fuligula),76
+58,Porrón osculado (Bucephala clangula),76
+59,Tigre escarlata (Callimorpha dominula),76
+23,Urraca (Pica pica),76
+60,Vulcana / atalanta /numerada (Vanessa atalanta),76
+61,Amazona frentiazul ( Amazona aestiva),85
+0,Artrópodos (Filo: Arthropoda),85
+4,Cobaya común / Conejillo de Indias (Cavia porcelus),85
+5,Conejo (Oryctolagus cuniculus),85
+62,Lavandera boyera (Motacilla flava),85
+55,Pito real (Picus viridis),85
+63,Chocha perdiz (Scolopax rusticola),87
+0,Artrópodos (Filo: Arthropoda),88
+7,Jilguero (Carduelis carduelis),92
+15,Perro (Canis lupus familiaris),92
+22,León (Panthera leo),101
+13,Paloma (Columba ssp),105
+64,Gorrión común (Passer domesticus),108
+65,Cisne vulgar (Cygnus olor),119
+2,Oveja (Ovis aries),122
+13,Paloma (Columba ssp),123
+63,Chocha perdiz (Scolopax rusticola),126
+66,Halcón peregrino (Falco peregrinus),128
+0,Artrópodos (Filo: Arthropoda),130
+0,Artrópodos (Filo: Arthropoda),140
+12,Gran pavón nocturno (Saturnia pyri),140
+67,Hormiga león (Nemoleon notatus o Megistopus flavicornis),140
+13,Paloma (Columba ssp),147
+0,Artrópodos (Filo: Arthropoda),151
+28,Caballito del diablo (Platycnemis pennipes),151
+68,Escarabajo ajedrezado / Lobo de las abejas (Trichodes apiarius),151
+69,Escarabajo sanjuanero (Melolontha melolontha),151
+25,Mariquita /mariquita de 7 puntos / mariquita común (Coccinella septempunctata),151
+15,Perro (Canis lupus familiaris),152
+70,Cacatúa Sulfúrea (Cacatua sulphurea),155
+0,Artrópodos (Filo: Arthropoda),167
+13,Paloma (Columba ssp),168
+13,Paloma (Columba ssp),170
+15,Perro (Canis lupus familiaris),170
+71,Anátida (Anatidae),171
+36,Arrendajo común (Garrulus glandarius),171
+0,Artrópodos (Filo: Arthropoda),171
+72,Ave del paraíso (Paradisaea raggiana),171
+73,Azor (Accipiter gentilis),171
+74,Bogavante / hibricante / cabrajo (Homarus gammarus),171
+14,Caballo (Equus ferus caballus),171
+38,Cabra (Capra aegagrus),171
+75,Calamón común (Porphyrio porphyrio),171
+76,Camachuelo (Pyrrhula pyrrhula),171
+77,Cangrejo de mar común (Carcinus maenas),171
+39,Cangrejo de río (Astacus astacus),171
+78,Carbonero común (Parus major),171
+40,Centollo / cabra (Maja brachydactyla),171
+79,Cerceta común (Anas crecca),171
+3,Ciervo (Cervus elaphus),171
+4,Cobaya común / Conejillo de Indias (Cavia porcelus),171
+5,Conejo (Oryctolagus cuniculus),171
+80,Espátula (Platalea leucorodia),171
+81,Estornino rosado (Sturnus roseus),171
+82,Fringílido (Fringillidae),171
+44,Galera / langostino mantis (Rissoides desmaresti),171
+83,Gallineta común / Polla de agua (Gallinula chloropus),171
+20,Garza (Ardea),171
+21,Garza real (Ardea cinerea),171
+84,Gato (Felis silvestris catus),171
+48,Golondrina (Hirundo rustica),171
+85,Guacamayo azul y amarillo (Ara ararauna),171
+49,Guacamayo rojo (Ara chloroptera),171
+86,Loro gris africano (Psittacus erithacus),171
+87,Martín pescador (Alcedo atthis),171
+88,Mochuelo común (Athene noctua),171
+10,Mono (Primates),171
+89,Negrón careto ( Melanitta perspicillata),171
+53,Picogordo (Coccothraustes coccothraustes),171
+55,Pito real (Picus viridis),171
+57,Porrón moñudo (Aythya fuligula),171
+58,Porrón osculado (Bucephala clangula),171
+63,Chocha perdiz (Scolopax rusticola),174
+1,Lobo (Canis lupus),178
+15,Perro (Canis lupus familiaris),178
+0,Artrópodos (Filo: Arthropoda),179
+90,Caballito del diablo (Lestes dryas Kirby o Lestes sponsa),179
+91,Caballito del diablo (Platycnemis acutipennis Sélys),179
+92,Hormiga (Lasius sp.),179
+13,Paloma (Columba ssp),181
+13,Paloma (Columba ssp),182
+23,Urraca (Pica pica),182
+0,Artrópodos (Filo: Arthropoda),187
+93,Mariposa de la col (Pieris brassicae),187
+94,Mosca (Eristalis cryptarum),187
+95,Ortiguera (Aglais urticae),187
+14,Caballo (Equus ferus caballus),190
+65,Cisne vulgar (Cygnus olor),190
+15,Perro (Canis lupus familiaris),190
+10,Mono (Primates),191
+15,Perro (Canis lupus familiaris),191
+46,Gallo / gallina (Gallus gallus),197
+15,Perro (Canis lupus familiaris),197
+49,Guacamayo rojo (Ara chloroptera),198
+96,Ánade real /Azulón (Anas platyrhynchos),199
+65,Cisne vulgar (Cygnus olor),210
+20,Garza (Ardea),210
+21,Garza real (Ardea cinerea),210
+0,Artrópodos (Filo: Arthropoda),212
+97,Sátiro negro (Satyrus actaea),212
+0,Artrópodos (Filo: Arthropoda),220
+13,Paloma (Columba ssp),221
+14,Caballo (Equus ferus caballus),226
+3,Ciervo (Cervus elaphus),226
+20,Garza (Ardea),226
+21,Garza real (Ardea cinerea),226
+6,Herrerillo común (Parus caeruleus),226
+98,Perdiz roja (Alectoris rufa),226
+15,Perro (Canis lupus familiaris),226
+99,Pico picapinos (Dendrocopos major),226
+96,Ánade real /Azulón (Anas platyrhynchos),226
+0,Artrópodos (Filo: Arthropoda),229
+100,Macaón (Papilio machaon),229
+7,Jilguero (Carduelis carduelis),231
+13,Paloma (Columba ssp),231
+15,Perro (Canis lupus familiaris),233
+14,Caballo (Equus ferus caballus),234
+84,Gato (Felis silvestris catus),235
+15,Perro (Canis lupus familiaris),235
+96,Ánade real /Azulón (Anas platyrhynchos),235
+46,Gallo / gallina (Gallus gallus),240
+14,Caballo (Equus ferus caballus),246
+13,Paloma (Columba ssp),247
+19,Cuervo (Corvus corax),252
+22,León (Panthera leo),252
+14,Caballo (Equus ferus caballus),253
+14,Caballo (Equus ferus caballus),258
+0,Artrópodos (Filo: Arthropoda),265
+74,Bogavante / hibricante / cabrajo (Homarus gammarus),265
+101,Búho chico (Asio otus),265
+28,Caballito del diablo (Platycnemis pennipes),265
+77,Cangrejo de mar común (Carcinus maenas),265
+39,Cangrejo de río (Astacus astacus),265
+78,Carbonero común (Parus major),265
+40,Centollo / cabra (Maja brachydactyla),265
+3,Ciervo (Cervus elaphus),265
+4,Cobaya común / Conejillo de Indias (Cavia porcelus),265
+5,Conejo (Oryctolagus cuniculus),265
+42,Faisán vulgar (Phasianus colchicus),265
+20,Garza (Ardea),265
+22,León (Panthera leo),265
+1,Lobo (Canis lupus),265
+87,Martín pescador (Alcedo atthis),265
+102,Milano real (Milvus milvus),265
+89,Negrón careto ( Melanitta perspicillata),265
+13,Paloma (Columba ssp),265
+52,Pavo real (Pavo cristatus),265
+55,Pito real (Picus viridis),265
+103,Polilla de cola amarilla (Euproctis similis),265
+104,Ratón de campo (Apodemus sylvaticus),265
+105,Saltamontes / Esperanzas (Tettigonia viridissima),265
+13,Paloma (Columba ssp),273
+10,Mono (Primates),275
+0,Artrópodos (Filo: Arthropoda),276
+93,Mariposa de la col (Pieris brassicae),276
+60,Vulcana / atalanta /numerada (Vanessa atalanta),276
+0,Artrópodos (Filo: Arthropoda),285
+106,Blanquita de la col (Pieris rapae),285
+107,Mariquita (Myzia oblongoguttata),285
+108,Ondulada / maculada (Pararge aegeria),285
+0,Artrópodos (Filo: Arthropoda),286
+109,Blanca verdinervada (Pieris napi),286
+106,Blanquita de la col (Pieris rapae),286
+110,Mariquita de dos puntos (Adalia bipunctata),286
+108,Ondulada / maculada (Pararge aegeria),286
+0,Artrópodos (Filo: Arthropoda),287
+93,Mariposa de la col (Pieris brassicae),287
+76,Camachuelo (Pyrrhula pyrrhula),288
+3,Ciervo (Cervus elaphus),288
+65,Cisne vulgar (Cygnus olor),288
+111,Codorniz (Coturnix coturnix),288
+46,Gallo / gallina (Gallus gallus),288
+84,Gato (Felis silvestris catus),288
+7,Jilguero (Carduelis carduelis),288
+51,Pavo común (Meleagris gallopavo),288
+52,Pavo real (Pavo cristatus),288
+112,Verdecillo (Serinus serinus),288
+13,Paloma (Columba ssp),290
+113,Coral (Filo: Cnidaria),293
+13,Paloma (Columba ssp),295
+0,Artrópodos (Filo: Arthropoda),302
+114,Aurora amarilla / bandera española (Anthocharis euphenoides),302
+115,Escarabajo de las azucenas (Lilioceris lilii),302
+116,Escarabajo sanjuanero (Melolontha papposa),302
+117,Falena moteada / geómetra arlequín (Abraxas grossulariata),302
+118,Mariposa Ícaro (Polyommatus icarus) o Niña celeste (Polyommatus bellargus),302
+119,Polilla (Nychiodes sp.),302
+120,Polilla / Pequeña urraca (Anania hortulata),302
+66,Halcón peregrino (Falco peregrinus),303
+121,Francolín común (Francolinus francolinus),315
+86,Loro gris africano (Psittacus erithacus),316
+2,Oveja (Ovis aries),317
+122,Abejorro carpintero (Xylocopa violacea),322
+123,Araña de jardín / araña de cruz (Araneus diadematus),322
+0,Artrópodos (Filo: Arthropoda),322
+124,Avispa (Polistes sp),322
+125,Hormiga (Formicidae gen. sp.),322
+126,Saltamontes (Tettigonia viridissima),322
+105,Saltamontes / Esperanzas (Tettigonia viridissima),322
+97,Sátiro negro (Satyrus actaea),322
+127,Sírfido (Brachypalpoides lentus),322
+13,Paloma (Columba ssp),331
+14,Caballo (Equus ferus caballus),334
+128,Buitre (sin especificar),335
+0,Artrópodos (Filo: Arthropoda),336
+129,Gusano de seda / mariposa de la seda (Bombyx mori),336
+130,Langosta egipcia / cigarrón (Anacridium aegyptium),336
+25,Mariquita /mariquita de 7 puntos / mariquita común (Coccinella septempunctata),336
+26,Níspola / ocelada común (Coenonympha pamphilus),336
+131,Polilla (Trichiura crataegi),336
+132,Saltamontes (Chrysochraon dispar),336
+126,Saltamontes (Tettigonia viridissima),336
+14,Caballo (Equus ferus caballus),337
+0,Artrópodos (Filo: Arthropoda),338
+133,Mosca doméstica (Musca domestica),338
+13,Paloma (Columba ssp),341
+78,Carbonero común (Parus major),345
+134,Civeta africana (Civettictis civetta),345
+4,Cobaya común / Conejillo de Indias (Cavia porcelus),345
+6,Herrerillo común (Parus caeruleus),345
+7,Jilguero (Carduelis carduelis),345
+135,Loro verde del amazonas (Amazona aestiva),345
+13,Paloma (Columba ssp),345
+52,Pavo real (Pavo cristatus),345
+15,Perro (Canis lupus familiaris),345
+7,Jilguero (Carduelis carduelis),346
+123,Araña de jardín / araña de cruz (Araneus diadematus),350
+0,Artrópodos (Filo: Arthropoda),350
+69,Escarabajo sanjuanero (Melolontha melolontha),350
+117,Falena moteada / geómetra arlequín (Abraxas grossulariata),350
+136,Loba (Maniola jurtina),350
+93,Mariposa de la col (Pieris brassicae),350
+137,Sátiro común / Pardo rubia (Hipparchia (Parahipparchia) semele),350
+71,Anátida (Anatidae),352
+36,Arrendajo común (Garrulus glandarius),352
+0,Artrópodos (Filo: Arthropoda),352
+72,Ave del paraíso (Paradisaea raggiana),352
+73,Azor (Accipiter gentilis),352
+74,Bogavante / hibricante / cabrajo (Homarus gammarus),352
+14,Caballo (Equus ferus caballus),352
+38,Cabra (Capra aegagrus),352
+75,Calamón común (Porphyrio porphyrio),352
+77,Cangrejo de mar común (Carcinus maenas),352
+39,Cangrejo de río (Astacus astacus),352
+78,Carbonero común (Parus major),352
+40,Centollo / cabra (Maja brachydactyla),352
+79,Cerceta común (Anas crecca),352
+3,Ciervo (Cervus elaphus),352
+4,Cobaya común / Conejillo de Indias (Cavia porcelus),352
+5,Conejo (Oryctolagus cuniculus),352
+80,Espátula (Platalea leucorodia),352
+81,Estornino rosado (Sturnus roseus),352
+82,Fringílido (Fringillidae),352
+44,Galera / langostino mantis (Rissoides desmaresti),352
+83,Gallineta común / Polla de agua (Gallinula chloropus),352
+20,Garza (Ardea),352
+21,Garza real (Ardea cinerea),352
+48,Golondrina (Hirundo rustica),352
+85,Guacamayo azul y amarillo (Ara ararauna),352
+49,Guacamayo rojo (Ara chloroptera),352
+86,Loro gris africano (Psittacus erithacus),352
+87,Martín pescador (Alcedo atthis),352
+88,Mochuelo común (Athene noctua),352
+10,Mono (Primates),352
+89,Negrón careto ( Melanitta perspicillata),352
+53,Picogordo (Coccothraustes coccothraustes),352
+57,Porrón moñudo (Aythya fuligula),352
+58,Porrón osculado (Bucephala clangula),352
+0,Artrópodos (Filo: Arthropoda),355
+15,Perro (Canis lupus familiaris),358
+13,Paloma (Columba ssp),364
+14,Caballo (Equus ferus caballus),367
+104,Ratón de campo (Apodemus sylvaticus),372
+14,Caballo (Equus ferus caballus),375
+7,Jilguero (Carduelis carduelis),383
+13,Paloma (Columba ssp),384
+13,Paloma (Columba ssp),386
+47,Ganso / Oca / Ánsar doméstico (Anser anser),389
+66,Halcón peregrino (Falco peregrinus),389
+52,Pavo real (Pavo cristatus),389
+15,Perro (Canis lupus familiaris),389
+3,Ciervo (Cervus elaphus),390
+0,Artrópodos (Filo: Arthropoda),397
+138,Libélula (Brachytron pratense),397
+93,Mariposa de la col (Pieris brassicae),397
+139,Mosca (Neomyia sp. o Pyrellia sp.),397
+140,Tórtola europea (Streptopelia turtur),398
+14,Caballo (Equus ferus caballus),403
+3,Ciervo (Cervus elaphus),406
+3,Ciervo (Cervus elaphus),408
+2,Oveja (Ovis aries),408
+141,Vaca (Bos taurus L.),408
+111,Codorniz (Coturnix coturnix),414
+0,Artrópodos (Filo: Arthropoda),417
+105,Saltamontes / Esperanzas (Tettigonia viridissima),417
+0,Artrópodos (Filo: Arthropoda),418
+142,Avetoro (Botaurus stellaris),418
+74,Bogavante / hibricante / cabrajo (Homarus gammarus),418
+3,Ciervo (Cervus elaphus),418
+65,Cisne vulgar (Cygnus olor),418
+5,Conejo (Oryctolagus cuniculus),418
+42,Faisán vulgar (Phasianus colchicus),418
+46,Gallo / gallina (Gallus gallus),418
+20,Garza (Ardea),418
+143,Garza imperial (Ardea purpurea),418
+49,Guacamayo rojo (Ara chloroptera),418
+10,Mono (Primates),418
+52,Pavo real (Pavo cristatus),418
+144,Perdiz pardilla (Perdix perdix),418
+57,Porrón moñudo (Aythya fuligula),418
+145,Abeja de patas peludas (Anthophora plumipes),420
+0,Artrópodos (Filo: Arthropoda),420
+115,Escarabajo de las azucenas (Lilioceris lilii),420
+93,Mariposa de la col (Pieris brassicae),420
+25,Mariquita /mariquita de 7 puntos / mariquita común (Coccinella septempunctata),420
+146,Mosca sírfida (Dasysyrphus albostriatus),420
+95,Ortiguera (Aglais urticae),420
+147,Pulgón (Aphididae gen. sp.),420
+7,Jilguero (Carduelis carduelis),423
+2,Oveja (Ovis aries),423
+148,Petirrojo (Erithacus rubecula),423
+2,Oveja (Ovis aries),427
+13,Paloma (Columba ssp),429
+46,Gallo / gallina (Gallus gallus),430
+14,Caballo (Equus ferus caballus),431
+66,Halcón peregrino (Falco peregrinus),431
+149,Lechuza común (Tyto alba),431
+10,Mono (Primates),431
+13,Paloma (Columba ssp),431
+15,Perro (Canis lupus familiaris),431
+0,Artrópodos (Filo: Arthropoda),433
+150,Olmera / mariposa de los olmos (Nymphalis polychloros),433
+15,Perro (Canis lupus familiaris),439
+151,Abeja (Anthophora atroalba),446
+0,Artrópodos (Filo: Arthropoda),446
+109,Blanca verdinervada (Pieris napi),446
+152,Cervantes (Erynnis tages),446
+153,Escarabajo (Anisoplia baetica),446
+154,Escarabajo rojo del álamo (Chrysomela populi),446
+93,Mariposa de la col (Pieris brassicae),446
+0,Artrópodos (Filo: Arthropoda),451
+19,Cuervo (Corvus corax),452
+22,León (Panthera leo),452
+0,Artrópodos (Filo: Arthropoda),453
+155,Medioluto (Melanargia sp.),453
+14,Caballo (Equus ferus caballus),454
+46,Gallo / gallina (Gallus gallus),454
+15,Perro (Canis lupus familiaris),454
+13,Paloma (Columba ssp),464
+0,Artrópodos (Filo: Arthropoda),470
+109,Blanca verdinervada (Pieris napi),470
+156,Gitana (Arctia caja),470
+95,Ortiguera (Aglais urticae),470
+60,Vulcana / atalanta /numerada (Vanessa atalanta),470
+157,Abeja (Halictus sp. o Lasioglossum sp. o Colletes sp.),471
+0,Artrópodos (Filo: Arthropoda),471
+158,Caballito del diablo (Calopteryx sp.),471
+159,Chinche de las malvas / zapatero / chinche roja / San Antonio (Pyrrhocoris apterus),471
+93,Mariposa de la col (Pieris brassicae),471
+118,Mariposa Ícaro (Polyommatus icarus) o Niña celeste (Polyommatus bellargus),471
+120,Polilla / Pequeña urraca (Anania hortulata),471
+97,Sátiro negro (Satyrus actaea),471
+60,Vulcana / atalanta /numerada (Vanessa atalanta),471
+0,Artrópodos (Filo: Arthropoda),476
+160,Esfinge ocelada (Smerinthus ocellatus),476
+107,Mariquita (Myzia oblongoguttata),476
+161,Sortijitas (Aphantopus hyperanthus),476
+0,Artrópodos (Filo: Arthropoda),478
+109,Blanca verdinervada (Pieris napi),478
+162,Limonera (Gonepteryx rhamni),478
+136,Loba (Maniola jurtina),478
+60,Vulcana / atalanta /numerada (Vanessa atalanta),478
+15,Perro (Canis lupus familiaris),479
+0,Artrópodos (Filo: Arthropoda),484
+163,Caballito del diablo (Coenagrion sp.),484
+78,Carbonero común (Parus major),484
+164,Chinche asesina (Peirates hybridus o Peirates stridulus),484
+68,Escarabajo ajedrezado / Lobo de las abejas (Trichodes apiarius),484
+165,Escarabajo longicornio (Ruptela maculata),484
+69,Escarabajo sanjuanero (Melolontha melolontha),484
+6,Herrerillo común (Parus caeruleus),484
+7,Jilguero (Carduelis carduelis),484
+166,Mariposa nocturna (Calliteara pudibunda),484
+30,Mariposa ícaro / Ícaro (Polyommatus icarus),484
+25,Mariquita /mariquita de 7 puntos / mariquita común (Coccinella septempunctata),484
+133,Mosca doméstica (Musca domestica),484
+167,Mírido (Dicyphus sp.),484
+26,Níspola / ocelada común (Coenonympha pamphilus),484
+131,Polilla (Trichiura crataegi),484
+105,Saltamontes / Esperanzas (Tettigonia viridissima),484
+168,Saltamontes común de campo (Chorthippus brunneus),484
+84,Gato (Felis silvestris catus),490
+38,Cabra (Capra aegagrus),496
+0,Artrópodos (Filo: Arthropoda),497
+169,Aurora blanca / musgosa (Anthocharis cardamines),497
+28,Caballito del diablo (Platycnemis pennipes),497
+70,Cacatúa Sulfúrea (Cacatua sulphurea),497
+78,Carbonero común (Parus major),497
+3,Ciervo (Cervus elaphus),497
+170,Ciervo volante (Lucanus cervus),497
+4,Cobaya común / Conejillo de Indias (Cavia porcelus),497
+171,Colirrojo real (Phoenicurus phoenicurus),497
+5,Conejo (Oryctolagus cuniculus),497
+68,Escarabajo ajedrezado / Lobo de las abejas (Trichodes apiarius),497
+165,Escarabajo longicornio (Ruptela maculata),497
+69,Escarabajo sanjuanero (Melolontha melolontha),497
+49,Guacamayo rojo (Ara chloroptera),497
+6,Herrerillo común (Parus caeruleus),497
+7,Jilguero (Carduelis carduelis),497
+172,Libélula (Anax parthenope),497
+86,Loro gris africano (Psittacus erithacus),497
+135,Loro verde del amazonas (Amazona aestiva),497
+30,Mariposa ícaro / Ícaro (Polyommatus icarus),497
+25,Mariquita /mariquita de 7 puntos / mariquita común (Coccinella septempunctata),497
+87,Martín pescador (Alcedo atthis),497
+10,Mono (Primates),497
+31,Mosca (Scaeva pyrastri),497
+173,Puercoespín (Hystrix cristata),497
+174,Roquero solitario ( Monticola solitarius),497
+168,Saltamontes común de campo (Chorthippus brunneus),497
+175,Tucán pechiblanco (Ramphastos tucanus),497
+122,Abejorro carpintero (Xylocopa violacea),499
+0,Artrópodos (Filo: Arthropoda),499
+160,Esfinge ocelada (Smerinthus ocellatus),499
+176,Veloz de las riberas (Gegenes nostradamus),499
+0,Artrópodos (Filo: Arthropoda),501
+2,Oveja (Ovis aries),504
+2,Oveja (Ovis aries),505
+63,Chocha perdiz (Scolopax rusticola),516
+0,Artrópodos (Filo: Arthropoda),522
+60,Vulcana / atalanta /numerada (Vanessa atalanta),522
+177,Grulla damisela (Anthropoides virgo),523
+13,Paloma (Columba ssp),523
+52,Pavo real (Pavo cristatus),523
+15,Perro (Canis lupus familiaris),523
+13,Paloma (Columba ssp),527
+0,Artrópodos (Filo: Arthropoda),530
+106,Blanquita de la col (Pieris rapae),530
+158,Caballito del diablo (Calopteryx sp.),530
+60,Vulcana / atalanta /numerada (Vanessa atalanta),530
+2,Oveja (Ovis aries),533
+0,Artrópodos (Filo: Arthropoda),538
+106,Blanquita de la col (Pieris rapae),538
+136,Loba (Maniola jurtina),538
+133,Mosca doméstica (Musca domestica),538
+120,Polilla / Pequeña urraca (Anania hortulata),538
+60,Vulcana / atalanta /numerada (Vanessa atalanta),538
+13,Paloma (Columba ssp),539
+13,Paloma (Columba ssp),540
+178,Abubilla (Upupa epops),547
+179,Araña (Segestria florentina),547
+36,Arrendajo común (Garrulus glandarius),547
+0,Artrópodos (Filo: Arthropoda),547
+14,Caballo (Equus ferus caballus),547
+38,Cabra (Capra aegagrus),547
+180,Camarón renacuajo (Lepidurus apus) o Tortuguitas/tortuguetas (Triops cancriformis),547
+181,Cangrejo de herradura / Cangrejo de las Molucas (Género: Carcinoscorpius / Tachypleus),547
+78,Carbonero común (Parus major),547
+182,Cerdo (Sus scrofa domestica),547
+183,Cigüeña blanca / Cigüeña común (Ciconia ciconia),547
+65,Cisne vulgar (Cygnus olor),547
+5,Conejo (Oryctolagus cuniculus),547
+184,Corneja cenicienta (Corvus corone cornix),547
+185,Críalo (Clamator glandarius),547
+186,Cárabo (Strix aluco),547
+80,Espátula (Platalea leucorodia),547
+7,Jilguero (Carduelis carduelis),547
+136,Loba (Maniola jurtina),547
+87,Martín pescador (Alcedo atthis),547
+88,Mochuelo común (Athene noctua),547
+95,Ortiguera (Aglais urticae),547
+187,Pato doméstico (Anas platyrhynchos),547
+52,Pavo real (Pavo cristatus),547
+148,Petirrojo (Erithacus rubecula),547
+55,Pito real (Picus viridis),547
+188,Vencejo común (Apus apus),547
+96,Ánade real /Azulón (Anas platyrhynchos),547
+13,Paloma (Columba ssp),549
+3,Ciervo (Cervus elaphus),550
+13,Paloma (Columba ssp),562
+0,Artrópodos (Filo: Arthropoda),563
+189,Esfinge abejorro de orla ancha (Hemaris fuciformis),563
+130,Langosta egipcia / cigarrón (Anacridium aegyptium),563
+31,Mosca (Scaeva pyrastri),563
+26,Níspola / ocelada común (Coenonympha pamphilus),563
+33,Saltamontes / Esperanzas (Tettigonia cantans),563
+5,Conejo (Oryctolagus cuniculus),564
+190,Abeja (Nomioides minutissimus),567
+191,Abeja cuco (Triepeolus tristis),567
+192,"Araña (Araneus marmoreus, var. pyramidatus)",567
+123,Araña de jardín / araña de cruz (Araneus diadematus),567
+0,Artrópodos (Filo: Arthropoda),567
+193,Avispa (Isodontia paludosa),567
+194,Avispa (Ophion sp.),567
+195,Caballito del diablo (Ischnura elegans),567
+196,Chinche (Anthocoris sp.),567
+197,Chinche (Liorhyssus hyalinus),567
+198,Escarabajo (Hoplia argentea),567
+115,Escarabajo de las azucenas (Lilioceris lilii),567
+199,Escarabajo longicornio (Lepturobosca virens),567
+189,Esfinge abejorro de orla ancha (Hemaris fuciformis),567
+200,Falsa oruga del rosal (Arge pagana),567
+30,Mariposa ícaro / Ícaro (Polyommatus icarus),567
+25,Mariquita /mariquita de 7 puntos / mariquita común (Coccinella septempunctata),567
+110,Mariquita de dos puntos (Adalia bipunctata),567
+201,Mosca (Dioctria sp.),567
+31,Mosca (Scaeva pyrastri),567
+202,Mosca abeja / mosca abejorro (Parageron incisus),567
+203,Mírido (Orthotylus sp.),567
+204,Náyade (Celastrina argiolus),567
+131,Polilla (Trichiura crataegi),567
+205,Zancudo (Tipula sp.),567
+206,Avestruz (Struthio camelus),569
+22,León (Panthera leo),569
+2,Oveja (Ovis aries),569
+13,Paloma (Columba ssp),569
+3,Ciervo (Cervus elaphus),571
+0,Artrópodos (Filo: Arthropoda),574
+40,Centollo / cabra (Maja brachydactyla),574
+84,Gato (Felis silvestris catus),574
+207,Langosta común (Palinurus elaphas),574
+51,Pavo común (Meleagris gallopavo),574
+15,Perro (Canis lupus familiaris),574
+96,Ánade real /Azulón (Anas platyrhynchos),574
+15,Perro (Canis lupus familiaris),575
+14,Caballo (Equus ferus caballus),578
+14,Caballo (Equus ferus caballus),580
+0,Artrópodos (Filo: Arthropoda),581
+208,Escorpión (Euscorpius flavicaudis),581
+156,Gitana (Arctia caja),581
+133,Mosca doméstica (Musca domestica),581
+15,Perro (Canis lupus familiaris),585
+0,Artrópodos (Filo: Arthropoda),586
+106,Blanquita de la col (Pieris rapae),586
+13,Paloma (Columba ssp),588
+0,Artrópodos (Filo: Arthropoda),591
+14,Caballo (Equus ferus caballus),591
+209,Escorpión (Euscorpius italicus),591
+15,Perro (Canis lupus familiaris),591
+2,Oveja (Ovis aries),593
+5,Conejo (Oryctolagus cuniculus),594
+13,Paloma (Columba ssp),600
+0,Artrópodos (Filo: Arthropoda),603
+106,Blanquita de la col (Pieris rapae),603
+95,Ortiguera (Aglais urticae),603
+60,Vulcana / atalanta /numerada (Vanessa atalanta),603
+13,Paloma (Columba ssp),606
+14,Caballo (Equus ferus caballus),608
+15,Perro (Canis lupus familiaris),608
+0,Artrópodos (Filo: Arthropoda),611
+152,Cervantes (Erynnis tages),611
+25,Mariquita /mariquita de 7 puntos / mariquita común (Coccinella septempunctata),611
+202,Mosca abeja / mosca abejorro (Parageron incisus),611
+22,León (Panthera leo),619
+210,Toro (Bos taurus),619
+211,Agachadiza común (Gallinago gallinago),620
+79,Cerceta común (Anas crecca),620
+212,Estornino pinto (Sturnus vulgaris),620
+82,Fringílido (Fringillidae),620
+87,Martín pescador (Alcedo atthis),620
+144,Perdiz pardilla (Perdix perdix),620
+148,Petirrojo (Erithacus rubecula),620
+213,Zorzal alirrojo ( Turdus iliacus),620
+0,Artrópodos (Filo: Arthropoda),621
+214,Avispa (Enicospilus sp.),621
+100,Macaón (Papilio machaon),621
+31,Mosca (Scaeva pyrastri),621
+13,Paloma (Columba ssp),622
+15,Perro (Canis lupus familiaris),626
+14,Caballo (Equus ferus caballus),628
+5,Conejo (Oryctolagus cuniculus),629
+46,Gallo / gallina (Gallus gallus),629
+98,Perdiz roja (Alectoris rufa),629
+96,Ánade real /Azulón (Anas platyrhynchos),629
+13,Paloma (Columba ssp),639
+215,Abejorro (Bombus terrestris),640
+0,Artrópodos (Filo: Arthropoda),640
+216,Blanca del espino (Aporia crataegi),640
+217,Espejitos / Sofía (Issoria lathonia),640
+93,Mariposa de la col (Pieris brassicae),640
+108,Ondulada / maculada (Pararge aegeria),640
+60,Vulcana / atalanta /numerada (Vanessa atalanta),640
+0,Artrópodos (Filo: Arthropoda),645
+7,Jilguero (Carduelis carduelis),646
+61,Amazona frentiazul ( Amazona aestiva),653
+78,Carbonero común (Parus major),653
+87,Martín pescador (Alcedo atthis),653
+144,Perdiz pardilla (Perdix perdix),653
+218,Zorzal real (Turdus pilaris),653

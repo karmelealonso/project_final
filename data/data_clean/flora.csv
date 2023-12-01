@@ -1,0 +1,2237 @@
+FloraID,Flora,TituloID
+0,Anémona (Anemone spp.),0
+1,Gladiolo (Gladiolus spp.),0
+2,Lirio (Iris germanica),0
+3,Mundillo / Bola de nieve (Viburnum opulus L.),0
+4,Peonía (Paeonia),0
+5,Rosa (Rosa),0
+6,Tulipán (Tulipa spp.),0
+7,Azucena (Lilium candidum),1
+8,Vid / Parra (Vitis vinifera),2
+9,Ajenuz / Arañuela (Nigella damascena),3
+0,Anémona (Anemone spp.),3
+10,Clavel (Dianthus caryophyllus),3
+11,"Dondiego de día (Convolvulaceas, Fam.)",3
+12,Junquillo (Narcissus jonquilla),3
+13,Narciso (Narcissus spp.),3
+5,Rosa (Rosa),3
+6,Tulipán (Tulipa spp.),3
+7,Azucena (Lilium candidum),4
+14,Capuchina (Tropaeolum majus),5
+11,"Dondiego de día (Convolvulaceas, Fam.)",5
+5,Rosa (Rosa),5
+15,Rosa antigua (Rosa centifolia),5
+16,Hortensia (Hydrangea),6
+0,Anémona (Anemone spp.),7
+10,Clavel (Dianthus caryophyllus),7
+12,Junquillo (Narcissus jonquilla),7
+13,Narciso (Narcissus spp.),7
+5,Rosa (Rosa),7
+6,Tulipán (Tulipa spp.),7
+17,Palmera (Phoenix dactylifera),8
+5,Rosa (Rosa),9
+18,Flor de Azahar (Citrus aurantium),10
+19,Nabo (Brassica rapa),10
+20,Aciano / Azulejo (Centaurea cyanus),11
+21,Adormidera / Amapola real (Papaver somniferum),11
+22,Caléndula / Maravilla (Calendula officinalis),11
+23,Clavellina (Dianthus deltoides),11
+18,Flor de Azahar (Citrus aurantium),11
+2,Lirio (Iris germanica),11
+5,Rosa (Rosa),11
+7,Azucena (Lilium candidum),12
+24,Jazmín (Jasminum grandiflorum),13
+25,Mirto / Arrayán (Myrtus communis),13
+8,Vid / Parra (Vitis vinifera),14
+7,Azucena (Lilium candidum),15
+0,Anémona (Anemone spp.),16
+7,Azucena (Lilium candidum),16
+26,Castaño común (Castanea sativa),17
+27,Naranjo (Citrus x sinensis),17
+8,Vid / Parra (Vitis vinifera),17
+28,Amaranto (Amaranthus caudatus),18
+0,Anémona (Anemone spp.),18
+10,Clavel (Dianthus caryophyllus),18
+18,Flor de Azahar (Citrus aurantium),18
+29,Iris / Lirio azul (Iris xiphium),18
+30,Jacinto (Hyacinthus orientalis),18
+12,Junquillo (Narcissus jonquilla),18
+2,Lirio (Iris germanica),18
+13,Narciso (Narcissus spp.),18
+31,Pasionaria / Flor de la Pasión (Passiflora caerulea),18
+5,Rosa (Rosa),18
+15,Rosa antigua (Rosa centifolia),18
+6,Tulipán (Tulipa spp.),18
+17,Palmera (Phoenix dactylifera),19
+7,Azucena (Lilium candidum),20
+32,Aguileña (Aquilegia vulgaris),21
+28,Amaranto (Amaranthus caudatus),21
+0,Anémona (Anemone spp.),21
+5,Rosa (Rosa),21
+6,Tulipán (Tulipa spp.),21
+32,Aguileña (Aquilegia vulgaris),22
+0,Anémona (Anemone spp.),22
+10,Clavel (Dianthus caryophyllus),22
+24,Jazmín (Jasminum grandiflorum),22
+0,Anémona (Anemone spp.),23
+10,Clavel (Dianthus caryophyllus),23
+18,Flor de Azahar (Citrus aurantium),23
+5,Rosa (Rosa),23
+33,Tagetes / Clavelón de India (Tajetes erecta),23
+0,Anémona (Anemone spp.),24
+10,Clavel (Dianthus caryophyllus),24
+12,Junquillo (Narcissus jonquilla),24
+2,Lirio (Iris germanica),24
+3,Mundillo / Bola de nieve (Viburnum opulus L.),24
+13,Narciso (Narcissus spp.),24
+5,Rosa (Rosa),24
+6,Tulipán (Tulipa spp.),24
+34,Roble (Quercus spp.),25
+10,Clavel (Dianthus caryophyllus),26
+30,Jacinto (Hyacinthus orientalis),26
+3,Mundillo / Bola de nieve (Viburnum opulus L.),26
+5,Rosa (Rosa),26
+6,Tulipán (Tulipa spp.),26
+10,Clavel (Dianthus caryophyllus),27
+11,"Dondiego de día (Convolvulaceas, Fam.)",27
+35,Espuela de caballero (Consolida ajacis),27
+36,Lilas (Syringa vulgaris),27
+2,Lirio (Iris germanica),27
+37,Malva real / Malvarrosa (Althaea rosea),27
+5,Rosa (Rosa),27
+33,Tagetes / Clavelón de India (Tajetes erecta),27
+17,Palmera (Phoenix dactylifera),28
+38,Alhelí dorado (Cheiranthus cheiri),29
+39,Amapola (Papaver rhoeas),29
+40,Lilium (Lilium spp.),29
+41,Muguet / Lirio del valle (Convallaria majalis),29
+42,Pensamiento (Viola tricolor),29
+5,Rosa (Rosa),29
+15,Rosa antigua (Rosa centifolia),29
+34,Roble (Quercus spp.),30
+21,Adormidera / Amapola real (Papaver somniferum),31
+39,Amapola (Papaver rhoeas),31
+43,Caña de río / Carrizo (Phragmites australis),31
+44,Sauce (Salix),31
+7,Azucena (Lilium candidum),32
+42,Pensamiento (Viola tricolor),33
+45,Higuera (Ficus carica),34
+46,Manzano (Malus domestica),34
+7,Azucena (Lilium candidum),35
+7,Azucena (Lilium candidum),36
+47,Ancusa / Chupamieles (Anchusa azurea),37
+0,Anémona (Anemone spp.),37
+14,Capuchina (Tropaeolum majus),37
+48,Ciclamen (Cyclamen persicum),37
+10,Clavel (Dianthus caryophyllus),37
+49,Clavel chino (Dianthus chinensis),37
+18,Flor de Azahar (Citrus aurantium),37
+50,Francesilla (Ranunculus asiaticus),37
+51,Hierba doncella / Vincapervinca (Vinca minor),37
+24,Jazmín (Jasminum grandiflorum),37
+12,Junquillo (Narcissus jonquilla),37
+13,Narciso (Narcissus spp.),37
+42,Pensamiento (Viola tricolor),37
+52,Prímula (Primula auricula),37
+53,Romero (Rosmarinus officinalis),37
+5,Rosa (Rosa),37
+54,Olivo (Olea europaea),38
+55,Acanto (Acanthus mollis),39
+56,Cala / Alcatraz (Zantedeschia aethiopica),39
+57,Laurel ( Laurus nobilis),39
+17,Palmera (Phoenix dactylifera),39
+0,Anémona (Anemone spp.),40
+22,Caléndula / Maravilla (Calendula officinalis),40
+2,Lirio (Iris germanica),40
+58,Retama amarilla (Retama sphaerocarpa),40
+8,Vid / Parra (Vitis vinifera),41
+5,Rosa (Rosa),42
+2,Lirio (Iris germanica),43
+13,Narciso (Narcissus spp.),43
+0,Anémona (Anemone spp.),44
+10,Clavel (Dianthus caryophyllus),44
+12,Junquillo (Narcissus jonquilla),44
+13,Narciso (Narcissus spp.),44
+5,Rosa (Rosa),44
+6,Tulipán (Tulipa spp.),44
+59,Pino ( Pinus spp.),45
+21,Adormidera / Amapola real (Papaver somniferum),46
+60,Alhelí de invierno (Matthiola incana),46
+0,Anémona (Anemone spp.),46
+14,Capuchina (Tropaeolum majus),46
+10,Clavel (Dianthus caryophyllus),46
+37,Malva real / Malvarrosa (Althaea rosea),46
+5,Rosa (Rosa),46
+6,Tulipán (Tulipa spp.),46
+10,Clavel (Dianthus caryophyllus),47
+5,Rosa (Rosa),47
+5,Rosa (Rosa),48
+32,Aguileña (Aquilegia vulgaris),49
+47,Ancusa / Chupamieles (Anchusa azurea),49
+0,Anémona (Anemone spp.),49
+22,Caléndula / Maravilla (Calendula officinalis),49
+50,Francesilla (Ranunculus asiaticus),49
+29,Iris / Lirio azul (Iris xiphium),49
+30,Jacinto (Hyacinthus orientalis),49
+12,Junquillo (Narcissus jonquilla),49
+40,Lilium (Lilium spp.),49
+2,Lirio (Iris germanica),49
+61,Malva común (Malva sylvestris),49
+41,Muguet / Lirio del valle (Convallaria majalis),49
+13,Narciso (Narcissus spp.),49
+42,Pensamiento (Viola tricolor),49
+52,Prímula (Primula auricula),49
+6,Tulipán (Tulipa spp.),49
+9,Ajenuz / Arañuela (Nigella damascena),50
+18,Flor de Azahar (Citrus aurantium),50
+50,Francesilla (Ranunculus asiaticus),50
+8,Vid / Parra (Vitis vinifera),51
+8,Vid / Parra (Vitis vinifera),52
+62,Hiedra (Hedera spp.),53
+63,Hiedra común (Hedera helix),53
+8,Vid / Parra (Vitis vinifera),53
+7,Azucena (Lilium candidum),54
+7,Azucena (Lilium candidum),55
+5,Rosa (Rosa),56
+55,Acanto (Acanthus mollis),57
+10,Clavel (Dianthus caryophyllus),58
+5,Rosa (Rosa),58
+5,Rosa (Rosa),59
+64,Adelfa (Nerium oleander),60
+21,Adormidera / Amapola real (Papaver somniferum),60
+0,Anémona (Anemone spp.),60
+7,Azucena (Lilium candidum),60
+22,Caléndula / Maravilla (Calendula officinalis),60
+10,Clavel (Dianthus caryophyllus),60
+49,Clavel chino (Dianthus chinensis),60
+11,"Dondiego de día (Convolvulaceas, Fam.)",60
+65,Dragonaria (Antirrhinum majus),60
+66,Girasol (Helianthus annuus),60
+29,Iris / Lirio azul (Iris xiphium),60
+30,Jacinto (Hyacinthus orientalis),60
+24,Jazmín (Jasminum grandiflorum),60
+12,Junquillo (Narcissus jonquilla),60
+40,Lilium (Lilium spp.),60
+2,Lirio (Iris germanica),60
+37,Malva real / Malvarrosa (Althaea rosea),60
+3,Mundillo / Bola de nieve (Viburnum opulus L.),60
+13,Narciso (Narcissus spp.),60
+4,Peonía (Paeonia),60
+58,Retama amarilla (Retama sphaerocarpa),60
+5,Rosa (Rosa),60
+15,Rosa antigua (Rosa centifolia),60
+6,Tulipán (Tulipa spp.),60
+21,Adormidera / Amapola real (Papaver somniferum),61
+60,Alhelí de invierno (Matthiola incana),61
+39,Amapola (Papaver rhoeas),61
+0,Anémona (Anemone spp.),61
+10,Clavel (Dianthus caryophyllus),61
+24,Jazmín (Jasminum grandiflorum),61
+13,Narciso (Narcissus spp.),61
+67,Nardo (Polianthes tuberosa),61
+5,Rosa (Rosa),61
+6,Tulipán (Tulipa spp.),61
+21,Adormidera / Amapola real (Papaver somniferum),62
+60,Alhelí de invierno (Matthiola incana),62
+0,Anémona (Anemone spp.),62
+49,Clavel chino (Dianthus chinensis),62
+35,Espuela de caballero (Consolida ajacis),62
+50,Francesilla (Ranunculus asiaticus),62
+5,Rosa (Rosa),62
+7,Azucena (Lilium candidum),63
+54,Olivo (Olea europaea),63
+5,Rosa (Rosa),63
+0,Anémona (Anemone spp.),64
+10,Clavel (Dianthus caryophyllus),64
+11,"Dondiego de día (Convolvulaceas, Fam.)",64
+30,Jacinto (Hyacinthus orientalis),64
+2,Lirio (Iris germanica),64
+5,Rosa (Rosa),64
+6,Tulipán (Tulipa spp.),64
+10,Clavel (Dianthus caryophyllus),65
+18,Flor de Azahar (Citrus aurantium),66
+2,Lirio (Iris germanica),66
+13,Narciso (Narcissus spp.),66
+5,Rosa (Rosa),66
+39,Amapola (Papaver rhoeas),67
+11,"Dondiego de día (Convolvulaceas, Fam.)",67
+37,Malva real / Malvarrosa (Althaea rosea),67
+42,Pensamiento (Viola tricolor),67
+5,Rosa (Rosa),68
+68,Encina (Quercus ilex),69
+69,Ciprés (Cupressus),70
+5,Rosa (Rosa),71
+8,Vid / Parra (Vitis vinifera),72
+32,Aguileña (Aquilegia vulgaris),73
+0,Anémona (Anemone spp.),73
+23,Clavellina (Dianthus deltoides),73
+24,Jazmín (Jasminum grandiflorum),73
+40,Lilium (Lilium spp.),73
+2,Lirio (Iris germanica),73
+3,Mundillo / Bola de nieve (Viburnum opulus L.),73
+13,Narciso (Narcissus spp.),73
+5,Rosa (Rosa),73
+6,Tulipán (Tulipa spp.),73
+17,Palmera (Phoenix dactylifera),74
+5,Rosa (Rosa),75
+9,Ajenuz / Arañuela (Nigella damascena),76
+0,Anémona (Anemone spp.),76
+22,Caléndula / Maravilla (Calendula officinalis),76
+49,Clavel chino (Dianthus chinensis),76
+35,Espuela de caballero (Consolida ajacis),76
+29,Iris / Lirio azul (Iris xiphium),76
+30,Jacinto (Hyacinthus orientalis),76
+12,Junquillo (Narcissus jonquilla),76
+40,Lilium (Lilium spp.),76
+2,Lirio (Iris germanica),76
+37,Malva real / Malvarrosa (Althaea rosea),76
+13,Narciso (Narcissus spp.),76
+4,Peonía (Paeonia),76
+5,Rosa (Rosa),76
+15,Rosa antigua (Rosa centifolia),76
+6,Tulipán (Tulipa spp.),76
+18,Flor de Azahar (Citrus aurantium),77
+50,Francesilla (Ranunculus asiaticus),77
+13,Narciso (Narcissus spp.),77
+68,Encina (Quercus ilex),78
+21,Adormidera / Amapola real (Papaver somniferum),79
+70,Guisante de olor (Lathyrus odoratus),79
+24,Jazmín (Jasminum grandiflorum),79
+71,Margarita mayor / Margaritón (Chrysanthemum leucanthemum),79
+53,Romero (Rosmarinus officinalis),79
+5,Rosa (Rosa),79
+46,Manzano (Malus domestica),80
+72,Tejo (Taxus baccata),81
+73,Repollo (Brassica oleracea Capitata),82
+59,Pino ( Pinus spp.),83
+9,Ajenuz / Arañuela (Nigella damascena),84
+10,Clavel (Dianthus caryophyllus),84
+35,Espuela de caballero (Consolida ajacis),84
+5,Rosa (Rosa),84
+21,Adormidera / Amapola real (Papaver somniferum),85
+28,Amaranto (Amaranthus caudatus),85
+0,Anémona (Anemone spp.),85
+7,Azucena (Lilium candidum),85
+10,Clavel (Dianthus caryophyllus),85
+18,Flor de Azahar (Citrus aurantium),85
+50,Francesilla (Ranunculus asiaticus),85
+30,Jacinto (Hyacinthus orientalis),85
+40,Lilium (Lilium spp.),85
+2,Lirio (Iris germanica),85
+3,Mundillo / Bola de nieve (Viburnum opulus L.),85
+13,Narciso (Narcissus spp.),85
+4,Peonía (Paeonia),85
+5,Rosa (Rosa),85
+15,Rosa antigua (Rosa centifolia),85
+33,Tagetes / Clavelón de India (Tajetes erecta),85
+6,Tulipán (Tulipa spp.),85
+74,Violeta (Viola),85
+57,Laurel ( Laurus nobilis),86
+75,Chirivía / Pastinaca (Pastinaca sativa),87
+76,Coliflor (Brassica oleracea Botrytis),87
+19,Nabo (Brassica rapa),87
+73,Repollo (Brassica oleracea Capitata),87
+21,Adormidera / Amapola real (Papaver somniferum),88
+0,Anémona (Anemone spp.),88
+10,Clavel (Dianthus caryophyllus),88
+11,"Dondiego de día (Convolvulaceas, Fam.)",88
+24,Jazmín (Jasminum grandiflorum),88
+2,Lirio (Iris germanica),88
+5,Rosa (Rosa),88
+6,Tulipán (Tulipa spp.),88
+7,Azucena (Lilium candidum),89
+54,Olivo (Olea europaea),89
+5,Rosa (Rosa),89
+21,Adormidera / Amapola real (Papaver somniferum),90
+32,Aguileña (Aquilegia vulgaris),90
+39,Amapola (Papaver rhoeas),90
+28,Amaranto (Amaranthus caudatus),90
+7,Azucena (Lilium candidum),90
+23,Clavellina (Dianthus deltoides),90
+11,"Dondiego de día (Convolvulaceas, Fam.)",90
+66,Girasol (Helianthus annuus),90
+24,Jazmín (Jasminum grandiflorum),90
+40,Lilium (Lilium spp.),90
+2,Lirio (Iris germanica),90
+37,Malva real / Malvarrosa (Althaea rosea),90
+5,Rosa (Rosa),90
+33,Tagetes / Clavelón de India (Tajetes erecta),90
+0,Anémona (Anemone spp.),91
+3,Mundillo / Bola de nieve (Viburnum opulus L.),91
+5,Rosa (Rosa),91
+6,Tulipán (Tulipa spp.),91
+22,Caléndula / Maravilla (Calendula officinalis),92
+3,Mundillo / Bola de nieve (Viburnum opulus L.),92
+5,Rosa (Rosa),92
+6,Tulipán (Tulipa spp.),92
+2,Lirio (Iris germanica),93
+13,Narciso (Narcissus spp.),93
+5,Rosa (Rosa),94
+8,Vid / Parra (Vitis vinifera),95
+2,Lirio (Iris germanica),96
+32,Aguileña (Aquilegia vulgaris),97
+38,Alhelí dorado (Cheiranthus cheiri),97
+70,Guisante de olor (Lathyrus odoratus),97
+40,Lilium (Lilium spp.),97
+37,Malva real / Malvarrosa (Althaea rosea),97
+77,Peonía (Paeonia suffruticosa),97
+4,Peonía (Paeonia),97
+5,Rosa (Rosa),97
+6,Tulipán (Tulipa spp.),97
+5,Rosa (Rosa),98
+14,Capuchina (Tropaeolum majus),99
+6,Tulipán (Tulipa spp.),99
+36,Lilas (Syringa vulgaris),100
+5,Rosa (Rosa),101
+6,Tulipán (Tulipa spp.),101
+0,Anémona (Anemone spp.),102
+78,Crisantemo (Chrysanthemum spp.),102
+62,Hiedra (Hedera spp.),102
+30,Jacinto (Hyacinthus orientalis),102
+24,Jazmín (Jasminum grandiflorum),102
+2,Lirio (Iris germanica),102
+13,Narciso (Narcissus spp.),102
+6,Tulipán (Tulipa spp.),102
+39,Amapola (Papaver rhoeas),103
+62,Hiedra (Hedera spp.),103
+8,Vid / Parra (Vitis vinifera),103
+8,Vid / Parra (Vitis vinifera),104
+7,Azucena (Lilium candidum),105
+5,Rosa (Rosa),105
+11,"Dondiego de día (Convolvulaceas, Fam.)",106
+24,Jazmín (Jasminum grandiflorum),106
+79,Madreselva (Lonicera),106
+5,Rosa (Rosa),106
+15,Rosa antigua (Rosa centifolia),106
+6,Tulipán (Tulipa spp.),106
+5,Rosa (Rosa),107
+27,Naranjo (Citrus x sinensis),108
+36,Lilas (Syringa vulgaris),109
+5,Rosa (Rosa),109
+32,Aguileña (Aquilegia vulgaris),110
+0,Anémona (Anemone spp.),110
+7,Azucena (Lilium candidum),110
+48,Ciclamen (Cyclamen persicum),110
+11,"Dondiego de día (Convolvulaceas, Fam.)",110
+18,Flor de Azahar (Citrus aurantium),110
+80,Granado (Punica granatum),110
+70,Guisante de olor (Lathyrus odoratus),110
+30,Jacinto (Hyacinthus orientalis),110
+24,Jazmín (Jasminum grandiflorum),110
+12,Junquillo (Narcissus jonquilla),110
+2,Lirio (Iris germanica),110
+37,Malva real / Malvarrosa (Althaea rosea),110
+13,Narciso (Narcissus spp.),110
+4,Peonía (Paeonia),110
+5,Rosa (Rosa),110
+15,Rosa antigua (Rosa centifolia),110
+6,Tulipán (Tulipa spp.),110
+81,Camelia (Camellis spp.),111
+10,Clavel (Dianthus caryophyllus),111
+30,Jacinto (Hyacinthus orientalis),111
+13,Narciso (Narcissus spp.),111
+5,Rosa (Rosa),111
+82,"Haya (Fagus, de la familia de las Fagaceae)",112
+80,Granado (Punica granatum),113
+5,Rosa (Rosa),114
+68,Encina (Quercus ilex),115
+18,Flor de Azahar (Citrus aurantium),116
+7,Azucena (Lilium candidum),117
+21,Adormidera / Amapola real (Papaver somniferum),118
+32,Aguileña (Aquilegia vulgaris),118
+9,Ajenuz / Arañuela (Nigella damascena),118
+60,Alhelí de invierno (Matthiola incana),118
+0,Anémona (Anemone spp.),118
+14,Capuchina (Tropaeolum majus),118
+10,Clavel (Dianthus caryophyllus),118
+35,Espuela de caballero (Consolida ajacis),118
+50,Francesilla (Ranunculus asiaticus),118
+24,Jazmín (Jasminum grandiflorum),118
+40,Lilium (Lilium spp.),118
+83,Matricaria / Botón de plata (Chrysanthemum parthenium),118
+3,Mundillo / Bola de nieve (Viburnum opulus L.),118
+31,Pasionaria / Flor de la Pasión (Passiflora caerulea),118
+4,Peonía (Paeonia),118
+5,Rosa (Rosa),118
+6,Tulipán (Tulipa spp.),118
+57,Laurel ( Laurus nobilis),119
+69,Ciprés (Cupressus),120
+18,Flor de Azahar (Citrus aurantium),121
+2,Lirio (Iris germanica),121
+13,Narciso (Narcissus spp.),121
+5,Rosa (Rosa),121
+5,Rosa (Rosa),122
+7,Azucena (Lilium candidum),123
+5,Rosa (Rosa),123
+62,Hiedra (Hedera spp.),124
+63,Hiedra común (Hedera helix),124
+84,Níspero europeo (Mespilus germánica),124
+85,Zarzamora (Rubus),124
+5,Rosa (Rosa),125
+75,Chirivía / Pastinaca (Pastinaca sativa),126
+76,Coliflor (Brassica oleracea Botrytis),126
+19,Nabo (Brassica rapa),126
+73,Repollo (Brassica oleracea Capitata),126
+21,Adormidera / Amapola real (Papaver somniferum),127
+0,Anémona (Anemone spp.),127
+10,Clavel (Dianthus caryophyllus),127
+11,"Dondiego de día (Convolvulaceas, Fam.)",127
+24,Jazmín (Jasminum grandiflorum),127
+12,Junquillo (Narcissus jonquilla),127
+2,Lirio (Iris germanica),127
+3,Mundillo / Bola de nieve (Viburnum opulus L.),127
+13,Narciso (Narcissus spp.),127
+6,Tulipán (Tulipa spp.),127
+7,Azucena (Lilium candidum),128
+10,Clavel (Dianthus caryophyllus),128
+21,Adormidera / Amapola real (Papaver somniferum),129
+9,Ajenuz / Arañuela (Nigella damascena),129
+0,Anémona (Anemone spp.),129
+14,Capuchina (Tropaeolum majus),129
+10,Clavel (Dianthus caryophyllus),129
+11,"Dondiego de día (Convolvulaceas, Fam.)",129
+16,Hortensia (Hydrangea),129
+30,Jacinto (Hyacinthus orientalis),129
+24,Jazmín (Jasminum grandiflorum),129
+12,Junquillo (Narcissus jonquilla),129
+40,Lilium (Lilium spp.),129
+13,Narciso (Narcissus spp.),129
+52,Prímula (Primula auricula),129
+5,Rosa (Rosa),129
+21,Adormidera / Amapola real (Papaver somniferum),130
+10,Clavel (Dianthus caryophyllus),130
+11,"Dondiego de día (Convolvulaceas, Fam.)",130
+29,Iris / Lirio azul (Iris xiphium),130
+30,Jacinto (Hyacinthus orientalis),130
+24,Jazmín (Jasminum grandiflorum),130
+12,Junquillo (Narcissus jonquilla),130
+13,Narciso (Narcissus spp.),130
+5,Rosa (Rosa),130
+6,Tulipán (Tulipa spp.),130
+7,Azucena (Lilium candidum),131
+32,Aguileña (Aquilegia vulgaris),132
+9,Ajenuz / Arañuela (Nigella damascena),132
+0,Anémona (Anemone spp.),132
+7,Azucena (Lilium candidum),132
+86,Botón de oro (Ranunculus acris),132
+22,Caléndula / Maravilla (Calendula officinalis),132
+10,Clavel (Dianthus caryophyllus),132
+23,Clavellina (Dianthus deltoides),132
+50,Francesilla (Ranunculus asiaticus),132
+66,Girasol (Helianthus annuus),132
+80,Granado (Punica granatum),132
+51,Hierba doncella / Vincapervinca (Vinca minor),132
+30,Jacinto (Hyacinthus orientalis),132
+12,Junquillo (Narcissus jonquilla),132
+2,Lirio (Iris germanica),132
+3,Mundillo / Bola de nieve (Viburnum opulus L.),132
+13,Narciso (Narcissus spp.),132
+4,Peonía (Paeonia),132
+58,Retama amarilla (Retama sphaerocarpa),132
+5,Rosa (Rosa),132
+15,Rosa antigua (Rosa centifolia),132
+6,Tulipán (Tulipa spp.),132
+60,Alhelí de invierno (Matthiola incana),133
+49,Clavel chino (Dianthus chinensis),133
+11,"Dondiego de día (Convolvulaceas, Fam.)",133
+2,Lirio (Iris germanica),133
+5,Rosa (Rosa),133
+6,Tulipán (Tulipa spp.),133
+30,Jacinto (Hyacinthus orientalis),134
+5,Rosa (Rosa),134
+0,Anémona (Anemone spp.),135
+14,Capuchina (Tropaeolum majus),135
+10,Clavel (Dianthus caryophyllus),135
+24,Jazmín (Jasminum grandiflorum),135
+4,Peonía (Paeonia),135
+10,Clavel (Dianthus caryophyllus),136
+50,Francesilla (Ranunculus asiaticus),136
+8,Vid / Parra (Vitis vinifera),137
+87,Hierba de san Benito (Geum urbanum),138
+7,Azucena (Lilium candidum),139
+20,Aciano / Azulejo (Centaurea cyanus),140
+88,Almendro (Prunus dulcis),140
+7,Azucena (Lilium candidum),140
+22,Caléndula / Maravilla (Calendula officinalis),140
+23,Clavellina (Dianthus deltoides),140
+2,Lirio (Iris germanica),140
+5,Rosa (Rosa),140
+8,Vid / Parra (Vitis vinifera),141
+34,Roble (Quercus spp.),142
+10,Clavel (Dianthus caryophyllus),143
+34,Roble (Quercus spp.),144
+36,Lilas (Syringa vulgaris),145
+0,Anémona (Anemone spp.),146
+11,"Dondiego de día (Convolvulaceas, Fam.)",146
+30,Jacinto (Hyacinthus orientalis),146
+5,Rosa (Rosa),146
+6,Tulipán (Tulipa spp.),146
+5,Rosa (Rosa),147
+81,Camelia (Camellis spp.),148
+5,Rosa (Rosa),148
+7,Azucena (Lilium candidum),149
+34,Roble (Quercus spp.),150
+0,Anémona (Anemone spp.),151
+7,Azucena (Lilium candidum),151
+49,Clavel chino (Dianthus chinensis),151
+18,Flor de Azahar (Citrus aurantium),151
+50,Francesilla (Ranunculus asiaticus),151
+29,Iris / Lirio azul (Iris xiphium),151
+30,Jacinto (Hyacinthus orientalis),151
+24,Jazmín (Jasminum grandiflorum),151
+12,Junquillo (Narcissus jonquilla),151
+40,Lilium (Lilium spp.),151
+2,Lirio (Iris germanica),151
+13,Narciso (Narcissus spp.),151
+4,Peonía (Paeonia),151
+5,Rosa (Rosa),151
+15,Rosa antigua (Rosa centifolia),151
+6,Tulipán (Tulipa spp.),151
+7,Azucena (Lilium candidum),152
+8,Vid / Parra (Vitis vinifera),153
+0,Anémona (Anemone spp.),154
+24,Jazmín (Jasminum grandiflorum),154
+40,Lilium (Lilium spp.),154
+5,Rosa (Rosa),154
+0,Anémona (Anemone spp.),155
+10,Clavel (Dianthus caryophyllus),155
+11,"Dondiego de día (Convolvulaceas, Fam.)",155
+89,Escaramujo (Rosa canina),155
+35,Espuela de caballero (Consolida ajacis),155
+30,Jacinto (Hyacinthus orientalis),155
+24,Jazmín (Jasminum grandiflorum),155
+12,Junquillo (Narcissus jonquilla),155
+2,Lirio (Iris germanica),155
+13,Narciso (Narcissus spp.),155
+5,Rosa (Rosa),155
+6,Tulipán (Tulipa spp.),155
+22,Caléndula / Maravilla (Calendula officinalis),156
+5,Rosa (Rosa),157
+21,Adormidera / Amapola real (Papaver somniferum),158
+11,"Dondiego de día (Convolvulaceas, Fam.)",159
+2,Lirio (Iris germanica),159
+5,Rosa (Rosa),159
+68,Encina (Quercus ilex),160
+5,Rosa (Rosa),161
+6,Tulipán (Tulipa spp.),161
+21,Adormidera / Amapola real (Papaver somniferum),162
+14,Capuchina (Tropaeolum majus),163
+62,Hiedra (Hedera spp.),163
+57,Laurel ( Laurus nobilis),163
+71,Margarita mayor / Margaritón (Chrysanthemum leucanthemum),163
+0,Anémona (Anemone spp.),164
+5,Rosa (Rosa),165
+36,Lilas (Syringa vulgaris),166
+5,Rosa (Rosa),166
+21,Adormidera / Amapola real (Papaver somniferum),167
+0,Anémona (Anemone spp.),167
+7,Azucena (Lilium candidum),167
+10,Clavel (Dianthus caryophyllus),167
+11,"Dondiego de día (Convolvulaceas, Fam.)",167
+30,Jacinto (Hyacinthus orientalis),167
+24,Jazmín (Jasminum grandiflorum),167
+67,Nardo (Polianthes tuberosa),167
+5,Rosa (Rosa),167
+6,Tulipán (Tulipa spp.),167
+7,Azucena (Lilium candidum),168
+7,Azucena (Lilium candidum),169
+0,Anémona (Anemone spp.),170
+21,Adormidera / Amapola real (Papaver somniferum),171
+0,Anémona (Anemone spp.),171
+7,Azucena (Lilium candidum),171
+90,Caña de indias / Canna (Canna indica),171
+50,Francesilla (Ranunculus asiaticus),171
+29,Iris / Lirio azul (Iris xiphium),171
+30,Jacinto (Hyacinthus orientalis),171
+12,Junquillo (Narcissus jonquilla),171
+40,Lilium (Lilium spp.),171
+2,Lirio (Iris germanica),171
+37,Malva real / Malvarrosa (Althaea rosea),171
+19,Nabo (Brassica rapa),171
+13,Narciso (Narcissus spp.),171
+5,Rosa (Rosa),171
+6,Tulipán (Tulipa spp.),171
+21,Adormidera / Amapola real (Papaver somniferum),172
+17,Palmera (Phoenix dactylifera),173
+75,Chirivía / Pastinaca (Pastinaca sativa),174
+76,Coliflor (Brassica oleracea Botrytis),174
+19,Nabo (Brassica rapa),174
+73,Repollo (Brassica oleracea Capitata),174
+91,Chumbera / Nopal (Opuntia ficus-indica),175
+64,Adelfa (Nerium oleander),176
+5,Rosa (Rosa),177
+57,Laurel ( Laurus nobilis),178
+34,Roble (Quercus spp.),178
+9,Ajenuz / Arañuela (Nigella damascena),179
+47,Ancusa / Chupamieles (Anchusa azurea),179
+48,Ciclamen (Cyclamen persicum),179
+24,Jazmín (Jasminum grandiflorum),179
+40,Lilium (Lilium spp.),179
+13,Narciso (Narcissus spp.),179
+42,Pensamiento (Viola tricolor),179
+53,Romero (Rosmarinus officinalis),179
+5,Rosa (Rosa),179
+6,Tulipán (Tulipa spp.),179
+59,Pino ( Pinus spp.),180
+7,Azucena (Lilium candidum),181
+10,Clavel (Dianthus caryophyllus),182
+8,Vid / Parra (Vitis vinifera),183
+5,Rosa (Rosa),184
+7,Azucena (Lilium candidum),185
+54,Olivo (Olea europaea),186
+32,Aguileña (Aquilegia vulgaris),187
+0,Anémona (Anemone spp.),187
+10,Clavel (Dianthus caryophyllus),187
+11,"Dondiego de día (Convolvulaceas, Fam.)",187
+92,Eléboro verde (Helleborus viridis),187
+62,Hiedra (Hedera spp.),187
+30,Jacinto (Hyacinthus orientalis),187
+3,Mundillo / Bola de nieve (Viburnum opulus L.),187
+13,Narciso (Narcissus spp.),187
+42,Pensamiento (Viola tricolor),187
+93,Retama negra (Cytisus scoparius),187
+5,Rosa (Rosa),187
+6,Tulipán (Tulipa spp.),187
+8,Vid / Parra (Vitis vinifera),188
+21,Adormidera / Amapola real (Papaver somniferum),189
+50,Francesilla (Ranunculus asiaticus),189
+4,Peonía (Paeonia),189
+5,Rosa (Rosa),189
+34,Roble (Quercus spp.),190
+0,Anémona (Anemone spp.),191
+7,Azucena (Lilium candidum),191
+10,Clavel (Dianthus caryophyllus),191
+24,Jazmín (Jasminum grandiflorum),191
+40,Lilium (Lilium spp.),191
+2,Lirio (Iris germanica),191
+4,Peonía (Paeonia),191
+5,Rosa (Rosa),191
+6,Tulipán (Tulipa spp.),191
+10,Clavel (Dianthus caryophyllus),192
+5,Rosa (Rosa),192
+5,Rosa (Rosa),193
+20,Aciano / Azulejo (Centaurea cyanus),194
+0,Anémona (Anemone spp.),194
+23,Clavellina (Dianthus deltoides),194
+11,"Dondiego de día (Convolvulaceas, Fam.)",194
+2,Lirio (Iris germanica),194
+13,Narciso (Narcissus spp.),194
+5,Rosa (Rosa),194
+6,Tulipán (Tulipa spp.),194
+17,Palmera (Phoenix dactylifera),195
+28,Amaranto (Amaranthus caudatus),196
+7,Azucena (Lilium candidum),196
+14,Capuchina (Tropaeolum majus),196
+10,Clavel (Dianthus caryophyllus),196
+11,"Dondiego de día (Convolvulaceas, Fam.)",196
+50,Francesilla (Ranunculus asiaticus),196
+29,Iris / Lirio azul (Iris xiphium),196
+2,Lirio (Iris germanica),196
+5,Rosa (Rosa),196
+15,Rosa antigua (Rosa centifolia),196
+6,Tulipán (Tulipa spp.),196
+34,Roble (Quercus spp.),197
+45,Higuera (Ficus carica),198
+37,Malva real / Malvarrosa (Althaea rosea),198
+46,Manzano (Malus domestica),198
+21,Adormidera / Amapola real (Papaver somniferum),199
+0,Anémona (Anemone spp.),199
+11,"Dondiego de día (Convolvulaceas, Fam.)",199
+30,Jacinto (Hyacinthus orientalis),199
+13,Narciso (Narcissus spp.),199
+5,Rosa (Rosa),199
+6,Tulipán (Tulipa spp.),199
+5,Rosa (Rosa),200
+7,Azucena (Lilium candidum),201
+2,Lirio (Iris germanica),201
+17,Palmera (Phoenix dactylifera),201
+5,Rosa (Rosa),201
+54,Olivo (Olea europaea),202
+7,Azucena (Lilium candidum),203
+60,Alhelí de invierno (Matthiola incana),204
+38,Alhelí dorado (Cheiranthus cheiri),204
+0,Anémona (Anemone spp.),204
+10,Clavel (Dianthus caryophyllus),204
+5,Rosa (Rosa),204
+6,Tulipán (Tulipa spp.),204
+5,Rosa (Rosa),205
+0,Anémona (Anemone spp.),206
+10,Clavel (Dianthus caryophyllus),206
+40,Lilium (Lilium spp.),206
+2,Lirio (Iris germanica),206
+31,Pasionaria / Flor de la Pasión (Passiflora caerulea),206
+5,Rosa (Rosa),206
+6,Tulipán (Tulipa spp.),206
+17,Palmera (Phoenix dactylifera),207
+8,Vid / Parra (Vitis vinifera),208
+62,Hiedra (Hedera spp.),209
+63,Hiedra común (Hedera helix),209
+8,Vid / Parra (Vitis vinifera),209
+5,Rosa (Rosa),210
+94,Espino albar / Espino blanco (Crataegus oxyacantha L.),211
+21,Adormidera / Amapola real (Papaver somniferum),212
+10,Clavel (Dianthus caryophyllus),212
+11,"Dondiego de día (Convolvulaceas, Fam.)",212
+29,Iris / Lirio azul (Iris xiphium),212
+30,Jacinto (Hyacinthus orientalis),212
+24,Jazmín (Jasminum grandiflorum),212
+12,Junquillo (Narcissus jonquilla),212
+13,Narciso (Narcissus spp.),212
+5,Rosa (Rosa),212
+6,Tulipán (Tulipa spp.),212
+64,Adelfa (Nerium oleander),213
+62,Hiedra (Hedera spp.),213
+63,Hiedra común (Hedera helix),213
+42,Pensamiento (Viola tricolor),213
+7,Azucena (Lilium candidum),214
+62,Hiedra (Hedera spp.),215
+63,Hiedra común (Hedera helix),215
+5,Rosa (Rosa),215
+57,Laurel ( Laurus nobilis),216
+5,Rosa (Rosa),217
+39,Amapola (Papaver rhoeas),218
+0,Anémona (Anemone spp.),218
+7,Azucena (Lilium candidum),218
+49,Clavel chino (Dianthus chinensis),218
+35,Espuela de caballero (Consolida ajacis),218
+24,Jazmín (Jasminum grandiflorum),218
+40,Lilium (Lilium spp.),218
+37,Malva real / Malvarrosa (Althaea rosea),218
+58,Retama amarilla (Retama sphaerocarpa),218
+5,Rosa (Rosa),218
+33,Tagetes / Clavelón de India (Tajetes erecta),218
+10,Clavel (Dianthus caryophyllus),219
+14,Capuchina (Tropaeolum majus),220
+11,"Dondiego de día (Convolvulaceas, Fam.)",220
+67,Nardo (Polianthes tuberosa),220
+5,Rosa (Rosa),220
+6,Tulipán (Tulipa spp.),220
+7,Azucena (Lilium candidum),221
+21,Adormidera / Amapola real (Papaver somniferum),222
+0,Anémona (Anemone spp.),222
+10,Clavel (Dianthus caryophyllus),222
+3,Mundillo / Bola de nieve (Viburnum opulus L.),222
+5,Rosa (Rosa),222
+6,Tulipán (Tulipa spp.),222
+60,Alhelí de invierno (Matthiola incana),223
+0,Anémona (Anemone spp.),223
+7,Azucena (Lilium candidum),223
+95,Celinda (Philadelphus coronarius L.),223
+78,Crisantemo (Chrysanthemum spp.),223
+18,Flor de Azahar (Citrus aurantium),223
+57,Laurel ( Laurus nobilis),223
+37,Malva real / Malvarrosa (Althaea rosea),223
+96,Margarita de los prados / Chiribita (Bellis perennis),223
+67,Nardo (Polianthes tuberosa),223
+4,Peonía (Paeonia),223
+5,Rosa (Rosa),223
+34,Roble (Quercus spp.),224
+69,Ciprés (Cupressus),225
+97,Fresa silvestre (Fragaria vesca),226
+51,Hierba doncella / Vincapervinca (Vinca minor),226
+41,Muguet / Lirio del valle (Convallaria majalis),226
+98,Trébol (Trifolium),226
+99,Trébol áspero (Trifolium scabrum),226
+74,Violeta (Viola),226
+100,Violeta silvestre (Viola riviniana),226
+14,Capuchina (Tropaeolum majus),227
+10,Clavel (Dianthus caryophyllus),227
+12,Junquillo (Narcissus jonquilla),227
+13,Narciso (Narcissus spp.),227
+5,Rosa (Rosa),227
+6,Tulipán (Tulipa spp.),227
+8,Vid / Parra (Vitis vinifera),228
+57,Laurel ( Laurus nobilis),229
+75,Chirivía / Pastinaca (Pastinaca sativa),230
+76,Coliflor (Brassica oleracea Botrytis),230
+101,Colinabo (Brassica napobrassica),230
+2,Lirio (Iris germanica),231
+23,Clavellina (Dianthus deltoides),232
+7,Azucena (Lilium candidum),233
+2,Lirio (Iris germanica),233
+91,Chumbera / Nopal (Opuntia ficus-indica),234
+76,Coliflor (Brassica oleracea Botrytis),235
+10,Clavel (Dianthus caryophyllus),236
+7,Azucena (Lilium candidum),237
+5,Rosa (Rosa),238
+5,Rosa (Rosa),239
+6,Tulipán (Tulipa spp.),239
+5,Rosa (Rosa),240
+0,Anémona (Anemone spp.),241
+10,Clavel (Dianthus caryophyllus),241
+5,Rosa (Rosa),241
+15,Rosa antigua (Rosa centifolia),241
+6,Tulipán (Tulipa spp.),241
+14,Capuchina (Tropaeolum majus),242
+10,Clavel (Dianthus caryophyllus),242
+24,Jazmín (Jasminum grandiflorum),242
+5,Rosa (Rosa),243
+62,Hiedra (Hedera spp.),244
+63,Hiedra común (Hedera helix),244
+8,Vid / Parra (Vitis vinifera),244
+24,Jazmín (Jasminum grandiflorum),245
+17,Palmera (Phoenix dactylifera),246
+7,Azucena (Lilium candidum),247
+0,Anémona (Anemone spp.),248
+71,Margarita mayor / Margaritón (Chrysanthemum leucanthemum),248
+5,Rosa (Rosa),248
+6,Tulipán (Tulipa spp.),248
+7,Azucena (Lilium candidum),249
+54,Olivo (Olea europaea),249
+5,Rosa (Rosa),249
+21,Adormidera / Amapola real (Papaver somniferum),250
+62,Hiedra (Hedera spp.),250
+84,Níspero europeo (Mespilus germánica),250
+21,Adormidera / Amapola real (Papaver somniferum),251
+0,Anémona (Anemone spp.),251
+49,Clavel chino (Dianthus chinensis),251
+11,"Dondiego de día (Convolvulaceas, Fam.)",251
+30,Jacinto (Hyacinthus orientalis),251
+24,Jazmín (Jasminum grandiflorum),251
+12,Junquillo (Narcissus jonquilla),251
+13,Narciso (Narcissus spp.),251
+52,Prímula (Primula auricula),251
+5,Rosa (Rosa),251
+15,Rosa antigua (Rosa centifolia),251
+6,Tulipán (Tulipa spp.),251
+17,Palmera (Phoenix dactylifera),252
+2,Lirio (Iris germanica),253
+38,Alhelí dorado (Cheiranthus cheiri),254
+0,Anémona (Anemone spp.),254
+13,Narciso (Narcissus spp.),254
+36,Lilas (Syringa vulgaris),255
+28,Amaranto (Amaranthus caudatus),256
+0,Anémona (Anemone spp.),256
+2,Lirio (Iris germanica),256
+5,Rosa (Rosa),256
+15,Rosa antigua (Rosa centifolia),256
+6,Tulipán (Tulipa spp.),256
+9,Ajenuz / Arañuela (Nigella damascena),257
+60,Alhelí de invierno (Matthiola incana),257
+0,Anémona (Anemone spp.),257
+23,Clavellina (Dianthus deltoides),257
+24,Jazmín (Jasminum grandiflorum),257
+12,Junquillo (Narcissus jonquilla),257
+13,Narciso (Narcissus spp.),257
+5,Rosa (Rosa),257
+15,Rosa antigua (Rosa centifolia),257
+6,Tulipán (Tulipa spp.),257
+57,Laurel ( Laurus nobilis),258
+0,Anémona (Anemone spp.),259
+50,Francesilla (Ranunculus asiaticus),259
+51,Hierba doncella / Vincapervinca (Vinca minor),259
+2,Lirio (Iris germanica),259
+3,Mundillo / Bola de nieve (Viburnum opulus L.),259
+13,Narciso (Narcissus spp.),259
+58,Retama amarilla (Retama sphaerocarpa),259
+5,Rosa (Rosa),259
+15,Rosa antigua (Rosa centifolia),259
+6,Tulipán (Tulipa spp.),259
+7,Azucena (Lilium candidum),260
+7,Azucena (Lilium candidum),261
+23,Clavellina (Dianthus deltoides),262
+76,Coliflor (Brassica oleracea Botrytis),263
+19,Nabo (Brassica rapa),263
+62,Hiedra (Hedera spp.),264
+63,Hiedra común (Hedera helix),264
+0,Anémona (Anemone spp.),265
+48,Ciclamen (Cyclamen persicum),265
+50,Francesilla (Ranunculus asiaticus),265
+30,Jacinto (Hyacinthus orientalis),265
+12,Junquillo (Narcissus jonquilla),265
+40,Lilium (Lilium spp.),265
+2,Lirio (Iris germanica),265
+19,Nabo (Brassica rapa),265
+13,Narciso (Narcissus spp.),265
+5,Rosa (Rosa),265
+6,Tulipán (Tulipa spp.),265
+37,Malva real / Malvarrosa (Althaea rosea),266
+0,Anémona (Anemone spp.),267
+10,Clavel (Dianthus caryophyllus),267
+49,Clavel chino (Dianthus chinensis),267
+78,Crisantemo (Chrysanthemum spp.),267
+5,Rosa (Rosa),267
+6,Tulipán (Tulipa spp.),267
+78,Crisantemo (Chrysanthemum spp.),268
+4,Peonía (Paeonia),268
+5,Rosa (Rosa),268
+45,Higuera (Ficus carica),269
+46,Manzano (Malus domestica),269
+10,Clavel (Dianthus caryophyllus),270
+7,Azucena (Lilium candidum),271
+5,Rosa (Rosa),271
+10,Clavel (Dianthus caryophyllus),272
+49,Clavel chino (Dianthus chinensis),272
+24,Jazmín (Jasminum grandiflorum),272
+3,Mundillo / Bola de nieve (Viburnum opulus L.),272
+5,Rosa (Rosa),272
+6,Tulipán (Tulipa spp.),272
+7,Azucena (Lilium candidum),273
+5,Rosa (Rosa),274
+60,Alhelí de invierno (Matthiola incana),275
+11,"Dondiego de día (Convolvulaceas, Fam.)",275
+2,Lirio (Iris germanica),275
+67,Nardo (Polianthes tuberosa),275
+5,Rosa (Rosa),275
+15,Rosa antigua (Rosa centifolia),275
+32,Aguileña (Aquilegia vulgaris),276
+0,Anémona (Anemone spp.),276
+102,Campanilla de invierno (Galanthus nivalis),276
+103,Campanilla de primavera (Leucojum vernum),276
+14,Capuchina (Tropaeolum majus),276
+10,Clavel (Dianthus caryophyllus),276
+18,Flor de Azahar (Citrus aurantium),276
+80,Granado (Punica granatum),276
+62,Hiedra (Hedera spp.),276
+30,Jacinto (Hyacinthus orientalis),276
+24,Jazmín (Jasminum grandiflorum),276
+13,Narciso (Narcissus spp.),276
+5,Rosa (Rosa),276
+104,Tablero de damas (Fritillaria meleagris),276
+6,Tulipán (Tulipa spp.),276
+75,Chirivía / Pastinaca (Pastinaca sativa),277
+7,Azucena (Lilium candidum),278
+0,Anémona (Anemone spp.),279
+24,Jazmín (Jasminum grandiflorum),279
+41,Muguet / Lirio del valle (Convallaria majalis),279
+5,Rosa (Rosa),279
+6,Tulipán (Tulipa spp.),279
+62,Hiedra (Hedera spp.),280
+8,Vid / Parra (Vitis vinifera),280
+7,Azucena (Lilium candidum),281
+0,Anémona (Anemone spp.),282
+105,Geranio (Pelargonium spp.),282
+5,Rosa (Rosa),283
+9,Ajenuz / Arañuela (Nigella damascena),284
+0,Anémona (Anemone spp.),284
+10,Clavel (Dianthus caryophyllus),284
+23,Clavellina (Dianthus deltoides),284
+11,"Dondiego de día (Convolvulaceas, Fam.)",284
+30,Jacinto (Hyacinthus orientalis),284
+2,Lirio (Iris germanica),284
+5,Rosa (Rosa),284
+15,Rosa antigua (Rosa centifolia),284
+6,Tulipán (Tulipa spp.),284
+64,Adelfa (Nerium oleander),285
+0,Anémona (Anemone spp.),285
+11,"Dondiego de día (Convolvulaceas, Fam.)",285
+62,Hiedra (Hedera spp.),285
+30,Jacinto (Hyacinthus orientalis),285
+13,Narciso (Narcissus spp.),285
+42,Pensamiento (Viola tricolor),285
+5,Rosa (Rosa),285
+6,Tulipán (Tulipa spp.),285
+64,Adelfa (Nerium oleander),286
+0,Anémona (Anemone spp.),286
+11,"Dondiego de día (Convolvulaceas, Fam.)",286
+62,Hiedra (Hedera spp.),286
+63,Hiedra común (Hedera helix),286
+30,Jacinto (Hyacinthus orientalis),286
+12,Junquillo (Narcissus jonquilla),286
+13,Narciso (Narcissus spp.),286
+42,Pensamiento (Viola tricolor),286
+5,Rosa (Rosa),286
+15,Rosa antigua (Rosa centifolia),286
+6,Tulipán (Tulipa spp.),286
+5,Rosa (Rosa),287
+75,Chirivía / Pastinaca (Pastinaca sativa),288
+19,Nabo (Brassica rapa),288
+5,Rosa (Rosa),289
+7,Azucena (Lilium candidum),290
+17,Palmera (Phoenix dactylifera),290
+8,Vid / Parra (Vitis vinifera),291
+0,Anémona (Anemone spp.),292
+18,Flor de Azahar (Citrus aurantium),292
+50,Francesilla (Ranunculus asiaticus),292
+66,Girasol (Helianthus annuus),292
+12,Junquillo (Narcissus jonquilla),292
+40,Lilium (Lilium spp.),292
+2,Lirio (Iris germanica),292
+13,Narciso (Narcissus spp.),292
+4,Peonía (Paeonia),292
+5,Rosa (Rosa),292
+15,Rosa antigua (Rosa centifolia),292
+6,Tulipán (Tulipa spp.),292
+96,Margarita de los prados / Chiribita (Bellis perennis),293
+21,Adormidera / Amapola real (Papaver somniferum),294
+39,Amapola (Papaver rhoeas),294
+7,Azucena (Lilium candidum),294
+106,Berza ( Brassica oleracea Acephala),294
+75,Chirivía / Pastinaca (Pastinaca sativa),294
+76,Coliflor (Brassica oleracea Botrytis),294
+45,Higuera (Ficus carica),294
+2,Lirio (Iris germanica),294
+19,Nabo (Brassica rapa),294
+13,Narciso (Narcissus spp.),294
+4,Peonía (Paeonia),294
+73,Repollo (Brassica oleracea Capitata),294
+34,Roble (Quercus spp.),294
+5,Rosa (Rosa),294
+6,Tulipán (Tulipa spp.),294
+7,Azucena (Lilium candidum),295
+7,Azucena (Lilium candidum),296
+21,Adormidera / Amapola real (Papaver somniferum),297
+0,Anémona (Anemone spp.),297
+7,Azucena (Lilium candidum),297
+10,Clavel (Dianthus caryophyllus),297
+24,Jazmín (Jasminum grandiflorum),297
+2,Lirio (Iris germanica),297
+5,Rosa (Rosa),297
+6,Tulipán (Tulipa spp.),297
+7,Azucena (Lilium candidum),298
+7,Azucena (Lilium candidum),299
+21,Adormidera / Amapola real (Papaver somniferum),300
+0,Anémona (Anemone spp.),300
+23,Clavellina (Dianthus deltoides),300
+11,"Dondiego de día (Convolvulaceas, Fam.)",300
+7,Azucena (Lilium candidum),301
+11,"Dondiego de día (Convolvulaceas, Fam.)",301
+30,Jacinto (Hyacinthus orientalis),301
+3,Mundillo / Bola de nieve (Viburnum opulus L.),301
+13,Narciso (Narcissus spp.),301
+4,Peonía (Paeonia),301
+5,Rosa (Rosa),301
+6,Tulipán (Tulipa spp.),301
+64,Adelfa (Nerium oleander),302
+0,Anémona (Anemone spp.),302
+7,Azucena (Lilium candidum),302
+10,Clavel (Dianthus caryophyllus),302
+11,"Dondiego de día (Convolvulaceas, Fam.)",302
+65,Dragonaria (Antirrhinum majus),302
+107,Glicinia (Wisteria sinensis),302
+29,Iris / Lirio azul (Iris xiphium),302
+5,Rosa (Rosa),302
+6,Tulipán (Tulipa spp.),302
+10,Clavel (Dianthus caryophyllus),303
+24,Jazmín (Jasminum grandiflorum),303
+21,Adormidera / Amapola real (Papaver somniferum),304
+32,Aguileña (Aquilegia vulgaris),304
+9,Ajenuz / Arañuela (Nigella damascena),304
+0,Anémona (Anemone spp.),304
+14,Capuchina (Tropaeolum majus),304
+10,Clavel (Dianthus caryophyllus),304
+12,Junquillo (Narcissus jonquilla),304
+13,Narciso (Narcissus spp.),304
+5,Rosa (Rosa),304
+5,Rosa (Rosa),305
+10,Clavel (Dianthus caryophyllus),306
+78,Crisantemo (Chrysanthemum spp.),307
+5,Rosa (Rosa),307
+6,Tulipán (Tulipa spp.),307
+7,Azucena (Lilium candidum),308
+2,Lirio (Iris germanica),308
+5,Rosa (Rosa),308
+6,Tulipán (Tulipa spp.),308
+34,Roble (Quercus spp.),309
+11,"Dondiego de día (Convolvulaceas, Fam.)",310
+30,Jacinto (Hyacinthus orientalis),310
+2,Lirio (Iris germanica),310
+5,Rosa (Rosa),310
+78,Crisantemo (Chrysanthemum spp.),311
+5,Rosa (Rosa),311
+6,Tulipán (Tulipa spp.),311
+10,Clavel (Dianthus caryophyllus),312
+5,Rosa (Rosa),312
+20,Aciano / Azulejo (Centaurea cyanus),313
+23,Clavellina (Dianthus deltoides),313
+24,Jazmín (Jasminum grandiflorum),313
+0,Anémona (Anemone spp.),314
+11,"Dondiego de día (Convolvulaceas, Fam.)",314
+67,Nardo (Polianthes tuberosa),314
+5,Rosa (Rosa),314
+6,Tulipán (Tulipa spp.),314
+2,Lirio (Iris germanica),315
+37,Malva real / Malvarrosa (Althaea rosea),316
+108,Pita (Agave spp.),316
+57,Laurel ( Laurus nobilis),317
+5,Rosa (Rosa),318
+6,Tulipán (Tulipa spp.),318
+2,Lirio (Iris germanica),319
+8,Vid / Parra (Vitis vinifera),320
+5,Rosa (Rosa),321
+32,Aguileña (Aquilegia vulgaris),322
+109,Alcachofa borriquera (Onopordum acanthium),322
+86,Botón de oro (Ranunculus acris),322
+110,Diente de león (Taraxacum officinale),322
+62,Hiedra (Hedera spp.),322
+63,Hiedra común (Hedera helix),322
+30,Jacinto (Hyacinthus orientalis),322
+34,Roble (Quercus spp.),322
+85,Zarzamora (Rubus),322
+9,Ajenuz / Arañuela (Nigella damascena),323
+0,Anémona (Anemone spp.),323
+11,"Dondiego de día (Convolvulaceas, Fam.)",323
+111,Jacinto del Perú / Esquila portuguesa (Scilla peruviana),323
+24,Jazmín (Jasminum grandiflorum),323
+5,Rosa (Rosa),323
+6,Tulipán (Tulipa spp.),323
+69,Ciprés (Cupressus),324
+14,Capuchina (Tropaeolum majus),325
+6,Tulipán (Tulipa spp.),325
+36,Lilas (Syringa vulgaris),326
+5,Rosa (Rosa),326
+17,Palmera (Phoenix dactylifera),327
+69,Ciprés (Cupressus),328
+46,Manzano (Malus domestica),329
+17,Palmera (Phoenix dactylifera),330
+7,Azucena (Lilium candidum),331
+0,Anémona (Anemone spp.),332
+11,"Dondiego de día (Convolvulaceas, Fam.)",332
+30,Jacinto (Hyacinthus orientalis),332
+5,Rosa (Rosa),332
+6,Tulipán (Tulipa spp.),332
+5,Rosa (Rosa),333
+17,Palmera (Phoenix dactylifera),334
+34,Roble (Quercus spp.),335
+9,Ajenuz / Arañuela (Nigella damascena),336
+47,Ancusa / Chupamieles (Anchusa azurea),336
+12,Junquillo (Narcissus jonquilla),336
+112,Moral blanco / Morera (Morus alba),336
+13,Narciso (Narcissus spp.),336
+5,Rosa (Rosa),336
+15,Rosa antigua (Rosa centifolia),336
+6,Tulipán (Tulipa spp.),336
+7,Azucena (Lilium candidum),337
+27,Naranjo (Citrus x sinensis),337
+5,Rosa (Rosa),337
+19,Nabo (Brassica rapa),338
+7,Azucena (Lilium candidum),339
+9,Ajenuz / Arañuela (Nigella damascena),340
+0,Anémona (Anemone spp.),340
+14,Capuchina (Tropaeolum majus),340
+10,Clavel (Dianthus caryophyllus),340
+11,"Dondiego de día (Convolvulaceas, Fam.)",340
+67,Nardo (Polianthes tuberosa),340
+5,Rosa (Rosa),340
+6,Tulipán (Tulipa spp.),340
+7,Azucena (Lilium candidum),341
+5,Rosa (Rosa),342
+7,Azucena (Lilium candidum),343
+2,Lirio (Iris germanica),344
+5,Rosa (Rosa),344
+20,Aciano / Azulejo (Centaurea cyanus),345
+32,Aguileña (Aquilegia vulgaris),345
+9,Ajenuz / Arañuela (Nigella damascena),345
+60,Alhelí de invierno (Matthiola incana),345
+0,Anémona (Anemone spp.),345
+7,Azucena (Lilium candidum),345
+86,Botón de oro (Ranunculus acris),345
+103,Campanilla de primavera (Leucojum vernum),345
+90,Caña de indias / Canna (Canna indica),345
+95,Celinda (Philadelphus coronarius L.),345
+10,Clavel (Dianthus caryophyllus),345
+49,Clavel chino (Dianthus chinensis),345
+23,Clavellina (Dianthus deltoides),345
+113,Corona imperial (Fritillaria imperialis),345
+92,Eléboro verde (Helleborus viridis),345
+89,Escaramujo (Rosa canina),345
+18,Flor de Azahar (Citrus aurantium),345
+50,Francesilla (Ranunculus asiaticus),345
+97,Fresa silvestre (Fragaria vesca),345
+1,Gladiolo (Gladiolus spp.),345
+51,Hierba doncella / Vincapervinca (Vinca minor),345
+45,Higuera (Ficus carica),345
+29,Iris / Lirio azul (Iris xiphium),345
+30,Jacinto (Hyacinthus orientalis),345
+36,Lilas (Syringa vulgaris),345
+40,Lilium (Lilium spp.),345
+2,Lirio (Iris germanica),345
+37,Malva real / Malvarrosa (Althaea rosea),345
+41,Muguet / Lirio del valle (Convallaria majalis),345
+3,Mundillo / Bola de nieve (Viburnum opulus L.),345
+13,Narciso (Narcissus spp.),345
+114,Olmo blanco europeo (Ulmus laevis Pall),345
+42,Pensamiento (Viola tricolor),345
+4,Peonía (Paeonia),345
+115,Primavera (Primula officinalis),345
+52,Prímula (Primula auricula),345
+5,Rosa (Rosa),345
+15,Rosa antigua (Rosa centifolia),345
+104,Tablero de damas (Fritillaria meleagris),345
+98,Trébol (Trifolium),345
+6,Tulipán (Tulipa spp.),345
+74,Violeta (Viola),345
+116,Borraja (Borago officinalis),346
+117,Collejón (Moricandia arvensis),346
+2,Lirio (Iris germanica),346
+5,Rosa (Rosa),346
+98,Trébol (Trifolium),346
+78,Crisantemo (Chrysanthemum spp.),347
+4,Peonía (Paeonia),347
+5,Rosa (Rosa),347
+57,Laurel ( Laurus nobilis),348
+32,Aguileña (Aquilegia vulgaris),349
+22,Caléndula / Maravilla (Calendula officinalis),349
+41,Muguet / Lirio del valle (Convallaria majalis),349
+5,Rosa (Rosa),349
+6,Tulipán (Tulipa spp.),349
+62,Hiedra (Hedera spp.),350
+84,Níspero europeo (Mespilus germánica),350
+18,Flor de Azahar (Citrus aurantium),351
+21,Adormidera / Amapola real (Papaver somniferum),352
+0,Anémona (Anemone spp.),352
+7,Azucena (Lilium candidum),352
+90,Caña de indias / Canna (Canna indica),352
+29,Iris / Lirio azul (Iris xiphium),352
+30,Jacinto (Hyacinthus orientalis),352
+40,Lilium (Lilium spp.),352
+2,Lirio (Iris germanica),352
+37,Malva real / Malvarrosa (Althaea rosea),352
+19,Nabo (Brassica rapa),352
+13,Narciso (Narcissus spp.),352
+5,Rosa (Rosa),352
+6,Tulipán (Tulipa spp.),352
+24,Jazmín (Jasminum grandiflorum),353
+5,Rosa (Rosa),353
+5,Rosa (Rosa),354
+10,Clavel (Dianthus caryophyllus),355
+24,Jazmín (Jasminum grandiflorum),355
+5,Rosa (Rosa),355
+7,Azucena (Lilium candidum),356
+17,Palmera (Phoenix dactylifera),357
+43,Caña de río / Carrizo (Phragmites australis),358
+5,Rosa (Rosa),359
+5,Rosa (Rosa),360
+28,Amaranto (Amaranthus caudatus),361
+0,Anémona (Anemone spp.),361
+10,Clavel (Dianthus caryophyllus),361
+5,Rosa (Rosa),361
+6,Tulipán (Tulipa spp.),361
+7,Azucena (Lilium candidum),362
+5,Rosa (Rosa),363
+7,Azucena (Lilium candidum),364
+8,Vid / Parra (Vitis vinifera),365
+21,Adormidera / Amapola real (Papaver somniferum),366
+11,"Dondiego de día (Convolvulaceas, Fam.)",366
+5,Rosa (Rosa),366
+6,Tulipán (Tulipa spp.),366
+2,Lirio (Iris germanica),367
+17,Palmera (Phoenix dactylifera),368
+21,Adormidera / Amapola real (Papaver somniferum),369
+0,Anémona (Anemone spp.),369
+11,"Dondiego de día (Convolvulaceas, Fam.)",369
+29,Iris / Lirio azul (Iris xiphium),369
+111,Jacinto del Perú / Esquila portuguesa (Scilla peruviana),369
+3,Mundillo / Bola de nieve (Viburnum opulus L.),369
+6,Tulipán (Tulipa spp.),369
+5,Rosa (Rosa),370
+0,Anémona (Anemone spp.),371
+10,Clavel (Dianthus caryophyllus),371
+30,Jacinto (Hyacinthus orientalis),371
+2,Lirio (Iris germanica),371
+13,Narciso (Narcissus spp.),371
+5,Rosa (Rosa),371
+6,Tulipán (Tulipa spp.),371
+10,Clavel (Dianthus caryophyllus),372
+24,Jazmín (Jasminum grandiflorum),372
+6,Tulipán (Tulipa spp.),372
+5,Rosa (Rosa),373
+7,Azucena (Lilium candidum),374
+2,Lirio (Iris germanica),375
+7,Azucena (Lilium candidum),376
+5,Rosa (Rosa),377
+118,Acebo (Ilex aquifolium),378
+64,Adelfa (Nerium oleander),378
+60,Alhelí de invierno (Matthiola incana),378
+38,Alhelí dorado (Cheiranthus cheiri),378
+119,Coronilla / Carolina de jardín (Coronilla glauca),378
+18,Flor de Azahar (Citrus aurantium),378
+80,Granado (Punica granatum),378
+16,Hortensia (Hydrangea),378
+24,Jazmín (Jasminum grandiflorum),378
+36,Lilas (Syringa vulgaris),378
+79,Madreselva (Lonicera),378
+37,Malva real / Malvarrosa (Althaea rosea),378
+46,Manzano (Malus domestica),378
+120,Peral (Pyrus communis),378
+58,Retama amarilla (Retama sphaerocarpa),378
+53,Romero (Rosmarinus officinalis),378
+5,Rosa (Rosa),378
+72,Tejo (Taxus baccata),378
+121,Árbol del paraiso (Eleagnus angustifolia),378
+7,Azucena (Lilium candidum),379
+2,Lirio (Iris germanica),379
+17,Palmera (Phoenix dactylifera),379
+5,Rosa (Rosa),379
+10,Clavel (Dianthus caryophyllus),380
+0,Anémona (Anemone spp.),381
+40,Lilium (Lilium spp.),381
+6,Tulipán (Tulipa spp.),382
+38,Alhelí dorado (Cheiranthus cheiri),383
+30,Jacinto (Hyacinthus orientalis),383
+6,Tulipán (Tulipa spp.),383
+7,Azucena (Lilium candidum),384
+122,Malva (Malva sylvestris),385
+112,Moral blanco / Morera (Morus alba),385
+54,Olivo (Olea europaea),385
+7,Azucena (Lilium candidum),386
+17,Palmera (Phoenix dactylifera),387
+5,Rosa (Rosa),388
+21,Adormidera / Amapola real (Papaver somniferum),389
+5,Rosa (Rosa),390
+7,Azucena (Lilium candidum),391
+76,Coliflor (Brassica oleracea Botrytis),392
+101,Colinabo (Brassica napobrassica),392
+7,Azucena (Lilium candidum),393
+4,Peonía (Paeonia),394
+7,Azucena (Lilium candidum),395
+7,Azucena (Lilium candidum),396
+5,Rosa (Rosa),396
+123,"Bella de día (Convolvulus, Gen.)",397
+124,Campanilla / Correhuela (Convolvula tricolor),397
+10,Clavel (Dianthus caryophyllus),397
+125,Diente de león de otoño (Scorzoneroides autumnalis),397
+11,"Dondiego de día (Convolvulaceas, Fam.)",397
+126,Dondiego de noche (Mirabilis jalapa),397
+97,Fresa silvestre (Fragaria vesca),397
+80,Granado (Punica granatum),397
+70,Guisante de olor (Lathyrus odoratus),397
+62,Hiedra (Hedera spp.),397
+24,Jazmín (Jasminum grandiflorum),397
+37,Malva real / Malvarrosa (Althaea rosea),397
+5,Rosa (Rosa),397
+85,Zarzamora (Rubus),397
+57,Laurel ( Laurus nobilis),398
+8,Vid / Parra (Vitis vinifera),399
+7,Azucena (Lilium candidum),400
+34,Roble (Quercus spp.),401
+9,Ajenuz / Arañuela (Nigella damascena),402
+88,Almendro (Prunus dulcis),402
+0,Anémona (Anemone spp.),402
+10,Clavel (Dianthus caryophyllus),402
+11,"Dondiego de día (Convolvulaceas, Fam.)",402
+3,Mundillo / Bola de nieve (Viburnum opulus L.),402
+5,Rosa (Rosa),402
+2,Lirio (Iris germanica),403
+7,Azucena (Lilium candidum),404
+110,Diente de león (Taraxacum officinale),405
+5,Rosa (Rosa),406
+0,Anémona (Anemone spp.),407
+10,Clavel (Dianthus caryophyllus),407
+11,"Dondiego de día (Convolvulaceas, Fam.)",407
+111,Jacinto del Perú / Esquila portuguesa (Scilla peruviana),407
+24,Jazmín (Jasminum grandiflorum),407
+2,Lirio (Iris germanica),407
+5,Rosa (Rosa),407
+33,Tagetes / Clavelón de India (Tajetes erecta),407
+6,Tulipán (Tulipa spp.),407
+2,Lirio (Iris germanica),408
+127,Ortiga mayor (Urtica dioica),408
+5,Rosa (Rosa),408
+10,Clavel (Dianthus caryophyllus),409
+7,Azucena (Lilium candidum),410
+32,Aguileña (Aquilegia vulgaris),411
+0,Anémona (Anemone spp.),411
+86,Botón de oro (Ranunculus acris),411
+22,Caléndula / Maravilla (Calendula officinalis),411
+29,Iris / Lirio azul (Iris xiphium),411
+30,Jacinto (Hyacinthus orientalis),411
+13,Narciso (Narcissus spp.),411
+4,Peonía (Paeonia),411
+53,Romero (Rosmarinus officinalis),411
+5,Rosa (Rosa),411
+6,Tulipán (Tulipa spp.),411
+5,Rosa (Rosa),412
+59,Pino ( Pinus spp.),413
+53,Romero (Rosmarinus officinalis),414
+5,Rosa (Rosa),414
+74,Violeta (Viola),414
+0,Anémona (Anemone spp.),415
+14,Capuchina (Tropaeolum majus),415
+24,Jazmín (Jasminum grandiflorum),415
+5,Rosa (Rosa),415
+6,Tulipán (Tulipa spp.),415
+17,Palmera (Phoenix dactylifera),416
+21,Adormidera / Amapola real (Papaver somniferum),417
+0,Anémona (Anemone spp.),417
+10,Clavel (Dianthus caryophyllus),417
+5,Rosa (Rosa),417
+6,Tulipán (Tulipa spp.),417
+75,Chirivía / Pastinaca (Pastinaca sativa),418
+76,Coliflor (Brassica oleracea Botrytis),418
+101,Colinabo (Brassica napobrassica),418
+19,Nabo (Brassica rapa),418
+73,Repollo (Brassica oleracea Capitata),418
+128,Amor de hombre (Tradescantia zebrina),419
+35,Espuela de caballero (Consolida ajacis),419
+129,Fucsia / Pendientes de la reina (Fuchsia magellanica),419
+1,Gladiolo (Gladiolus spp.),419
+29,Iris / Lirio azul (Iris xiphium),419
+130,Kentia (Howea forsteriana),419
+36,Lilas (Syringa vulgaris),419
+71,Margarita mayor / Margaritón (Chrysanthemum leucanthemum),419
+67,Nardo (Polianthes tuberosa),419
+131,Plumbago (Plumbago auriculata),419
+5,Rosa (Rosa),419
+0,Anémona (Anemone spp.),420
+10,Clavel (Dianthus caryophyllus),420
+132,Eléboro fétido / Hierba de ballesteros (Helleborus foetidus),420
+62,Hiedra (Hedera spp.),420
+30,Jacinto (Hyacinthus orientalis),420
+41,Muguet / Lirio del valle (Convallaria majalis),420
+13,Narciso (Narcissus spp.),420
+42,Pensamiento (Viola tricolor),420
+5,Rosa (Rosa),420
+6,Tulipán (Tulipa spp.),420
+5,Rosa (Rosa),421
+19,Nabo (Brassica rapa),422
+29,Iris / Lirio azul (Iris xiphium),423
+7,Azucena (Lilium candidum),424
+10,Clavel (Dianthus caryophyllus),424
+5,Rosa (Rosa),424
+7,Azucena (Lilium candidum),425
+36,Lilas (Syringa vulgaris),426
+5,Rosa (Rosa),426
+5,Rosa (Rosa),427
+5,Rosa (Rosa),428
+7,Azucena (Lilium candidum),429
+76,Coliflor (Brassica oleracea Botrytis),430
+5,Rosa (Rosa),431
+10,Clavel (Dianthus caryophyllus),432
+12,Junquillo (Narcissus jonquilla),433
+13,Narciso (Narcissus spp.),433
+5,Rosa (Rosa),433
+15,Rosa antigua (Rosa centifolia),433
+6,Tulipán (Tulipa spp.),433
+5,Rosa (Rosa),434
+30,Jacinto (Hyacinthus orientalis),435
+2,Lirio (Iris germanica),435
+5,Rosa (Rosa),435
+10,Clavel (Dianthus caryophyllus),436
+5,Rosa (Rosa),437
+17,Palmera (Phoenix dactylifera),438
+7,Azucena (Lilium candidum),439
+88,Almendro (Prunus dulcis),440
+17,Palmera (Phoenix dactylifera),441
+0,Anémona (Anemone spp.),442
+24,Jazmín (Jasminum grandiflorum),442
+12,Junquillo (Narcissus jonquilla),442
+3,Mundillo / Bola de nieve (Viburnum opulus L.),442
+13,Narciso (Narcissus spp.),442
+5,Rosa (Rosa),442
+6,Tulipán (Tulipa spp.),442
+37,Malva real / Malvarrosa (Althaea rosea),443
+7,Azucena (Lilium candidum),444
+0,Anémona (Anemone spp.),445
+10,Clavel (Dianthus caryophyllus),445
+24,Jazmín (Jasminum grandiflorum),445
+13,Narciso (Narcissus spp.),445
+5,Rosa (Rosa),445
+6,Tulipán (Tulipa spp.),445
+0,Anémona (Anemone spp.),446
+11,"Dondiego de día (Convolvulaceas, Fam.)",446
+62,Hiedra (Hedera spp.),446
+63,Hiedra común (Hedera helix),446
+30,Jacinto (Hyacinthus orientalis),446
+13,Narciso (Narcissus spp.),446
+42,Pensamiento (Viola tricolor),446
+5,Rosa (Rosa),446
+15,Rosa antigua (Rosa centifolia),446
+6,Tulipán (Tulipa spp.),446
+62,Hiedra (Hedera spp.),447
+63,Hiedra común (Hedera helix),447
+8,Vid / Parra (Vitis vinifera),447
+10,Clavel (Dianthus caryophyllus),448
+49,Clavel chino (Dianthus chinensis),448
+11,"Dondiego de día (Convolvulaceas, Fam.)",448
+35,Espuela de caballero (Consolida ajacis),448
+24,Jazmín (Jasminum grandiflorum),448
+40,Lilium (Lilium spp.),448
+4,Peonía (Paeonia),448
+6,Tulipán (Tulipa spp.),448
+0,Anémona (Anemone spp.),449
+11,"Dondiego de día (Convolvulaceas, Fam.)",449
+35,Espuela de caballero (Consolida ajacis),449
+2,Lirio (Iris germanica),449
+5,Rosa (Rosa),449
+6,Tulipán (Tulipa spp.),449
+57,Laurel ( Laurus nobilis),450
+54,Olivo (Olea europaea),451
+5,Rosa (Rosa),451
+17,Palmera (Phoenix dactylifera),452
+21,Adormidera / Amapola real (Papaver somniferum),453
+0,Anémona (Anemone spp.),453
+11,"Dondiego de día (Convolvulaceas, Fam.)",453
+35,Espuela de caballero (Consolida ajacis),453
+30,Jacinto (Hyacinthus orientalis),453
+24,Jazmín (Jasminum grandiflorum),453
+12,Junquillo (Narcissus jonquilla),453
+3,Mundillo / Bola de nieve (Viburnum opulus L.),453
+13,Narciso (Narcissus spp.),453
+67,Nardo (Polianthes tuberosa),453
+77,Peonía (Paeonia suffruticosa),453
+4,Peonía (Paeonia),453
+5,Rosa (Rosa),453
+33,Tagetes / Clavelón de India (Tajetes erecta),453
+6,Tulipán (Tulipa spp.),453
+27,Naranjo (Citrus x sinensis),454
+84,Níspero europeo (Mespilus germánica),455
+8,Vid / Parra (Vitis vinifera),455
+5,Rosa (Rosa),456
+0,Anémona (Anemone spp.),457
+12,Junquillo (Narcissus jonquilla),457
+13,Narciso (Narcissus spp.),457
+5,Rosa (Rosa),457
+6,Tulipán (Tulipa spp.),457
+24,Jazmín (Jasminum grandiflorum),458
+10,Clavel (Dianthus caryophyllus),459
+5,Rosa (Rosa),459
+34,Roble (Quercus spp.),460
+19,Nabo (Brassica rapa),461
+5,Rosa (Rosa),462
+5,Rosa (Rosa),463
+7,Azucena (Lilium candidum),464
+18,Flor de Azahar (Citrus aurantium),465
+0,Anémona (Anemone spp.),466
+133,Azafrán (Crocus sativus),466
+86,Botón de oro (Ranunculus acris),466
+62,Hiedra (Hedera spp.),466
+40,Lilium (Lilium spp.),466
+13,Narciso (Narcissus spp.),466
+115,Primavera (Primula officinalis),466
+52,Prímula (Primula auricula),466
+5,Rosa (Rosa),466
+6,Tulipán (Tulipa spp.),466
+22,Caléndula / Maravilla (Calendula officinalis),467
+64,Adelfa (Nerium oleander),468
+10,Clavel (Dianthus caryophyllus),469
+2,Lirio (Iris germanica),469
+3,Mundillo / Bola de nieve (Viburnum opulus L.),469
+58,Retama amarilla (Retama sphaerocarpa),469
+5,Rosa (Rosa),469
+32,Aguileña (Aquilegia vulgaris),470
+0,Anémona (Anemone spp.),470
+11,"Dondiego de día (Convolvulaceas, Fam.)",470
+132,Eléboro fétido / Hierba de ballesteros (Helleborus foetidus),470
+62,Hiedra (Hedera spp.),470
+2,Lirio (Iris germanica),470
+42,Pensamiento (Viola tricolor),470
+5,Rosa (Rosa),470
+6,Tulipán (Tulipa spp.),470
+21,Adormidera / Amapola real (Papaver somniferum),471
+32,Aguileña (Aquilegia vulgaris),471
+123,"Bella de día (Convolvulus, Gen.)",471
+124,Campanilla / Correhuela (Convolvula tricolor),471
+10,Clavel (Dianthus caryophyllus),471
+11,"Dondiego de día (Convolvulaceas, Fam.)",471
+35,Espuela de caballero (Consolida ajacis),471
+62,Hiedra (Hedera spp.),471
+30,Jacinto (Hyacinthus orientalis),471
+2,Lirio (Iris germanica),471
+79,Madreselva (Lonicera),471
+3,Mundillo / Bola de nieve (Viburnum opulus L.),471
+134,Nomeolvides (Myosotis),471
+4,Peonía (Paeonia),471
+5,Rosa (Rosa),471
+15,Rosa antigua (Rosa centifolia),471
+104,Tablero de damas (Fritillaria meleagris),471
+6,Tulipán (Tulipa spp.),471
+85,Zarzamora (Rubus),471
+29,Iris / Lirio azul (Iris xiphium),472
+135,Cantueso / Tomillo borriquero (Lavandula stoechas),473
+94,Espino albar / Espino blanco (Crataegus oxyacantha L.),473
+59,Pino ( Pinus spp.),473
+59,Pino ( Pinus spp.),474
+69,Ciprés (Cupressus),475
+32,Aguileña (Aquilegia vulgaris),476
+0,Anémona (Anemone spp.),476
+10,Clavel (Dianthus caryophyllus),476
+11,"Dondiego de día (Convolvulaceas, Fam.)",476
+1,Gladiolo (Gladiolus spp.),476
+30,Jacinto (Hyacinthus orientalis),476
+12,Junquillo (Narcissus jonquilla),476
+13,Narciso (Narcissus spp.),476
+5,Rosa (Rosa),476
+6,Tulipán (Tulipa spp.),476
+5,Rosa (Rosa),477
+0,Anémona (Anemone spp.),478
+22,Caléndula / Maravilla (Calendula officinalis),478
+102,Campanilla de invierno (Galanthus nivalis),478
+10,Clavel (Dianthus caryophyllus),478
+11,"Dondiego de día (Convolvulaceas, Fam.)",478
+18,Flor de Azahar (Citrus aurantium),478
+62,Hiedra (Hedera spp.),478
+30,Jacinto (Hyacinthus orientalis),478
+13,Narciso (Narcissus spp.),478
+52,Prímula (Primula auricula),478
+5,Rosa (Rosa),478
+104,Tablero de damas (Fritillaria meleagris),478
+6,Tulipán (Tulipa spp.),478
+136,Altamisa / Hierba santa (Tanacetum parthenium),479
+0,Anémona (Anemone spp.),479
+66,Girasol (Helianthus annuus),479
+1,Gladiolo (Gladiolus spp.),479
+51,Hierba doncella / Vincapervinca (Vinca minor),479
+29,Iris / Lirio azul (Iris xiphium),479
+24,Jazmín (Jasminum grandiflorum),479
+2,Lirio (Iris germanica),479
+37,Malva real / Malvarrosa (Althaea rosea),479
+5,Rosa (Rosa),479
+6,Tulipán (Tulipa spp.),479
+5,Rosa (Rosa),480
+68,Encina (Quercus ilex),481
+5,Rosa (Rosa),482
+7,Azucena (Lilium candidum),483
+0,Anémona (Anemone spp.),484
+7,Azucena (Lilium candidum),484
+49,Clavel chino (Dianthus chinensis),484
+18,Flor de Azahar (Citrus aurantium),484
+70,Guisante de olor (Lathyrus odoratus),484
+51,Hierba doncella / Vincapervinca (Vinca minor),484
+30,Jacinto (Hyacinthus orientalis),484
+12,Junquillo (Narcissus jonquilla),484
+2,Lirio (Iris germanica),484
+13,Narciso (Narcissus spp.),484
+5,Rosa (Rosa),484
+6,Tulipán (Tulipa spp.),484
+7,Azucena (Lilium candidum),485
+5,Rosa (Rosa),486
+57,Laurel ( Laurus nobilis),487
+17,Palmera (Phoenix dactylifera),487
+10,Clavel (Dianthus caryophyllus),488
+18,Flor de Azahar (Citrus aurantium),488
+30,Jacinto (Hyacinthus orientalis),488
+34,Roble (Quercus spp.),489
+10,Clavel (Dianthus caryophyllus),490
+105,Geranio (Pelargonium spp.),490
+137,Geranio común (Pelargonium x hortorum),490
+5,Rosa (Rosa),490
+21,Adormidera / Amapola real (Papaver somniferum),491
+60,Alhelí de invierno (Matthiola incana),491
+0,Anémona (Anemone spp.),491
+22,Caléndula / Maravilla (Calendula officinalis),491
+71,Margarita mayor / Margaritón (Chrysanthemum leucanthemum),491
+5,Rosa (Rosa),491
+6,Tulipán (Tulipa spp.),491
+7,Azucena (Lilium candidum),492
+57,Laurel ( Laurus nobilis),493
+0,Anémona (Anemone spp.),494
+10,Clavel (Dianthus caryophyllus),494
+24,Jazmín (Jasminum grandiflorum),494
+12,Junquillo (Narcissus jonquilla),494
+13,Narciso (Narcissus spp.),494
+67,Nardo (Polianthes tuberosa),494
+5,Rosa (Rosa),494
+6,Tulipán (Tulipa spp.),494
+54,Olivo (Olea europaea),495
+34,Roble (Quercus spp.),496
+39,Amapola (Papaver rhoeas),497
+0,Anémona (Anemone spp.),497
+7,Azucena (Lilium candidum),497
+10,Clavel (Dianthus caryophyllus),497
+40,Lilium (Lilium spp.),497
+2,Lirio (Iris germanica),497
+19,Nabo (Brassica rapa),497
+13,Narciso (Narcissus spp.),497
+5,Rosa (Rosa),497
+6,Tulipán (Tulipa spp.),497
+7,Azucena (Lilium candidum),498
+9,Ajenuz / Arañuela (Nigella damascena),499
+0,Anémona (Anemone spp.),499
+7,Azucena (Lilium candidum),499
+10,Clavel (Dianthus caryophyllus),499
+35,Espuela de caballero (Consolida ajacis),499
+3,Mundillo / Bola de nieve (Viburnum opulus L.),499
+5,Rosa (Rosa),499
+6,Tulipán (Tulipa spp.),499
+0,Anémona (Anemone spp.),500
+7,Azucena (Lilium candidum),500
+11,"Dondiego de día (Convolvulaceas, Fam.)",500
+24,Jazmín (Jasminum grandiflorum),500
+40,Lilium (Lilium spp.),500
+5,Rosa (Rosa),500
+7,Azucena (Lilium candidum),501
+138,Estramonio (Datura stramonium),501
+5,Rosa (Rosa),501
+7,Azucena (Lilium candidum),502
+7,Azucena (Lilium candidum),503
+5,Rosa (Rosa),503
+5,Rosa (Rosa),504
+7,Azucena (Lilium candidum),505
+54,Olivo (Olea europaea),506
+5,Rosa (Rosa),507
+7,Azucena (Lilium candidum),508
+5,Rosa (Rosa),509
+57,Laurel ( Laurus nobilis),510
+7,Azucena (Lilium candidum),511
+54,Olivo (Olea europaea),512
+38,Alhelí dorado (Cheiranthus cheiri),513
+11,"Dondiego de día (Convolvulaceas, Fam.)",513
+80,Granado (Punica granatum),513
+24,Jazmín (Jasminum grandiflorum),513
+5,Rosa (Rosa),513
+15,Rosa antigua (Rosa centifolia),513
+7,Azucena (Lilium candidum),514
+10,Clavel (Dianthus caryophyllus),515
+19,Nabo (Brassica rapa),516
+17,Palmera (Phoenix dactylifera),517
+7,Azucena (Lilium candidum),518
+7,Azucena (Lilium candidum),519
+5,Rosa (Rosa),520
+5,Rosa (Rosa),521
+32,Aguileña (Aquilegia vulgaris),522
+116,Borraja (Borago officinalis),522
+22,Caléndula / Maravilla (Calendula officinalis),522
+10,Clavel (Dianthus caryophyllus),522
+11,"Dondiego de día (Convolvulaceas, Fam.)",522
+94,Espino albar / Espino blanco (Crataegus oxyacantha L.),522
+18,Flor de Azahar (Citrus aurantium),522
+80,Granado (Punica granatum),522
+24,Jazmín (Jasminum grandiflorum),522
+2,Lirio (Iris germanica),522
+3,Mundillo / Bola de nieve (Viburnum opulus L.),522
+13,Narciso (Narcissus spp.),522
+4,Peonía (Paeonia),522
+5,Rosa (Rosa),522
+6,Tulipán (Tulipa spp.),522
+85,Zarzamora (Rubus),522
+69,Ciprés (Cupressus),523
+37,Malva real / Malvarrosa (Althaea rosea),523
+8,Vid / Parra (Vitis vinifera),523
+5,Rosa (Rosa),524
+59,Pino ( Pinus spp.),525
+10,Clavel (Dianthus caryophyllus),526
+62,Hiedra (Hedera spp.),526
+63,Hiedra común (Hedera helix),526
+79,Madreselva (Lonicera),526
+5,Rosa (Rosa),526
+85,Zarzamora (Rubus),527
+2,Lirio (Iris germanica),528
+60,Alhelí de invierno (Matthiola incana),529
+10,Clavel (Dianthus caryophyllus),529
+1,Gladiolo (Gladiolus spp.),529
+62,Hiedra (Hedera spp.),529
+13,Narciso (Narcissus spp.),529
+5,Rosa (Rosa),529
+24,Jazmín (Jasminum grandiflorum),530
+40,Lilium (Lilium spp.),530
+79,Madreselva (Lonicera),530
+52,Prímula (Primula auricula),530
+5,Rosa (Rosa),530
+15,Rosa antigua (Rosa centifolia),530
+6,Tulipán (Tulipa spp.),530
+21,Adormidera / Amapola real (Papaver somniferum),531
+0,Anémona (Anemone spp.),531
+11,"Dondiego de día (Convolvulaceas, Fam.)",531
+29,Iris / Lirio azul (Iris xiphium),531
+111,Jacinto del Perú / Esquila portuguesa (Scilla peruviana),531
+3,Mundillo / Bola de nieve (Viburnum opulus L.),531
+6,Tulipán (Tulipa spp.),531
+5,Rosa (Rosa),532
+8,Vid / Parra (Vitis vinifera),533
+21,Adormidera / Amapola real (Papaver somniferum),534
+0,Anémona (Anemone spp.),534
+7,Azucena (Lilium candidum),534
+14,Capuchina (Tropaeolum majus),534
+10,Clavel (Dianthus caryophyllus),534
+11,"Dondiego de día (Convolvulaceas, Fam.)",534
+30,Jacinto (Hyacinthus orientalis),534
+24,Jazmín (Jasminum grandiflorum),534
+12,Junquillo (Narcissus jonquilla),534
+13,Narciso (Narcissus spp.),534
+5,Rosa (Rosa),534
+6,Tulipán (Tulipa spp.),534
+7,Azucena (Lilium candidum),535
+5,Rosa (Rosa),536
+34,Roble (Quercus spp.),537
+139,Acerola (Crataegus azarolus),538
+0,Anémona (Anemone spp.),538
+22,Caléndula / Maravilla (Calendula officinalis),538
+29,Iris / Lirio azul (Iris xiphium),538
+30,Jacinto (Hyacinthus orientalis),538
+40,Lilium (Lilium spp.),538
+52,Prímula (Primula auricula),538
+5,Rosa (Rosa),538
+15,Rosa antigua (Rosa centifolia),538
+85,Zarzamora (Rubus),538
+7,Azucena (Lilium candidum),539
+7,Azucena (Lilium candidum),540
+32,Aguileña (Aquilegia vulgaris),541
+0,Anémona (Anemone spp.),541
+7,Azucena (Lilium candidum),541
+10,Clavel (Dianthus caryophyllus),541
+35,Espuela de caballero (Consolida ajacis),541
+12,Junquillo (Narcissus jonquilla),541
+2,Lirio (Iris germanica),541
+13,Narciso (Narcissus spp.),541
+115,Primavera (Primula officinalis),541
+52,Prímula (Primula auricula),541
+5,Rosa (Rosa),541
+15,Rosa antigua (Rosa centifolia),541
+6,Tulipán (Tulipa spp.),541
+7,Azucena (Lilium candidum),542
+56,Cala / Alcatraz (Zantedeschia aethiopica),542
+10,Clavel (Dianthus caryophyllus),542
+11,"Dondiego de día (Convolvulaceas, Fam.)",542
+40,Lilium (Lilium spp.),542
+5,Rosa (Rosa),542
+5,Rosa (Rosa),543
+8,Vid / Parra (Vitis vinifera),544
+17,Palmera (Phoenix dactylifera),545
+7,Azucena (Lilium candidum),546
+32,Aguileña (Aquilegia vulgaris),547
+116,Borraja (Borago officinalis),547
+46,Manzano (Malus domestica),547
+17,Palmera (Phoenix dactylifera),547
+42,Pensamiento (Viola tricolor),547
+85,Zarzamora (Rubus),547
+106,Berza ( Brassica oleracea Acephala),548
+76,Coliflor (Brassica oleracea Botrytis),548
+19,Nabo (Brassica rapa),548
+73,Repollo (Brassica oleracea Capitata),548
+7,Azucena (Lilium candidum),549
+5,Rosa (Rosa),550
+13,Narciso (Narcissus spp.),551
+74,Violeta (Viola),551
+28,Amaranto (Amaranthus caudatus),552
+48,Ciclamen (Cyclamen persicum),552
+49,Clavel chino (Dianthus chinensis),552
+23,Clavellina (Dianthus deltoides),552
+11,"Dondiego de día (Convolvulaceas, Fam.)",552
+10,Clavel (Dianthus caryophyllus),553
+32,Aguileña (Aquilegia vulgaris),554
+0,Anémona (Anemone spp.),554
+10,Clavel (Dianthus caryophyllus),554
+23,Clavellina (Dianthus deltoides),554
+1,Gladiolo (Gladiolus spp.),554
+30,Jacinto (Hyacinthus orientalis),554
+24,Jazmín (Jasminum grandiflorum),554
+40,Lilium (Lilium spp.),554
+2,Lirio (Iris germanica),554
+13,Narciso (Narcissus spp.),554
+42,Pensamiento (Viola tricolor),554
+5,Rosa (Rosa),554
+6,Tulipán (Tulipa spp.),554
+7,Azucena (Lilium candidum),555
+9,Ajenuz / Arañuela (Nigella damascena),556
+0,Anémona (Anemone spp.),556
+46,Manzano (Malus domestica),556
+53,Romero (Rosmarinus officinalis),556
+5,Rosa (Rosa),556
+15,Rosa antigua (Rosa centifolia),556
+5,Rosa (Rosa),557
+88,Almendro (Prunus dulcis),558
+10,Clavel (Dianthus caryophyllus),559
+7,Azucena (Lilium candidum),560
+10,Clavel (Dianthus caryophyllus),560
+23,Clavellina (Dianthus deltoides),560
+24,Jazmín (Jasminum grandiflorum),560
+13,Narciso (Narcissus spp.),560
+4,Peonía (Paeonia),560
+52,Prímula (Primula auricula),560
+58,Retama amarilla (Retama sphaerocarpa),560
+5,Rosa (Rosa),560
+6,Tulipán (Tulipa spp.),560
+79,Madreselva (Lonicera),561
+5,Rosa (Rosa),561
+140,Áster (Aster cordifolius),561
+7,Azucena (Lilium candidum),562
+47,Ancusa / Chupamieles (Anchusa azurea),563
+12,Junquillo (Narcissus jonquilla),563
+2,Lirio (Iris germanica),563
+13,Narciso (Narcissus spp.),563
+42,Pensamiento (Viola tricolor),563
+5,Rosa (Rosa),563
+15,Rosa antigua (Rosa centifolia),563
+6,Tulipán (Tulipa spp.),563
+5,Rosa (Rosa),564
+69,Ciprés (Cupressus),565
+17,Palmera (Phoenix dactylifera),566
+32,Aguileña (Aquilegia vulgaris),567
+9,Ajenuz / Arañuela (Nigella damascena),567
+60,Alhelí de invierno (Matthiola incana),567
+47,Ancusa / Chupamieles (Anchusa azurea),567
+0,Anémona (Anemone spp.),567
+22,Caléndula / Maravilla (Calendula officinalis),567
+14,Capuchina (Tropaeolum majus),567
+48,Ciclamen (Cyclamen persicum),567
+10,Clavel (Dianthus caryophyllus),567
+23,Clavellina (Dianthus deltoides),567
+50,Francesilla (Ranunculus asiaticus),567
+51,Hierba doncella / Vincapervinca (Vinca minor),567
+30,Jacinto (Hyacinthus orientalis),567
+12,Junquillo (Narcissus jonquilla),567
+141,Minutisa (Dianthus barbatus),567
+41,Muguet / Lirio del valle (Convallaria majalis),567
+13,Narciso (Narcissus spp.),567
+42,Pensamiento (Viola tricolor),567
+4,Peonía (Paeonia),567
+52,Prímula (Primula auricula),567
+53,Romero (Rosmarinus officinalis),567
+5,Rosa (Rosa),567
+6,Tulipán (Tulipa spp.),567
+74,Violeta (Viola),567
+21,Adormidera / Amapola real (Papaver somniferum),568
+9,Ajenuz / Arañuela (Nigella damascena),568
+22,Caléndula / Maravilla (Calendula officinalis),568
+14,Capuchina (Tropaeolum majus),568
+10,Clavel (Dianthus caryophyllus),568
+5,Rosa (Rosa),568
+54,Olivo (Olea europaea),569
+21,Adormidera / Amapola real (Papaver somniferum),570
+5,Rosa (Rosa),571
+142,Zulla / Pipirigallo (Hedysarum coronarium),571
+34,Roble (Quercus spp.),572
+14,Capuchina (Tropaeolum majus),573
+34,Roble (Quercus spp.),573
+21,Adormidera / Amapola real (Papaver somniferum),574
+64,Adelfa (Nerium oleander),575
+69,Ciprés (Cupressus),575
+37,Malva real / Malvarrosa (Althaea rosea),575
+5,Rosa (Rosa),575
+62,Hiedra (Hedera spp.),576
+8,Vid / Parra (Vitis vinifera),576
+5,Rosa (Rosa),577
+17,Palmera (Phoenix dactylifera),578
+2,Lirio (Iris germanica),579
+5,Rosa (Rosa),580
+118,Acebo (Ilex aquifolium),581
+0,Anémona (Anemone spp.),581
+7,Azucena (Lilium candidum),581
+116,Borraja (Borago officinalis),581
+18,Flor de Azahar (Citrus aurantium),581
+80,Granado (Punica granatum),581
+84,Níspero europeo (Mespilus germánica),581
+5,Rosa (Rosa),581
+85,Zarzamora (Rubus),581
+21,Adormidera / Amapola real (Papaver somniferum),582
+0,Anémona (Anemone spp.),582
+11,"Dondiego de día (Convolvulaceas, Fam.)",582
+12,Junquillo (Narcissus jonquilla),582
+13,Narciso (Narcissus spp.),582
+5,Rosa (Rosa),582
+6,Tulipán (Tulipa spp.),582
+7,Azucena (Lilium candidum),583
+5,Rosa (Rosa),583
+34,Roble (Quercus spp.),584
+43,Caña de río / Carrizo (Phragmites australis),585
+11,"Dondiego de día (Convolvulaceas, Fam.)",585
+5,Rosa (Rosa),585
+32,Aguileña (Aquilegia vulgaris),586
+0,Anémona (Anemone spp.),586
+86,Botón de oro (Ranunculus acris),586
+62,Hiedra (Hedera spp.),586
+63,Hiedra común (Hedera helix),586
+24,Jazmín (Jasminum grandiflorum),586
+2,Lirio (Iris germanica),586
+3,Mundillo / Bola de nieve (Viburnum opulus L.),586
+13,Narciso (Narcissus spp.),586
+5,Rosa (Rosa),586
+15,Rosa antigua (Rosa centifolia),586
+6,Tulipán (Tulipa spp.),586
+55,Acanto (Acanthus mollis),587
+7,Azucena (Lilium candidum),588
+7,Azucena (Lilium candidum),589
+69,Ciprés (Cupressus),590
+26,Castaño común (Castanea sativa),591
+19,Nabo (Brassica rapa),591
+32,Aguileña (Aquilegia vulgaris),592
+38,Alhelí dorado (Cheiranthus cheiri),592
+0,Anémona (Anemone spp.),592
+86,Botón de oro (Ranunculus acris),592
+10,Clavel (Dianthus caryophyllus),592
+23,Clavellina (Dianthus deltoides),592
+11,"Dondiego de día (Convolvulaceas, Fam.)",592
+18,Flor de Azahar (Citrus aurantium),592
+50,Francesilla (Ranunculus asiaticus),592
+51,Hierba doncella / Vincapervinca (Vinca minor),592
+30,Jacinto (Hyacinthus orientalis),592
+24,Jazmín (Jasminum grandiflorum),592
+12,Junquillo (Narcissus jonquilla),592
+40,Lilium (Lilium spp.),592
+2,Lirio (Iris germanica),592
+41,Muguet / Lirio del valle (Convallaria majalis),592
+13,Narciso (Narcissus spp.),592
+42,Pensamiento (Viola tricolor),592
+5,Rosa (Rosa),592
+6,Tulipán (Tulipa spp.),592
+5,Rosa (Rosa),593
+22,Caléndula / Maravilla (Calendula officinalis),594
+40,Lilium (Lilium spp.),594
+41,Muguet / Lirio del valle (Convallaria majalis),594
+5,Rosa (Rosa),594
+7,Azucena (Lilium candidum),595
+59,Pino ( Pinus spp.),596
+39,Amapola (Papaver rhoeas),597
+0,Anémona (Anemone spp.),598
+10,Clavel (Dianthus caryophyllus),598
+11,"Dondiego de día (Convolvulaceas, Fam.)",598
+30,Jacinto (Hyacinthus orientalis),598
+12,Junquillo (Narcissus jonquilla),598
+13,Narciso (Narcissus spp.),598
+5,Rosa (Rosa),598
+6,Tulipán (Tulipa spp.),598
+38,Alhelí dorado (Cheiranthus cheiri),599
+2,Lirio (Iris germanica),599
+42,Pensamiento (Viola tricolor),599
+74,Violeta (Viola),599
+7,Azucena (Lilium candidum),600
+17,Palmera (Phoenix dactylifera),600
+5,Rosa (Rosa),601
+20,Aciano / Azulejo (Centaurea cyanus),602
+0,Anémona (Anemone spp.),602
+10,Clavel (Dianthus caryophyllus),602
+49,Clavel chino (Dianthus chinensis),602
+0,Anémona (Anemone spp.),603
+10,Clavel (Dianthus caryophyllus),603
+18,Flor de Azahar (Citrus aurantium),603
+62,Hiedra (Hedera spp.),603
+30,Jacinto (Hyacinthus orientalis),603
+2,Lirio (Iris germanica),603
+13,Narciso (Narcissus spp.),603
+5,Rosa (Rosa),603
+32,Aguileña (Aquilegia vulgaris),604
+11,"Dondiego de día (Convolvulaceas, Fam.)",604
+18,Flor de Azahar (Citrus aurantium),604
+79,Madreselva (Lonicera),604
+84,Níspero europeo (Mespilus germánica),604
+42,Pensamiento (Viola tricolor),604
+69,Ciprés (Cupressus),605
+7,Azucena (Lilium candidum),606
+59,Pino ( Pinus spp.),607
+59,Pino ( Pinus spp.),608
+5,Rosa (Rosa),608
+28,Amaranto (Amaranthus caudatus),609
+48,Ciclamen (Cyclamen persicum),609
+49,Clavel chino (Dianthus chinensis),609
+23,Clavellina (Dianthus deltoides),609
+11,"Dondiego de día (Convolvulaceas, Fam.)",609
+27,Naranjo (Citrus x sinensis),610
+5,Rosa (Rosa),610
+20,Aciano / Azulejo (Centaurea cyanus),611
+9,Ajenuz / Arañuela (Nigella damascena),611
+136,Altamisa / Hierba santa (Tanacetum parthenium),611
+0,Anémona (Anemone spp.),611
+7,Azucena (Lilium candidum),611
+10,Clavel (Dianthus caryophyllus),611
+23,Clavellina (Dianthus deltoides),611
+35,Espuela de caballero (Consolida ajacis),611
+62,Hiedra (Hedera spp.),611
+63,Hiedra común (Hedera helix),611
+24,Jazmín (Jasminum grandiflorum),611
+12,Junquillo (Narcissus jonquilla),611
+37,Malva real / Malvarrosa (Althaea rosea),611
+13,Narciso (Narcissus spp.),611
+52,Prímula (Primula auricula),611
+58,Retama amarilla (Retama sphaerocarpa),611
+6,Tulipán (Tulipa spp.),611
+57,Laurel ( Laurus nobilis),612
+0,Anémona (Anemone spp.),613
+40,Lilium (Lilium spp.),613
+59,Pino ( Pinus spp.),614
+5,Rosa (Rosa),615
+23,Clavellina (Dianthus deltoides),616
+84,Níspero europeo (Mespilus germánica),617
+0,Anémona (Anemone spp.),618
+10,Clavel (Dianthus caryophyllus),618
+2,Lirio (Iris germanica),618
+3,Mundillo / Bola de nieve (Viburnum opulus L.),618
+13,Narciso (Narcissus spp.),618
+5,Rosa (Rosa),618
+6,Tulipán (Tulipa spp.),618
+2,Lirio (Iris germanica),619
+10,Clavel (Dianthus caryophyllus),620
+76,Coliflor (Brassica oleracea Botrytis),620
+5,Rosa (Rosa),620
+6,Tulipán (Tulipa spp.),620
+0,Anémona (Anemone spp.),621
+23,Clavellina (Dianthus deltoides),621
+50,Francesilla (Ranunculus asiaticus),621
+12,Junquillo (Narcissus jonquilla),621
+13,Narciso (Narcissus spp.),621
+5,Rosa (Rosa),621
+6,Tulipán (Tulipa spp.),621
+7,Azucena (Lilium candidum),622
+69,Ciprés (Cupressus),622
+2,Lirio (Iris germanica),623
+10,Clavel (Dianthus caryophyllus),624
+8,Vid / Parra (Vitis vinifera),625
+0,Anémona (Anemone spp.),626
+22,Caléndula / Maravilla (Calendula officinalis),626
+2,Lirio (Iris germanica),626
+3,Mundillo / Bola de nieve (Viburnum opulus L.),626
+4,Peonía (Paeonia),626
+5,Rosa (Rosa),626
+6,Tulipán (Tulipa spp.),626
+59,Pino ( Pinus spp.),627
+17,Palmera (Phoenix dactylifera),628
+76,Coliflor (Brassica oleracea Botrytis),629
+73,Repollo (Brassica oleracea Capitata),629
+13,Narciso (Narcissus spp.),630
+5,Rosa (Rosa),630
+7,Azucena (Lilium candidum),631
+0,Anémona (Anemone spp.),632
+29,Iris / Lirio azul (Iris xiphium),632
+40,Lilium (Lilium spp.),632
+2,Lirio (Iris germanica),632
+5,Rosa (Rosa),632
+6,Tulipán (Tulipa spp.),632
+10,Clavel (Dianthus caryophyllus),633
+5,Rosa (Rosa),633
+7,Azucena (Lilium candidum),634
+5,Rosa (Rosa),635
+0,Anémona (Anemone spp.),636
+6,Tulipán (Tulipa spp.),636
+7,Azucena (Lilium candidum),637
+91,Chumbera / Nopal (Opuntia ficus-indica),638
+108,Pita (Agave spp.),638
+143,Platanera (Musa paradisiaca),638
+7,Azucena (Lilium candidum),639
+144,Achicoria silvestre (Cichorium intybus),640
+64,Adelfa (Nerium oleander),640
+0,Anémona (Anemone spp.),640
+102,Campanilla de invierno (Galanthus nivalis),640
+103,Campanilla de primavera (Leucojum vernum),640
+10,Clavel (Dianthus caryophyllus),640
+145,Digital (Digitalis spp.),640
+11,"Dondiego de día (Convolvulaceas, Fam.)",640
+92,Eléboro verde (Helleborus viridis),640
+62,Hiedra (Hedera spp.),640
+63,Hiedra común (Hedera helix),640
+30,Jacinto (Hyacinthus orientalis),640
+24,Jazmín (Jasminum grandiflorum),640
+61,Malva común (Malva sylvestris),640
+13,Narciso (Narcissus spp.),640
+52,Prímula (Primula auricula),640
+5,Rosa (Rosa),640
+15,Rosa antigua (Rosa centifolia),640
+146,Saúco (Sambucus nigra),640
+6,Tulipán (Tulipa spp.),640
+10,Clavel (Dianthus caryophyllus),641
+24,Jazmín (Jasminum grandiflorum),642
+13,Narciso (Narcissus spp.),642
+5,Rosa (Rosa),642
+0,Anémona (Anemone spp.),643
+56,Cala / Alcatraz (Zantedeschia aethiopica),643
+81,Camelia (Camellis spp.),643
+14,Capuchina (Tropaeolum majus),643
+12,Junquillo (Narcissus jonquilla),643
+2,Lirio (Iris germanica),643
+13,Narciso (Narcissus spp.),643
+5,Rosa (Rosa),643
+9,Ajenuz / Arañuela (Nigella damascena),644
+51,Hierba doncella / Vincapervinca (Vinca minor),644
+24,Jazmín (Jasminum grandiflorum),644
+5,Rosa (Rosa),644
+0,Anémona (Anemone spp.),645
+7,Azucena (Lilium candidum),645
+10,Clavel (Dianthus caryophyllus),645
+11,"Dondiego de día (Convolvulaceas, Fam.)",645
+24,Jazmín (Jasminum grandiflorum),645
+3,Mundillo / Bola de nieve (Viburnum opulus L.),645
+5,Rosa (Rosa),645
+6,Tulipán (Tulipa spp.),645
+106,Berza ( Brassica oleracea Acephala),646
+7,Azucena (Lilium candidum),647
+17,Palmera (Phoenix dactylifera),647
+147,Piorno (Cytisus hispanicus),648
+7,Azucena (Lilium candidum),649
+54,Olivo (Olea europaea),649
+5,Rosa (Rosa),649
+106,Berza ( Brassica oleracea Acephala),650
+75,Chirivía / Pastinaca (Pastinaca sativa),650
+101,Colinabo (Brassica napobrassica),650
+5,Rosa (Rosa),651
+2,Lirio (Iris germanica),652
+10,Clavel (Dianthus caryophyllus),653
+5,Rosa (Rosa),654

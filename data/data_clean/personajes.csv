@@ -1,0 +1,674 @@
+PersonajesID,Personajes,TituloID
+0,Virgen María,1
+0,Virgen María,4
+1,Ángel / ángeles,4
+2,San Miguel,9
+0,Virgen María,9
+1,Ángel / ángeles,9
+3,Cibeles,10
+4,Jesús,12
+0,Virgen María,12
+5,San Gabriel,15
+0,Virgen María,15
+1,Ángel / ángeles,15
+6,San Antonio de Padua,18
+7,Carlos V,19
+8,Felipe II,19
+5,San Gabriel,20
+0,Virgen María,20
+1,Ángel / ángeles,20
+9,Hércules/Heracles,28
+10,Mary Ruthven,30
+5,San Gabriel,32
+11,San Jerónimo,32
+12,San Juan Bautista,32
+0,Virgen María,32
+4,Jesús,33
+0,Virgen María,33
+1,Ángel / ángeles,33
+13,Adán,34
+14,Eva,34
+0,Virgen María,35
+1,Ángel / ángeles,35
+15,San Juan Evangelista,36
+16,Adonis,41
+17,Afrodita/Venus,41
+18,Cupido/Eros,41
+4,Jesús,42
+19,San Francisco de Asís,42
+0,Virgen María,42
+12,San Juan Bautista,43
+20,Dionisio / Baco,51
+21,Sileno,51
+22,Sátiro,51
+20,Dionisio / Baco,53
+22,Sátiro,53
+0,Virgen María,54
+1,Ángel / ángeles,54
+0,Virgen María,55
+23,"Diana Cecil, condesa de Oxford",56
+24,María de las Nieves Micaela Fourdinier,58
+4,Jesús,59
+25,Luis IX de Francia / San Luis de Francia,59
+26,San José,59
+12,San Juan Bautista,59
+27,Santa Isabel,59
+0,Virgen María,59
+1,Ángel / ángeles,59
+0,Virgen María,60
+0,Virgen María,63
+1,Ángel / ángeles,63
+17,Afrodita/Venus,66
+28,Amorcillos,66
+29,Santa María Magdalena,68
+1,Ángel / ángeles,68
+4,Jesús,71
+19,San Francisco de Asís,71
+0,Virgen María,71
+1,Ángel / ángeles,71
+20,Dionisio / Baco,72
+22,Sátiro,72
+30,San Antonio Abad / San Antón,74
+31,San Pablo ermitaño,74
+32,"Borbón y Farnesio, María Antonia Fernanda de",77
+33,Isabel II,86
+0,Virgen María,89
+1,Ángel / ángeles,89
+34,"Baltasar Carlos de Austria, príncipe de Asturias",92
+20,Dionisio / Baco,95
+22,Sátiro,95
+35,San Agustín,96
+36,San Bernardo de Claraval,96
+37,San Francisco Javier,96
+38,San Francisco de Borja,96
+39,San Ignacio de Loyola,96
+15,San Juan Evangelista,96
+40,San Pablo,96
+41,San Pedro,96
+42,Santa Margarita,96
+43,Santa Teresa de Jesús,96
+0,Virgen María,96
+44,Santa Casilda,98
+45,Santa Isabel de Portugal,98
+46,Apolo/Febo,101
+3,Cibeles,101
+20,Dionisio / Baco,101
+47,Pan/Fauno,101
+48,Anfitrite,103
+49,Deméter/Ceres,103
+20,Dionisio / Baco,103
+50,San Jorge,107
+51,Santa Catalina de Alejandría,107
+52,Santa Dorotea,107
+0,Virgen María,107
+53,Tipos populares,108
+4,Jesús,110
+12,San Juan Bautista,110
+0,Virgen María,110
+54,"Mendeville, Mercedes",114
+55,"Médici, García de",116
+4,Jesús,117
+26,San José,117
+12,San Juan Bautista,117
+0,Virgen María,117
+56,Atenea/ Minerva,118
+57,Hermes / Mercurio,118
+28,Amorcillos,119
+58,Cárites o Las tres Gracias,119
+17,Afrodita/Venus,121
+28,Amorcillos,121
+4,Jesús,122
+25,Luis IX de Francia / San Luis de Francia,122
+26,San José,122
+12,San Juan Bautista,122
+27,Santa Isabel,122
+0,Virgen María,122
+1,Ángel / ángeles,122
+0,Virgen María,123
+1,Ángel / ángeles,123
+4,Jesús,124
+26,San José,124
+12,San Juan Bautista,124
+0,Virgen María,124
+59,"Escher van Muralt, Anna von",125
+4,Jesús,128
+1,Ángel / ángeles,128
+60,Flora,129
+6,San Antonio de Padua,131
+0,Virgen María,131
+60,Flora,132
+4,Jesús,138
+61,José de Arimatea,138
+15,San Juan Evangelista,138
+62,San Nicodemo,138
+29,Santa María Magdalena,138
+0,Virgen María,138
+63,"Grotteria, fray Lorenzo de",139
+51,Santa Catalina de Alejandría,139
+29,Santa María Magdalena,139
+64,Santo Domingo de Guzmán,139
+0,Virgen María,139
+13,Adán,141
+0,Virgen María,146
+0,Virgen María,147
+1,Ángel / ángeles,147
+65,"Manzanedo e Intentas, Josefa",148
+26,San José,149
+66,Santa Ana,149
+0,Virgen María,149
+67,Jacob,150
+1,Ángel / ángeles,150
+64,Santo Domingo de Guzmán,152
+68,Carlos III,155
+69,Santa Rosalía de Palermo,157
+1,Ángel / ángeles,157
+4,Jesús,160
+0,Virgen María,160
+0,Virgen María,168
+1,Ángel / ángeles,168
+4,Jesús,169
+6,San Antonio de Padua,169
+16,Adonis,170
+17,Afrodita/Venus,170
+18,Cupido/Eros,170
+17,Afrodita/Venus,171
+49,Deméter/Ceres,171
+60,Flora,171
+70,Hera/Juno,171
+4,Jesús,173
+26,San José,173
+0,Virgen María,173
+1,Ángel / ángeles,173
+53,Tipos populares,175
+71,"Layana Alsina, Luis",176
+72,"Navarro Alconero, Valentina",176
+73,"Pla Navarro, Cristina",176
+74,"Pla Navarro, Pepita",176
+4,Jesús,179
+75,Reyes Magos,179
+26,San José,179
+0,Virgen María,179
+5,San Gabriel,181
+0,Virgen María,181
+1,Ángel / ángeles,181
+0,Virgen María,187
+53,Tipos populares,188
+76,Alberto de Austria,190
+77,Isabel Clara Eugenia de Austria,190
+26,San José,191
+4,Jesús,195
+75,Reyes Magos,195
+26,San José,195
+0,Virgen María,195
+76,Alberto de Austria,197
+77,Isabel Clara Eugenia de Austria,197
+13,Adán,198
+14,Eva,198
+1,Ángel / ángeles,200
+0,Virgen María,201
+1,Ángel / ángeles,201
+78,Sebastián de Aparicio,203
+1,Ángel / ángeles,203
+79,Santa Rosa de Viterbo,205
+53,Tipos populares,208
+20,Dionisio / Baco,209
+22,Sátiro,209
+76,Alberto de Austria,210
+80,San Rafael,214
+1,Ángel / ángeles,214
+81,Francisco Martínez de la Rosa,216
+5,San Gabriel,221
+0,Virgen María,221
+1,Ángel / ángeles,221
+82,San Huberto,226
+20,Dionisio / Baco,228
+18,Cupido/Eros,229
+4,Jesús,231
+35,San Agustín,231
+30,San Antonio Abad / San Antón,231
+19,San Francisco de Asís,231
+11,San Jerónimo,231
+26,San José,231
+0,Virgen María,231
+1,Ángel / ángeles,231
+83,Demonio / Diablo,233
+64,Santo Domingo de Guzmán,233
+84,Santa Marta,235
+29,Santa María Magdalena,235
+0,Virgen María,237
+1,Ángel / ángeles,237
+4,Jesús,238
+19,San Francisco de Asís,238
+0,Virgen María,238
+1,Ángel / ángeles,238
+53,Tipos populares,240
+20,Dionisio / Baco,244
+22,Sátiro,244
+5,San Gabriel,247
+0,Virgen María,247
+1,Ángel / ángeles,247
+0,Virgen María,249
+1,Ángel / ángeles,249
+4,Jesús,250
+0,Virgen María,250
+30,San Antonio Abad / San Antón,252
+31,San Pablo ermitaño,252
+28,Amorcillos,253
+85,Artemisa/Diana,253
+56,Atenea/ Minerva,253
+49,Deméter/Ceres,253
+86,Hades/Plutón,253
+87,Perséfone/Proserpina,253
+88,"Aparicio y Mérida, Francisca, Marquesa de Vistabella",255
+89,Santa Catalina de Siena,260
+36,San Bernardo de Claraval,261
+0,Virgen María,261
+1,Ángel / ángeles,261
+13,Adán,269
+14,Eva,269
+53,Tipos populares,270
+5,San Gabriel,273
+0,Virgen María,273
+0,Virgen María,276
+4,Jesús,277
+29,Santa María Magdalena,277
+4,Jesús,278
+0,Virgen María,278
+1,Ángel / ángeles,278
+43,Santa Teresa de Jesús,279
+20,Dionisio / Baco,280
+22,Sátiro,280
+36,San Bernardo de Claraval,281
+0,Virgen María,281
+1,Ángel / ángeles,281
+0,Virgen María,285
+4,Jesús,286
+0,Virgen María,286
+90,Filopómenes,288
+0,Virgen María,290
+91,Eugenia Martínez Vallejo,291
+4,Jesús,293
+15,San Juan Evangelista,293
+29,Santa María Magdalena,293
+0,Virgen María,293
+49,Deméter/Ceres,294
+5,San Gabriel,295
+0,Virgen María,295
+1,Ángel / ángeles,295
+92,San Pedro Mártir de Verona,296
+64,Santo Domingo de Guzmán,296
+0,Virgen María,296
+26,San José,299
+0,Virgen María,308
+1,Ángel / ángeles,308
+93,"Borbón y Borbón-Parma, María Luisa",310
+94,"Borbón-Parma, Carlos Luis",310
+95,"Borbón-Parma, Luis Francisco Filiberto",310
+96,"Borbón-Parma, María Luisa Carlota",310
+1,Ángel / ángeles,317
+4,Jesús,319
+5,San Gabriel,319
+2,San Miguel,319
+97,Arquían,324
+98,Sedequía,324
+99,Susana,324
+37,San Francisco Javier,327
+5,San Gabriel,331
+0,Virgen María,331
+1,Ángel / ángeles,331
+53,Tipos populares,338
+6,San Antonio de Padua,339
+5,San Gabriel,341
+0,Virgen María,341
+1,Ángel / ángeles,341
+5,San Gabriel,343
+0,Virgen María,344
+1,Ángel / ángeles,344
+4,Jesús,346
+100,San Joaquín,346
+12,San Juan Bautista,346
+15,San Juan Evangelista,346
+66,Santa Ana,346
+27,Santa Isabel,346
+0,Virgen María,346
+33,Isabel II,348
+4,Jesús,350
+55,"Médici, García de",351
+70,Hera/Juno,352
+18,Cupido/Eros,354
+101,Ninfas,354
+28,Amorcillos,355
+32,"Borbón y Farnesio, María Antonia Fernanda de",355
+18,Cupido/Eros,355
+102,San Carlos Borromeo,356
+103,Europa,357
+4,Jesús,358
+23,"Diana Cecil, condesa de Oxford",360
+104,Fernando el Católico,362
+105,Fray Tomás de Torquemada,362
+106,Isabel de Aragón,362
+107,Isabel la Católica,362
+4,Jesús,362
+108,"Juan de Aragón, príncipe de Asturias",362
+92,San Pedro Mártir de Verona,362
+64,Santo Domingo de Guzmán,362
+109,Santo Tomás de Aquino,362
+0,Virgen María,362
+110,Inés María Aguirre y Yoldi,363
+1,Ángel / ángeles,364
+28,Amorcillos,367
+85,Artemisa/Diana,367
+56,Atenea/ Minerva,367
+49,Deméter/Ceres,367
+86,Hades/Plutón,367
+87,Perséfone/Proserpina,367
+111,"Tudor, María",370
+53,Tipos populares,373
+6,San Antonio de Padua,374
+1,Ángel / ángeles,374
+112,Santa Bárbara,375
+41,San Pedro,376
+1,Ángel / ángeles,376
+0,Virgen María,378
+0,Virgen María,379
+113,Mariana de Austria,382
+4,Jesús,384
+26,San José,384
+0,Virgen María,384
+4,Jesús,385
+1,Ángel / ángeles,385
+0,Virgen María,386
+1,Ángel / ángeles,386
+13,Adán,387
+14,Eva,387
+114,Santa Rosa de Lima,388
+115,Aglae,390
+18,Cupido/Eros,390
+58,Cárites o Las tres Gracias,390
+116,Eufrósine,390
+117,Talía,390
+100,San Joaquín,391
+66,Santa Ana,391
+0,Virgen María,391
+0,Virgen María,393
+1,Ángel / ángeles,393
+4,Jesús,395
+35,San Agustín,395
+26,San José,395
+0,Virgen María,395
+114,Santa Rosa de Lima,396
+64,Santo Domingo de Guzmán,396
+109,Santo Tomás de Aquino,396
+0,Virgen María,396
+1,Ángel / ángeles,398
+20,Dionisio / Baco,399
+4,Jesús,400
+6,San Antonio de Padua,400
+118,San Roque,400
+0,Virgen María,400
+67,Jacob,401
+28,Amorcillos,403
+85,Artemisa/Diana,403
+56,Atenea/ Minerva,403
+49,Deméter/Ceres,403
+86,Hades/Plutón,403
+87,Perséfone/Proserpina,403
+100,San Joaquín,404
+66,Santa Ana,404
+0,Virgen María,404
+4,Jesús,405
+75,Reyes Magos,405
+26,San José,405
+0,Virgen María,405
+115,Aglae,406
+18,Cupido/Eros,406
+58,Cárites o Las tres Gracias,406
+116,Eufrósine,406
+117,Talía,406
+109,Santo Tomás de Aquino,408
+26,San José,410
+66,Santa Ana,410
+0,Virgen María,410
+4,Jesús,413
+0,Virgen María,413
+60,Flora,415
+37,San Francisco Javier,417
+4,Jesús,420
+12,San Juan Bautista,420
+0,Virgen María,420
+23,"Diana Cecil, condesa de Oxford",421
+12,San Juan Bautista,423
+4,Jesús,425
+26,San José,425
+0,Virgen María,425
+1,Ángel / ángeles,425
+4,Jesús,427
+25,Luis IX de Francia / San Luis de Francia,427
+26,San José,427
+12,San Juan Bautista,427
+27,Santa Isabel,427
+0,Virgen María,427
+1,Ángel / ángeles,427
+5,San Gabriel,429
+0,Virgen María,429
+1,Ángel / ángeles,429
+17,Afrodita/Venus,431
+18,Cupido/Eros,431
+37,San Francisco Javier,435
+12,San Juan Bautista,438
+64,Santo Domingo de Guzmán,439
+4,Jesús,444
+6,San Antonio de Padua,444
+1,Ángel / ángeles,444
+60,Flora,445
+20,Dionisio / Baco,447
+22,Sátiro,447
+56,Atenea/ Minerva,450
+119,Juan de Austria,450
+120,Poseidón/Neptuno,450
+17,Afrodita/Venus,451
+28,Amorcillos,451
+121,Nereidas,451
+120,Poseidón/Neptuno,451
+30,San Antonio Abad / San Antón,452
+31,San Pablo ermitaño,452
+1,Ángel / ángeles,456
+53,Tipos populares,461
+122,"Vázquez de la Varga, Pura",463
+123,"Ángeles Ortiz, Manuel",463
+4,Jesús,466
+26,San José,466
+0,Virgen María,466
+72,"Navarro Alconero, Valentina",468
+73,"Pla Navarro, Cristina",468
+74,"Pla Navarro, Pepita",468
+0,Virgen María,470
+4,Jesús,471
+12,San Juan Bautista,471
+0,Virgen María,472
+97,Arquían,475
+98,Sedequía,475
+99,Susana,475
+4,Jesús,477
+19,San Francisco de Asís,477
+0,Virgen María,477
+1,Ángel / ángeles,477
+124,San Ambrosio,479
+4,Jesús,483
+26,San José,483
+0,Virgen María,483
+1,Ángel / ángeles,483
+0,Virgen María,484
+4,Jesús,485
+6,San Antonio de Padua,485
+125,"Borbón y Farnesio, María Ana Victoria",488
+67,Jacob,489
+64,Santo Domingo de Guzmán,492
+109,Santo Tomás de Aquino,492
+28,Amorcillos,493
+126,Salustiano de Olózaga,495
+4,Jesús,497
+0,Virgen María,497
+5,San Gabriel,498
+0,Virgen María,498
+18,Cupido/Eros,501
+6,San Antonio de Padua,502
+0,Virgen María,503
+4,Jesús,504
+25,Luis IX de Francia / San Luis de Francia,504
+26,San José,504
+12,San Juan Bautista,504
+27,Santa Isabel,504
+0,Virgen María,504
+1,Ángel / ángeles,504
+4,Jesús,505
+68,Carlos III,506
+60,Flora,507
+4,Jesús,508
+6,San Antonio de Padua,508
+60,Flora,509
+56,Atenea/ Minerva,510
+119,Juan de Austria,510
+120,Poseidón/Neptuno,510
+37,San Francisco Javier,511
+1,Ángel / ángeles,511
+127,San Pedro Nolasco,512
+5,San Gabriel,514
+0,Virgen María,514
+1,Ángel / ángeles,514
+128,Iñigo de Ayala y Rojas,517
+15,San Juan Evangelista,517
+41,San Pedro,517
+0,Virgen María,517
+5,San Gabriel,518
+2,San Miguel,518
+0,Virgen María,518
+4,Jesús,519
+26,San José,519
+0,Virgen María,519
+1,Ángel / ángeles,519
+114,Santa Rosa de Lima,520
+23,"Diana Cecil, condesa de Oxford",521
+0,Virgen María,527
+1,Ángel / ángeles,527
+129,San Lorenzo,528
+130,San Vicente,528
+131,Santa Lucía,528
+29,Santa María Magdalena,528
+64,Santo Domingo de Guzmán,528
+19,San Francisco de Asís,532
+1,Ángel / ángeles,532
+4,Jesús,533
+4,Jesús,535
+6,San Antonio de Padua,535
+65,"Manzanedo e Intentas, Josefa",536
+4,Jesús,539
+26,San José,539
+0,Virgen María,539
+1,Ángel / ángeles,539
+0,Virgen María,540
+132,San Andrés,543
+4,Jesús,545
+26,San José,546
+66,Santa Ana,546
+0,Virgen María,546
+5,San Gabriel,549
+0,Virgen María,549
+1,Ángel / ángeles,549
+115,Aglae,550
+18,Cupido/Eros,550
+58,Cárites o Las tres Gracias,550
+116,Eufrósine,550
+117,Talía,550
+53,Tipos populares,551
+1,Ángel / ángeles,555
+133,"Gonzaga y Caracciolo, María Antonia",557
+4,Jesús,558
+26,San José,558
+43,Santa Teresa de Jesús,560
+0,Virgen María,562
+97,Arquían,565
+98,Sedequía,565
+99,Susana,565
+0,Virgen María,567
+18,Cupido/Eros,569
+115,Aglae,571
+18,Cupido/Eros,571
+58,Cárites o Las tres Gracias,571
+116,Eufrósine,571
+117,Talía,571
+85,Artemisa/Diana,573
+134,"Madrazo y Kuntz, Cecilia de",575
+20,Dionisio / Baco,576
+22,Sátiro,576
+4,Jesús,579
+4,Jesús,581
+89,Santa Catalina de Siena,581
+43,Santa Teresa de Jesús,581
+1,Ángel / ángeles,581
+69,Santa Rosalía de Palermo,583
+85,Artemisa/Diana,585
+4,Jesús,586
+26,San José,586
+0,Virgen María,586
+135,Medusa,587
+4,Jesús,588
+26,San José,588
+0,Virgen María,588
+4,Jesús,589
+26,San José,589
+1,Ángel / ángeles,589
+97,Arquían,590
+98,Sedequía,590
+99,Susana,590
+60,Flora,592
+4,Jesús,593
+25,Luis IX de Francia / San Luis de Francia,593
+26,San José,593
+12,San Juan Bautista,593
+27,Santa Isabel,593
+0,Virgen María,593
+1,Ángel / ángeles,593
+5,San Gabriel,595
+0,Virgen María,595
+1,Ángel / ángeles,595
+66,Santa Ana,599
+0,Virgen María,599
+0,Virgen María,600
+66,Santa Ana,603
+0,Virgen María,603
+0,Virgen María,606
+1,Ángel / ángeles,606
+114,Santa Rosa de Lima,615
+136,Jörg Zörer,616
+28,Amorcillos,621
+83,Demonio / Diablo,622
+0,Virgen María,622
+1,Ángel / ángeles,622
+4,Jesús,623
+6,San Antonio de Padua,623
+53,Tipos populares,624
+49,Deméter/Ceres,628
+26,San José,631
+1,Ángel / ángeles,631
+4,Jesús,632
+26,San José,632
+12,San Juan Bautista,632
+0,Virgen María,632
+26,San José,634
+114,Santa Rosa de Lima,635
+1,Ángel / ángeles,635
+113,Mariana de Austria,636
+1,Ángel / ángeles,637
+137,"Colón, Cristóbal",638
+5,San Gabriel,639
+0,Virgen María,639
+138,San Felipe,640
+26,San José,645
+4,Jesús,647
+26,San José,647
+0,Virgen María,647
+0,Virgen María,649
+1,Ángel / ángeles,649
+4,Jesús,652
+0,Virgen María,652
