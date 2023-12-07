@@ -48,7 +48,9 @@ st.text('   ')
 st.markdown("---")
 
 floreros = Image.open("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/imagenes/Floreros, Nuzzi, Mario (1640-1642).png")
-
+el_oido = Image.open("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/imagenes/El oído.png")
+en_vue = Image.open("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/imagenes/En vue.png")
+leon_lobos = Image.open("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/imagenes/Un leon y tres lobos.png")
 
 def apartado1():
     col1, col2 = st.columns(2)
@@ -79,7 +81,7 @@ def apartado1():
     
     # Mostrar imagen en la segunda columna
     with col2:
-        st.image(floreros, caption='"Floreros"; Nuzzi, Mario (1640-1642)')
+        st.image(leon_lobos, caption='"Un león y tres lobos"; Vos, Paul de (Siglo XVII)')
 
 
 
@@ -89,7 +91,7 @@ def apartado2():
     
     col1, col2 = st.columns(2)
     with col1:
-        st.image(floreros, caption='"Floreros"; Nuzzi, Mario (1640-1642)')
+        st.image(en_vue, caption='"En Vue"; Palmaroli González, Vicente (1834-1896)')
 
     with col2:
         st.markdown(
@@ -140,7 +142,7 @@ def apartado3():
         unsafe_allow_html=True)
     
     with col2:
-        st.image(floreros, caption='"Floreros"; Nuzzi, Mario (1640-1642)')
+        st.image(el_oido, caption='"Floreros"; Brueghel el Viejo, Jan (1617-1618)')
 
 
 # Añadir los tres apartados

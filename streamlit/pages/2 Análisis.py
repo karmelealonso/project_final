@@ -281,7 +281,7 @@ elif page == "Objectos":
                             x=correlation_matrix_objetos_2d.columns, 
                             y=correlation_matrix_objetos_2d.index,
                             labels=dict(color="Frecuencia"),
-                            title='Mapa de Correlaciones entre los Objetos Seleccionados',
+                            title='Relaciones regulares entre los objetos representados en el Museo del Prado',
                             color_continuous_scale = 'viridis',
                             range_color = [0, 40],
                         
@@ -464,7 +464,7 @@ elif page == "Personajes":
                     x=correlation_matrix_2d.columns, 
                     y=correlation_matrix_2d.index,
                     labels=dict(color="Frecuencia"),
-                    title='Mapa de Correlaciones entre los Personajes Seleccionados',
+                    title='Relaciones regulares entre los personajes representados en el Museo del Prado',
                     color_continuous_scale="Viridis",
                     width=800, height=600)
 
@@ -495,8 +495,12 @@ elif page == "Fauna":
         f"Seleccionar Fauna", top_10_fauna, default=top_10_fauna, key=key_fauna_filter
     )
 
-    # Crear un diccionario con colores RGB aleatorios para los top 10 elementos de flora
-    color_dict_fauna = {fauna: f'rgb({random.randint(0, 255)}, {random.randint(0, 255)}, {random.randint(0, 255)})' for fauna in top_10_fauna}
+    # Ordenar loa fauna de manera lógica
+    orden_fauna = ['Antrópodos', 'Perro', 'Paloma', 'Oveja', 'Cobaya Común', 'Caballo', 'Mono', 'Jilguero', 'Pavo Real', 'Conejo']
+
+    # Elegimos los colores:
+    color = ['#117A65  ', '#f26722', '#cd2027', '#139b48', '#04B4A2', '#f1eb1f', '#4c2600', '#0a3452', '#259E04',
+             '#4554a5']
 
         # Filtrar el DataFrame solo para los elementos más comunes
     df_fauna_comunes = fauna_streamlit[fauna_streamlit['Fauna'].isin(top_10_fauna)]
@@ -515,7 +519,8 @@ elif page == "Fauna":
         title='Distribución de Frecuencia de Fauna',
         hover_data=['Fauna', 'Frecuencia'],
         labels={'Frecuencia': 'Porcentaje'},
-        color_discrete_map=color_dict_fauna,
+        category_orders={'Fauna': orden_fauna},
+        color_discrete_sequence=color,
         hole=0.4
     )
 
@@ -552,8 +557,14 @@ elif page == "Fauna":
     df_frecuencia_decadas_fauna = df_filtrado_decadas_fauna.groupby(['Década', 'Fauna']).size().reset_index(name='Frecuencia')
 
     # Crear el gráfico de líneas con Plotly Express
-    line_chart_fauna = px.line(df_frecuencia_decadas_fauna, x='Década', y='Frecuencia', color='Fauna',
-                                labels={'Frecuencia': 'Número de Apariciones'}, title='Desarrollo de Fauna a lo largo del Tiempo')
+    line_chart_fauna = px.line(df_frecuencia_decadas_fauna, 
+                               x='Década', 
+                               y='Frecuencia', 
+                               color='Fauna',
+                                labels={'Frecuencia': 'Número de Apariciones'},
+                                category_orders={'Objetos': orden_fauna},
+                                color_discrete_sequence=color, 
+                                title='Desarrollo de Fauna a lo largo del Tiempo')
 
     # Ocultar la leyenda
     line_chart_fauna.update_layout(width=1000, height=600)
@@ -584,7 +595,7 @@ elif page == "Fauna":
     # Crear el gráfico de barras con Plotly Express
     bar_chart_fauna_by_escuela = px.bar(top10_fauna_by_escuela, x='Escuela', y='Frecuencia', color='Fauna',
                                         labels={'Frecuencia': 'Número de Apariciones'}, title='Top 10 Fauna por Escuela',
-                                        color_discrete_sequence=px.colors.qualitative.Set3,
+                                        color_discrete_sequence=color,
                                         width=1000, height=600, 
                                         )
 
@@ -631,7 +642,7 @@ elif page == "Fauna":
                         x=correlation_matrix_2d_fauna.columns, 
                         y=correlation_matrix_2d_fauna.index,
                         labels=dict(color="Frecuencia"),
-                        title='Mapa de Correlaciones entre la Fauna Seleccionada',
+                        title='Relaciones regulares entre la fauna representada en el Museo del Prado',
                         color_continuous_scale="Viridis",
                         width=800, height=600)
 
@@ -799,7 +810,7 @@ elif page == "Flora":
                         x=correlation_matrix_2d_flora.columns, 
                         y=correlation_matrix_2d_flora.index,
                         labels=dict(color="Frecuencia"),
-                        title='Mapa de Correlaciones entre la Flora Seleccionada',
+                        title='Relaciones regulares entre la flora representada en el Museo del Prado',
                         color_continuous_scale="Viridis",
                         width=800, height=600)
 

@@ -49,7 +49,7 @@ st.markdown("---")
 st.markdown(
     f"""
     <div style='text-align: justify;'>
-        <h6 style='font-size: 16px; color: #545458;'> En el presente trabajo nos hemos propuesto trasladar el conjunto de métodos
+        <h6 style='font-size: 16px; font-weight: normal; color: #545458;'> En el presente trabajo nos hemos propuesto trasladar el conjunto de métodos
         analíticos basados en la automatización de los procesos de cálculo de las
         máquinas, al terreno del arte y en concreto al área de análisis iconográfico. La
         iconografía es un término que resulta etimológicamente de la unión de los
@@ -57,9 +57,9 @@ st.markdown(
         como la disciplina cuyo objeto de estudio es la descripción de las imágenes, o
         cdesde un punto de vista superior, la escritura en imágenes.
         </h6>
-        <h6 style='font-size: 18px;font-weight: normal; color: #4D458E;'> ¿Qué quiere decir “escritura de imágenes”?
+        <h6 style='font-size: 18px;font-weight: normal; color: #545458;'> ¿Qué quiere decir “escritura de imágenes”?
         </h6>
-        <h6 style='font-size: 16px;font-weight: normal; color: #4D458E;'> Habitualmente las imágenes en el arte funcionan
+        <h6 style='font-size: 16px;font-weight: normal; color: #545458;'> Habitualmente las imágenes en el arte funcionan
         como símbolo y el hecho de que unas determinadas imágenes vayan al lado de
         otras no es casualidad. La imagen de la Virgen María, por ejemplo, pisando un
         dragón o una serpiente es habitual en la iconografía cristiana y significa el
@@ -94,7 +94,7 @@ st.markdown("---")
 st.markdown(
     f"""
     <div style='text-align: justify;'>
-        <h6 style='font-size: 16px; color: #545458;'> El presente trabajo pretende trasladar el conjunto de métodos analíticos
+        <h6 style='font-size: 16px; font-weight: normal; color: #545458;'> El presente trabajo pretende trasladar el conjunto de métodos analíticos
         utilizados para dotar de inteligencia a los negocios al terreno de la museografía.
         Para ello necesita datos iconográficos. El Museo del Prado es probablemente
         el único museo del mundo que dispone de un registro iconográfico de su
@@ -103,10 +103,10 @@ st.markdown(
         3 en el XVIII, siglo del que el Prado dispone de 156 vírgenes, frente a las 221
         del anterior.
         </h6>
-        <h6 style='font-size: 18px;font-weight: normal; color: #4D458E;'> ¿Por qué razón se empezó a dejar de pintar a la Virgen con rosas
+        <h6 style='font-size: 18px;font-weight: normal; color: #545458;'> ¿Por qué razón se empezó a dejar de pintar a la Virgen con rosas
         en el   siglo XVIII?”?
         </h6>
-        <h6 style='font-size: 16px;font-weight: normal; color: #4D458E;'> Esto lo tendrán que responder los historiadores del arte u
+        <h6 style='font-size: 16px;font-weight: normal; color: #545458;'> Esto lo tendrán que responder los historiadores del arte u
         otros estudiosos, pero el caso es que esto es así, al menos en la colección del
         Prado, probablemente la mejor colección del mundo en los siglos XVI, XVII y
         XVIII. Otro ejemplo, el cuadro dispone de 12 pinturas que representan a
@@ -132,7 +132,7 @@ st.text('   ')
 st.markdown(
     f"""
     <div style='text-align: justify;'>
-        <h6 style='font-size: 16px; color: #545458;'> El presente trabajo pretende trasladar el conjunto de métodos analíticos
+        <h6 style='font-size: 16px; font-weight: normal; color: #545458;'> El presente trabajo pretende trasladar el conjunto de métodos analíticos
         utilizados para dotar de inteligencia a los negocios al terreno de la museografía.
         Para ello necesita datos iconográficos. El Museo del Prado es probablemente
         el único museo del mundo que dispone de un registro iconográfico de su
@@ -141,10 +141,10 @@ st.markdown(
         3 en el XVIII, siglo del que el Prado dispone de 156 vírgenes, frente a las 221
         del anterior.
         </h6>
-        <h6 style='font-size: 18px;font-weight: normal; color: #4D458E;'> ¿Por qué razón se empezó a dejar de pintar a la Virgen con rosas
+        <h6 style='font-size: 18px;font-weight: normal; color: #545458;'> ¿Por qué razón se empezó a dejar de pintar a la Virgen con rosas
 en el   siglo XVIII?”?
         </h6>
-        <h6 style='font-size: 16px;font-weight: normal; color: #4D458E;'> Esto lo tendrán que responder los historiadores del arte u
+        <h6 style='font-size: 16px;font-weight: normal; color: #545458;'> Esto lo tendrán que responder los historiadores del arte u
         otros estudiosos, pero el caso es que esto es así, al menos en la colección del
         Prado, probablemente la mejor colección del mundo en los siglos XVI, XVII y
         XVIII. Otro ejemplo, el cuadro dispone de 12 pinturas que representan a
