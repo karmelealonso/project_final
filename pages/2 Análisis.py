@@ -5,7 +5,6 @@ import seaborn as sns
 from pyecharts import options as opts
 from pyecharts.charts import Line
 import plotly.express as px
-from pyecharts.charts import Pie
 from pyecharts.globals import ThemeType
 import numpy as np
 import random
