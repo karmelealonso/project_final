@@ -10,6 +10,7 @@ import numpy as np
 import random
 
 
+
 # Cargar los nuevos DataFrames
 obras_completo = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/obras_completo.csv")
 personajes_streamlit = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/personajes_streamlit.csv")
@@ -120,7 +121,8 @@ if page == "¿Qué podemos encontrar?":
 
 
 elif page == "Objectos":
-    st.markdown("Analytical study of Objects")
+    st.title("Objetos")
+    
 
     # Definir una clave única para el sin_nulos de personajes
     key_objetos_filter = "objetos_filter"
@@ -139,7 +141,7 @@ elif page == "Objectos":
    
 
 
-        # Filtrar el DataFrame solo para los elementos más comunes
+    # Filtrar el DataFrame solo para los elementos más comunes
     df_objetos_comunes = objetos_streamlit[objetos_streamlit['Objetos'].isin(top_10_objetos)]
 
     # Calcular la frecuencia y agregarla al DataFrame
@@ -298,57 +300,6 @@ elif page == "Objectos":
 
     st.plotly_chart(fig_objetos)
 
-    # Desplegable con texto (puedes personalizar el texto)
-
-    texto_conclusion_personalizado = """
-
-        Un análisis exhaustivo de los resultados del análisis iconográfico en todos sus detalles
-        que podemos ver en los gráficos daría para un libro. Me voy a limitar aquí a algunos
-        resultados a modo de ejemplo.
-        
-        En la distribución de la frecuencia de los 10 principales grupos de objetos llama la
-        atención la prevalencia de los objetos domésticos, especialmente al tratarse de una
-        colección que se construye sobre la base del gusto de coleccionistas que son todos ellos
-        Reyes. Habría que ver la correlación entre este hecho y las escuelas que los pintan.
-        
-        Cuando analizamos la correlación entre estos objetos y las escuelas, podemos ver que
-        los cuadros de la escuela holandesa contienen muchos más objetos de escenas
-        domésticas, objetos más próximos a la idea que de “doméstico” tienen los burgueses o
-        habitantes de las ciudades, mientras que las escenas domésticas de otras escuelas, como
-        la española (segunda en representar esta clase de objetos), pueden ser escenas
-        domésticas que tienen como escenario el palacio o sus estancias.
-        
-        Lo que resulta muy interesante es que los objetos domésticos, cuando se cruce su
-        frecuencia con su ocurrencia en el tiempo, tienen un pico entre 1800 y 1850, después de
-        las Revoluciones Americana (1776) y Francesa (1789). Habría que ver si este triunfo de
-        los valores burgueses y ciudadanos tienen algo que ver con esos acontecimientos, que
-        han modelado nuestra vida, pero es un asunto de historiadores e historiadores del arte en
-        particular. Aquí solo mostramos el hecho, pero en todo caso esta distribución temporal
-        abunda en la idea de que la vida en las ciudades, burguesa, y el interés por los objetos de
-        la casa es una relación muy profunda.
-        
-        Por otro lado, un pintor esencial de la colección, como puede ser Velázquez, es autor de
-        “Las hilanderas” en el que se pinta una escena de trabajo doméstico, pero también el
-        escenario de “Las Meninas” es el domus o la casa. Las vajillas o los jardines tienen una
-        presencia remarcable, pero no protagonista. El hecho de que floreros y cestos elementos
-        de cestería este muy bien representados, sobre todo los primeros tienen que ver mucho
-        con un género de pintura “el bodegón”, donde no solo se pintan viandas, frutas,
-        verduras, sino con frecuencia flores y floreros. Los cestos, hasta la invención del
-        packaging moderno, eran un elemento de guarda y transporte esencial. Parece normal
-        que estén.
-        
-        Lo que es realmente notable es la cantidad de cuadros dentro de cuadros (más del 6%)
-        que podemos ver en la colección del Prado. Esta dimensión autorreferencial de la
-        colección, y probablemente del arte de la pintura en general, es un descubrimiento para
-        mí sorprendente y notable.
-        
-        Los objetos de mesa o adornos de la mesa, van habitualmente acompañados de cestos y
-        floreros, lo que abunda en las ideas anteriormente dichas.
-    """
-
-    # Desplegable con el texto personalizado
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion_personalizado)
 
 
 
@@ -356,7 +307,7 @@ elif page == "Objectos":
 # Crear la subpágina "Personajes"
 elif page == "Personajes":
     st.title("Personajes")
-    st.markdown("Estudio analítico de los Personajes")
+    
 
     # Definir una clave única para el sin_nulos de personajes
     key_personajes_filter = "personajes_filter"
@@ -366,10 +317,16 @@ elif page == "Personajes":
         f"Seleccionar Personajes", top_10_personajes, default=top_10_personajes, key=key_personajes_filter
     )
 
-    # Crear un diccionario con colores RGB aleatorios para los top 10 elementos de flora
-    color_dict_personajes = {personajes: f'rgb({random.randint(0, 255)}, {random.randint(0, 255)}, {random.randint(0, 255)})' for personajes in top_10_personajes}
+    # Ordenar los personajes de manera lógica
+    orden_personajes = ['Afrodita/Venus', 'Deméter/Ceres', 'Dionisio/Baco', 'Flora', 'Hera/Juno', 'Jesús', 'San José', 'San Juan Bautista', 'Virgen María', 'Ángel/ángeles']
 
-        # Filtrar el DataFrame solo para los elementos más comunes
+    # Elegimos los colores:
+    color = ['#117A65  ', '#f26722', '#cd2027', '#139b48', '#04B4A2', '#f1eb1f', '#4c2600', '#0a3452', '#259E04',
+             '#4554a5']
+
+    
+
+    # Filtrar el DataFrame solo para los elementos más comunes
     df_personajes_comunes = personajes_streamlit[personajes_streamlit['Personajes'].isin(top_10_personajes)]
 
     # Calcular la frecuencia y agregarla al DataFrame
@@ -386,7 +343,8 @@ elif page == "Personajes":
         title='Distribución de Frecuencia de Personajes',
         hover_data=['Personajes', 'Frecuencia'],
         labels={'Frecuencia': 'Porcentaje'},
-        color_discrete_map=color_dict_personajes,
+        category_orders={'Personajes': orden_personajes},
+        color_discrete_sequence=color,
         hole=0.4
     )
 
@@ -396,23 +354,7 @@ elif page == "Personajes":
     # Mostrar el gráfico de pastel en Streamlit
     st.plotly_chart(pie_chart_personajes)
 
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
-
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
-
+    
     
     # Convertir la columna 'Año' a tipo datetime
     personajes_streamlit['Año'] = pd.to_datetime(personajes_streamlit['Año'], format='%Y', errors='coerce', infer_datetime_format=True, yearfirst=True)
@@ -439,8 +381,14 @@ elif page == "Personajes":
     df_frecuencia_decadas = df_filtrado_decadas.groupby(['Década', 'Personajes']).size().reset_index(name='Frecuencia')
 
     # Crear el gráfico de líneas con Plotly Express
-    line_chart = px.line(df_frecuencia_decadas, x='Década', y='Frecuencia', color='Personajes',
-                        labels={'Frecuencia': 'Número de Apariciones'}, title='Desarrollo de Personajes a lo largo del Tiempo')
+    line_chart = px.line(df_frecuencia_decadas, 
+                         x='Década', 
+                         y='Frecuencia', 
+                         color='Personajes',
+                        labels={'Frecuencia': 'Número de Apariciones'}, 
+                        category_orders={'Objetos': orden_personajes},
+                        color_discrete_sequence=color,
+                        title='Desarrollo de Personajes a lo largo del Tiempo')
 
     # Ocultar la leyenda
     line_chart.update_layout(width=1000, height=600)
@@ -449,24 +397,7 @@ elif page == "Personajes":
     st.plotly_chart(line_chart)
 
 
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
-
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
-
-
+    
     # Obtener valores únicos de la columna 'Escuela'
     unique_escuelas_personajes = personajes_streamlit['Escuela'].unique()
 
@@ -487,30 +418,14 @@ elif page == "Personajes":
     # Crear el gráfico de barras con Plotly Express
     bar_chart_personajes_by_escuela = px.bar(top10_personajes_by_escuela, x='Escuela', y='Frecuencia', color='Personajes',
                                         labels={'Frecuencia': 'Número de Apariciones'}, title='Top 10 Personajes por Escuela',
-                                        color_discrete_sequence=px.colors.qualitative.Set3,
+                                        color_discrete_sequence=color,
                                         width=1000, height=600,
                                         )
 
     # Mostrar el gráfico de barras en Streamlit
     st.plotly_chart(bar_chart_personajes_by_escuela)
 
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
-
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
-
+    
 
 
     # Calculo cuantos personajes tiene cada obra:
@@ -565,23 +480,7 @@ elif page == "Personajes":
 
     st.plotly_chart(fig)
 
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
-
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
-
+    
 
 
 
@@ -626,26 +525,7 @@ elif page == "Fauna":
     # Mostrar el gráfico de pastel en Streamlit
     st.plotly_chart(pie_chart_fauna)
 
-    
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
 
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
-
-        
-    
     # Convertir la columna 'Año' a tipo datetime
     fauna_streamlit['Año'] = pd.to_datetime(fauna_streamlit['Año'], format='%Y', errors='coerce', infer_datetime_format=True, yearfirst=True)
 
@@ -680,25 +560,6 @@ elif page == "Fauna":
 
     # Mostrar el gráfico en Streamlit
     st.plotly_chart(line_chart_fauna)
-
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
-
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
-
-
    
    
    # Obtener valores únicos de la columna 'Escuela'
@@ -730,25 +591,7 @@ elif page == "Fauna":
     # Mostrar el gráfico de barras en Streamlit
     st.plotly_chart(bar_chart_fauna_by_escuela)
 
-
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
-
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
-
-   
+ 
 
 
 
@@ -804,23 +647,6 @@ elif page == "Fauna":
 
     st.plotly_chart(fig_fauna)
 
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
-
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
-
 
 
 
@@ -866,24 +692,6 @@ elif page == "Flora":
     # Mostrar el gráfico de pastel en Streamlit
     st.plotly_chart(pie_chart_flora)
 
-
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
-
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
-
         
 # Convertir la columna 'Año' a tipo datetime
     flora_streamlit['Año'] = pd.to_datetime(flora_streamlit['Año'], format='%Y', errors='coerce', infer_datetime_format=True, yearfirst=True)
@@ -920,24 +728,6 @@ elif page == "Flora":
     # Mostrar el gráfico en Streamlit
     st.plotly_chart(line_chart_flora)
 
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
-
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
-
-
     
     
     # Obtener valores únicos de la columna 'Escuela'
@@ -968,23 +758,6 @@ elif page == "Flora":
 
     # Mostrar el gráfico de barras en Streamlit
     st.plotly_chart(bar_chart_flora_by_escuela)
-
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
-
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
 
 
 
@@ -1042,26 +815,6 @@ elif page == "Flora":
 
     st.plotly_chart(fig_flora)
 
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
-
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
-
-
-
-
 
 
 
@@ -1106,24 +859,6 @@ elif page == "Lugar":
     # Mostrar el gráfico de pastel en Streamlit
     st.plotly_chart(pie_chart_lugar)
 
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
-
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
-
-
 
 
     # Convertir la columna 'Año' a tipo datetime
@@ -1160,25 +895,6 @@ elif page == "Lugar":
 
     # Mostrar el gráfico en Streamlit
     st.plotly_chart(line_chart_lugar)
-
-    # Desplegable con texto (puedes personalizar el texto)
-    texto_conclusion = """
-    ### Conclusiones
-
-    Después de analizar el desarrollo de objetos a lo largo del tiempo, se puede concluir que...
-
-    1. **Tendencia a la alza:** La frecuencia de ciertos objetos ha experimentado un aumento a medida que avanzan las décadas.
-
-    2. **Variabilidad:** Se observa una variabilidad en la frecuencia de diferentes objetos a lo largo de las décadas.
-
-    3. **Influencia de factores externos:** Algunos objetos pueden haber experimentado cambios en su frecuencia debido a factores externos como eventos históricos o tendencias culturales.
-    """
-
-    # Desplegable con el texto
-    with st.expander("Conclusiones"):
-        st.markdown(texto_conclusion)
-
-
 
     
     

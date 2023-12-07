@@ -40,7 +40,7 @@ st.text('   ')
 
 st.markdown("---")
 
-st.title("Una aproximación a un modelo de iconografía analítica sobre la base de la iconografía del Museo Del Prado")
+st.title("Un análisis iconográfico de la colección del Museo Del Prado")
 
 st.text('   ')
 
