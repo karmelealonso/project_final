@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from PIL import Image
 
 # Cargar los nuevos DataFrames
 obras_completo = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/obras_completo.csv")
@@ -32,47 +33,7 @@ max_year = personajes_streamlit['Año'].max()
 # ESTILO DE LA APLICACIÓN
 
 CSS_STYLE_ = """
-<style>
 
-MainMenu {
-    visibility:hidden;
-}
-
-footer {
-    visibility:visible;
-}
-
-# Font family for all text in the app, except code blocks. One of "sans serif", "serif", or "monospace".
-font = "sans serif"
-
-h1 {
-    color: #FF8966;
-}
-h2 {
-    color: #848C8E;
-}
-h3 {
-    color: #022B3A;
-}
-h4 {
-    color: #FAFAFA;
-}
-
-.badge-custom {
-    color: #CCCCCC;
-    background-color: #0000CC;
-}
-
-button[data-baseweb="tab"] {
-    font-size: 18px;
-    color: #FE4A4A;
-}
-
-</style>
-
-<link rel="stylesheet" href="https://m axcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 """
 
 
@@ -82,10 +43,25 @@ st.markdown(CSS_STYLE_, unsafe_allow_html=True)
 
 st.title("Home")
 
+st.text('   ')
+
+
+st.markdown("---")
+
 st.title("Una aproximación a un modelo de iconografía analítica sobre la base de la iconografía del Museo Del Prado")
-# Añadir texto e imágenes para la sección de Explanation of the project
+
+st.text('   ')
+
+
+st.markdown("---")
+
+floreros = Image.open("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/imagenes/Floreros, Nuzzi, Mario (1640-1642).png")
+
+
 def apartado1():
-    st.markdown(
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown(
         f"""
         <div style='text-align: justify;'>
             <h6 style='font-size: 16px; color: #545458;'> El los métodos estadísticos predictivos y el Aprendizaje Automático, junto con
@@ -95,56 +71,68 @@ def apartado1():
             revelan relaciones regulares en los datos que nos posibilitan tomar decisiones,
             predecir y evitar riesgos o conocer simplemente cómo está organizado el
             mundo en un determinado dominio de conocimiento.
+            Tradicionalmente, los sistemas de  Analítica Avanzada de Datos y el
+            Aprendizaje Automático se han utilizado, y utilizan, con diversas finalidades y
+            en diversos sectores, como Defensa, Sanidad, Investigación, Finanzas,
+            Seguridad, Análisis de Marcados…
+            </h6>
+            <h6 style='font-size: 16px; color: #545458;'> Tradicionalmente, los sistemas de  Analítica Avanzada de Datos y el
+            Aprendizaje Automático se han utilizado, y utilizan, con diversas finalidades y
+            en diversos sectores, como Defensa, Sanidad, Investigación, Finanzas,
+            Seguridad, Análisis de Marcados…
             </h6>
         </div>
         """, 
         unsafe_allow_html=True)
     
     # Mostrar imagen en la segunda columna
-    col1, col2 = st.columns(2)
     with col2:
-        st.image("Imagen")
+        st.image(floreros, caption='"Floreros"; Nuzzi, Mario (1640-1642)')
+
+
 
 # Función para el segundo apartado
 def apartado2():
     # Mostrar imagen en la primera columna
+    
     col1, col2 = st.columns(2)
     with col1:
-        st.image("Imagen")  # Reemplaza "Imagen" con tu variable de imagen
+        st.image(floreros, caption='"Floreros"; Nuzzi, Mario (1640-1642)')
 
-    st.markdown(
+    with col2:
+        st.markdown(
         f"""
         <div style='text-align: justify;'>
-            <h6 style='font-size: 16px; color: #545458;'> Tradicionalmente, los sistemas de  Analítica Avanzada de Datos y el
-            Aprendizaje Automático se han utilizado, y utilizan, con diversas finalidades y
-            en diversos sectores, como Defensa, Sanidad, Investigación, Finanzas,
-            Seguridad, Análisis de Marcados…:
-                 Diagnóstico médico
-                 Diseño de fármacos
-                 Mantenimiento predictivo de maquinaria industrial, de vehículos, etc…
-                 Predicciones climáticas
-                 Gestión de datos de clientes
-                 Perfilado y personalización de la experiencia de usuario
-                 Ciberseguridad y detección predictiva de anomalías
-                 Detección de fraudes
-                 Gestión del riesgo
-                 Realización de estudios de mercado
-                 …
+            <h6 style='font-size: 16px; color: #545458;'> Algunos ejemplos son:
             </h6>
+            <ul>
+                <li>Diagnóstico médico</li>
+                <li>Diseño de fármacos</li>
+                <li>Mantenimiento predictivo de maquinaria industrial, de vehículos, etc…</li>
+                <li>Predicciones climáticas</li>
+                <li>Gestión de datos de clientes</li>
+                <li>Perfilado y personalización de la experiencia de usuario</li>
+                <li>Ciberseguridad y detección predictiva de anomalías</li>
+                <li>Detección de fraudes</li>
+                <li>Gestión del riesgo</li>
+                <li>Realización de estudios de mercado</li>
+                <!-- Agrega más elementos según sea necesario -->
+            </ul>
         </div>
         """, 
-        unsafe_allow_html=True)
-
+        unsafe_allow_html=True
+    )
 # Función para el tercer apartado
 def apartado3():
-    st.markdown(
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown(
         f"""
         <div style='text-align: justify;'>
             <h6 style='font-size: 16px; color: #545458;'> La Analítica de Datos aportaría las evidencias necesarias para poder
             desarrollar procesos de Inteligencia de Negocio (Business Intelligence), que es
             aquella disciplina, conjunto de métodos y prácticas orientadas a comprender la
             información más relevante para tomar decisiones de negocio acertadas.
-
             La Inteligencia de Negocio (Business Intelligence), combina la minería de datos
             y sus visualizaciones con métodos de análisis con el fin de ayudar a las
             organizaciones a tomar decisiones basadas en los datos. Para ello, debe
@@ -159,13 +147,9 @@ def apartado3():
         """, 
         unsafe_allow_html=True)
     
-    # Mostrar imagen en la segunda columna
-    col1, col2 = st.columns(2)
     with col2:
-        st.image("Imagen")  # Reemplaza "Imagen" con tu variable de imagen
+        st.image(floreros, caption='"Floreros"; Nuzzi, Mario (1640-1642)')
 
-# Usar las funciones en tu aplicación
-st.title("Home")
 
 # Añadir los tres apartados
 apartado1()

@@ -33,56 +33,19 @@ max_year = personajes_streamlit['Año'].max()
 # ESTILO DE LA APLICACIÓN
 
 CSS_STYLE_ = """
-<style>
-
-MainMenu {
-    visibility:hidden;
-}
-
-footer {
-    visibility:visible;
-}
-
-# Font family for all text in the app, except code blocks. One of "sans serif", "serif", or "monospace".
-font = "sans serif"
-
-h1 {
-    color: #FF8966;
-}
-h2 {
-    color: #848C8E;
-}
-h3 {
-    color: #022B3A;
-}
-h4 {
-    color: #FAFAFA;
-}
-
-.badge-custom {
-    color: #CCCCCC;
-    background-color: #0000CC;
-}
-
-button[data-baseweb="tab"] {
-    font-size: 18px;
-    color: #FE4A4A;
-}
-
-</style>
-
-<link rel="stylesheet" href="https://m axcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 """
-floreros = Image.open("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/imagenes/Floreros, Nuzzi, Mario.png")
-
+floreros = Image.open("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/imagenes/Floreros, Nuzzi, Mario (1640-1642).png")
+la_virgen = Image.open("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/imagenes/La Virgen con el Niño, Santa Dorotea y San Jorge, Tiziano, Vecellido di Gregorio (1515-1518).png") 
 # Aplicar el estilo a la aplicación
 st.markdown(CSS_STYLE_, unsafe_allow_html=True)
 
 
 st.title("Planteamiento del proyecto: una visión analítica de la iconografía representada en la colección del Museo del Prado.")
-# Añadir texto e imágenes para la sección de Explanation of the project
+        
+st.text('   ')
+
+st.markdown("---")
+
 st.markdown(
     f"""
     <div style='text-align: justify;'>
@@ -117,17 +80,17 @@ st.markdown(
     """, 
     unsafe_allow_html=True)
 
-st.markdown("---")
-
         
 st.text('   ')
 
-st.image(floreros, caption='Floreros; Nuzzi, Mario', use_column_width=True)
+st.image(floreros, caption='"Floreros"; Nuzzi, Mario (1640-1642)', use_column_width=True)
         
 st.text('   ')
 
-st.markdown("---")
 st.markdown("## Líneas generales y objetivos del proyecto. ¿Qué se pretende conseguir?")
+
+st.markdown("---")
+
 st.markdown(
     f"""
     <div style='text-align: justify;'>
@@ -141,7 +104,7 @@ st.markdown(
         del anterior.
         </h6>
         <h6 style='font-size: 18px;font-weight: normal; color: #4D458E;'> ¿Por qué razón se empezó a dejar de pintar a la Virgen con rosas
-en el   siglo XVIII?”?
+        en el   siglo XVIII?”?
         </h6>
         <h6 style='font-size: 16px;font-weight: normal; color: #4D458E;'> Esto lo tendrán que responder los historiadores del arte u
         otros estudiosos, pero el caso es que esto es así, al menos en la colección del
@@ -159,8 +122,12 @@ en el   siglo XVIII?”?
     </div>
     """, 
     unsafe_allow_html=True)
-st.markdown("---")
 
+st.text('   ')
+
+st.image(la_virgen, caption='"La Virgen con el Niño, Santa Dorotea y San Jorge"; Tiziano, Vecellido di Gregorio (1515-1518)', use_column_width=True)
+        
+st.text('   ')
 
 st.markdown(
     f"""

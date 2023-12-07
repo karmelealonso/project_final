@@ -8,19 +8,22 @@ import plotly.express as px
 from pyecharts.charts import Pie
 from pyecharts.globals import ThemeType
 import numpy as np
+import random
 
 
 # Cargar los nuevos DataFrames
-obras_completo = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/obras_completo.csv")
+obras_completo = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/obras_completo_streamlit.csv")
 personajes_streamlit = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/personajes_streamlit.csv")
 objetos_streamlit = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/objetos_streamlit.csv")
 fauna_streamlit = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/fauna_streamlit.csv")
 flora_streamlit = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/flora_streamlit.csv")
 lugar_streamlit = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/lugar_streamlit.csv")
 
+
 # Función para obtener los top 10 elementos según la categoría seleccionada
 def get_top_10_elements(category_df):
-    return ["Seleccionar Todas"] + category_df.iloc[:, 0].value_counts().head(10).index.tolist()
+    return category_df.iloc[:, 0].value_counts().head(10).index.tolist()
+
 
 # Cargar los top 10 elementos iniciales y valores únicos de rango de años para cada categoría
 top_10_personajes = get_top_10_elements(personajes_streamlit)
@@ -33,6 +36,7 @@ top_10_lugar = get_top_10_elements(lugar_streamlit)
 # Obtener todos los valores únicos en las categorías de Escuela y Año_rango
 unique_escuelas = personajes_streamlit['Escuela'].dropna().unique()
 unique_anio_rango = personajes_streamlit['Año_rango'].dropna().unique().tolist()
+
 
 # Establecer los años mínimo y máximo
 min_year = personajes_streamlit['Año'].min()
@@ -53,47 +57,7 @@ flora_list = obras_completo["Flora"].unique().tolist()
 # ESTILO DE LA APLICACIÓN
 
 CSS_STYLE_ = """
-<style>
 
-MainMenu {
-    visibility:hidden;
-}
-
-footer {
-    visibility:visible;
-}
-
-# Font family for all text in the app, except code blocks. One of "sans serif", "serif", or "monospace".
-font = "sans serif"
-
-h1 {
-    color: #FF8966;
-}
-h2 {
-    color: #848C8E;
-}
-h3 {
-    color: #022B3A;
-}
-h4 {
-    color: #FAFAFA;
-}
-
-.badge-custom {
-    color: #CCCCCC;
-    background-color: #0000CC;
-}
-
-button[data-baseweb="tab"] {
-    font-size: 18px;
-    color: #FE4A4A;
-}
-
-</style>
-
-<link rel="stylesheet" href="https://m axcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 """
 
 # Aplicar el estilo a la aplicación
@@ -153,15 +117,41 @@ if page == "¿Qué podemos encontrar?":
             (obras_completo["Año"].between(selected_year_range[0], selected_year_range[1]))
         ]
 
+        # Reemplazar valores nulos con una cadena vacía
+        filtered_df = filtered_df.fillna("Desconocido")
+        
         # Mostrar la tabla filtrada
         st.title("Tabla Filtrada")
-        st.write(filtered_df)
+
+        # Crear un enlace interactivo para cada URL
+        for index, row in filtered_df.iterrows():
+            st.write(f"**Título:** {row['Título']}, **Autor:** {row['Autor']}, **Año:** {row['Año']}, **Objetos:** {row['Objetos']}, **Personajes:** {row['Personajes']}, **Fauna:** {row['Fauna']}, **Flora:** {row['Flora']}, **Lugar:** {row['Lugar']} ...")  # Mostrar otras columnas
+            # Enlace para mostrar/ocultar la URL
+            url_expander = st.expander(f"Ver más {index + 1}", expanded=False)
+            with url_expander:
+                st.markdown(f"**URL:** [{row['Imagenes']}]({row['Imagenes']})")
 
 
 elif page == "Objectos":
     st.markdown("Analytical study of Objects")
+
+    # Definir una clave única para el filtro de personajes
+    key_objetos_filter = "objetos_filter"
+
+    # Filtro para seleccionar personajes
+    selected_objetos = st.sidebar.multiselect(
+        f"Seleccionar Objetos", top_10_objetos, default=top_10_objetos, key=key_objetos_filter
+    )
         
-    # Filtrar el DataFrame solo para los objetos más comunes
+    # Paleta "Vivid" de Plotly
+    vivid_palette = px.colors.qualitative.Vivid
+
+
+    # Diccionario de colores de la paleta "Vivid" para cada objeto
+    color_dict_objetos = dict(zip(top_10_objetos, vivid_palette[:len(top_10_objetos)]))
+
+
+        # Filtrar el DataFrame solo para los elementos más comunes
     df_objetos_comunes = objetos_streamlit[objetos_streamlit['Objetos'].isin(top_10_objetos)]
 
     # Calcular la frecuencia y agregarla al DataFrame
@@ -170,65 +160,142 @@ elif page == "Objectos":
     # Calcular la frecuencia total
     frecuencia_total_objetos = df_objetos_comunes['Frecuencia'].sum()
 
-    # Crear el gráfico de pastel para objetos
-    pie_chart_objetos = (
-        Pie(init_opts=opts.InitOpts(theme=ThemeType.LIGHT))
-        .add(
-            series_name="Objetos",
-            data_pair=[(objeto, objeto_total['Frecuencia'].sum() / frecuencia_total_objetos * 100) 
-                        for objeto, objeto_total in df_objetos_comunes.groupby('Objetos')],
-            radius=["30%", "75%"],
-            center=["50%", "50%"],
-            label_opts=opts.LabelOpts(is_show=False, position="center"),
-        )
-        .set_global_opts(
-            title_opts=opts.TitleOpts(title="Distribución de Frecuencia de Objetos"),
-            legend_opts=opts.LegendOpts(pos_left="80%", orient="vertical"),
-        )
+    # Crear el gráfico de pastel con Plotly Express
+    pie_chart_objetos = px.pie(
+        df_objetos_comunes,
+        names='Objetos',
+        values='Frecuencia',
+        title='Distribución de Frecuencia de Objetos',
+        hover_data=['Objetos', 'Frecuencia'],
+        labels={'Frecuencia': 'Porcentaje'},
+        color_discrete_map=color_dict_objetos,
+        hole=0.4
     )
 
-    # Guardar el gráfico PyEcharts para objetos como un archivo HTML
-    pie_chart_objetos.render("pie_chart_objetos.html")
+    # Establecer dimensiones del gráfico
+    pie_chart_objetos.update_layout(width=1000, height=600)
 
-    # Mostrar el gráfico en Streamlit
-    st.components.v1.html(open("pie_chart_objetos.html", "r").read(), height=600)
+    # Mostrar el gráfico de pastel en Streamlit
+    st.plotly_chart(pie_chart_objetos)
         
-    # Agrupar por año y calcular la suma acumulativa de las apariciones de cada objeto
-    df_objetos_comunes_grouped = df_objetos_comunes.groupby(['Año', 'Objetos']).agg({'Frecuencia': 'sum'}).reset_index()
-    df_objetos_comunes_grouped['Frecuencia_cumsum'] = df_objetos_comunes_grouped.groupby('Objetos')['Frecuencia'].cumsum()
+    # Convertir la columna 'Año' a tipo datetime
+    objetos_streamlit['Año'] = pd.to_datetime(objetos_streamlit['Año'], format='%Y', errors='coerce', infer_datetime_format=True, yearfirst=True)
 
-    
-    
-    # Crear el gráfico de líneas
-    line_chart_objetos = (
-        Line()
-        .add_xaxis(xaxis_data=df_objetos_comunes_grouped['Año'].tolist())
-        .set_global_opts(
-            title_opts=opts.TitleOpts(title="Evolución de Aparición de Top 10 Objetos a lo largo del Tiempo"),
-            tooltip_opts=opts.TooltipOpts(trigger="axis"),
-            legend_opts=opts.LegendOpts(pos_right="10%", pos_top="5%"),
-            datazoom_opts=[opts.DataZoomOpts(), opts.DataZoomOpts(type_="inside")],
-        )
-        .set_series_opts(
-            label_opts=opts.LabelOpts(is_show=False),
-            linestyle_opts=opts.LineStyleOpts(width=2),
-        )
+    # Crear una nueva columna 'Década'
+    objetos_streamlit['Década'] = objetos_streamlit['Año'].dt.year // 10 * 10
+
+    # Filtro deslizable para seleccionar rango de décadas
+    decadas_range_objetos = st.sidebar.slider(
+        "Seleccionar Rango de Décadas",
+        min_value=objetos_streamlit['Década'].min(),
+        max_value=objetos_streamlit['Década'].max(),
+        value=(objetos_streamlit['Década'].min(), objetos_streamlit['Década'].max())
     )
 
-    # Agregar líneas al gráfico con la suma acumulativa
-    for objeto in top_10_objetos:
-        data = df_objetos_comunes_grouped[df_objetos_comunes_grouped['Objetos'] == objeto]
-        line_chart_objetos.add_yaxis(
-            series_name=objeto,
-            y_axis=data['Frecuencia_cumsum'].tolist(),
-            is_smooth=True
-        )
+    # Filtrar el DataFrame para los objetos seleccionados y rango de décadas
+    df_filtrado_decadas_objetos = objetos_streamlit[
+        (objetos_streamlit['Objetos'].isin(selected_objetos)) &
+        (objetos_streamlit['Década'].between(*decadas_range_objetos))
+    ]
 
-    # Renderizar el gráfico
-    chart_html_objetos = line_chart_objetos.render("line_chart_objetos.html")
+    # Calcular la frecuencia de objetos por década
+    df_frecuencia_decadas_objetos = df_filtrado_decadas_objetos.groupby(['Década', 'Objetos']).size().reset_index(name='Frecuencia')
+
+    # Crear el gráfico de líneas con Plotly Express
+    line_chart_objetos = px.line(df_frecuencia_decadas_objetos, x='Década', y='Frecuencia', color='Objetos',
+                                labels={'Frecuencia': 'Número de Apariciones'}, title='Desarrollo de Objetos a lo largo del Tiempo')
+    
+    # Ocultar la leyenda
+    line_chart_objetos.update_layout(width=1000, height=600)
 
     # Mostrar el gráfico en Streamlit
-    st.components.v1.html(chart_html_objetos, height=600)
+    st.plotly_chart(line_chart_objetos)
+
+    # Obtener valores únicos de la columna 'Escuela'
+    unique_escuelas = objetos_streamlit['Escuela'].unique()
+
+    # Filtro para seleccionar escuelas
+    selected_escuelas = st.sidebar.multiselect(
+        "Seleccionar Escuelas", unique_escuelas, default=unique_escuelas, key="escuelas_filter"
+    )
+
+    # Obtener los 10 elementos más comunes de la columna 'Objetos'
+    top10_objetos = objetos_streamlit['Objetos'].value_counts().nlargest(10).index
+
+    # Filtrar el DataFrame para incluir solo los 10 elementos más comunes
+    objetos_top10 = objetos_streamlit[objetos_streamlit['Objetos'].isin(top10_objetos)]
+
+    # Calcular la frecuencia de los top 10 elementos de la columna 'Objetos' por 'Escuela'
+    top10_objetos_by_escuela = objetos_top10.groupby('Escuela')['Objetos'].value_counts().groupby(level=0, group_keys=False).nlargest(10).reset_index(name='Frecuencia')
+
+    # Crear el gráfico de barras con Plotly Express
+    bar_chart_objetos_by_escuela = px.bar(top10_objetos_by_escuela, x='Escuela', y='Frecuencia', color='Objetos',
+                                        labels={'Frecuencia': 'Número de Apariciones'}, title='Top 10 Objetos por Escuela',
+                                        color_discrete_sequence=px.colors.qualitative.Set3,
+                                        width=1000, height=600, 
+                                        )
+
+    # Mostrar el gráfico de barras en Streamlit
+    st.plotly_chart(bar_chart_objetos_by_escuela)
+
+
+
+
+    # Calculo cuántos objetos tiene cada obra:
+    titulo_objetos_frecuencia = objetos_streamlit.groupby(['Título', 'Objetos']).size().reset_index(name='Frecuencia')
+
+    # Agrupo por el título para obtener la lista de objetos representados en cada una de las obras:
+    titulo_objetos = titulo_objetos_frecuencia.groupby('Título')['Objetos'].unique().reset_index(name='Objetos_en_obra')
+
+    # Filtrar por objetos seleccionados
+    titulo_objetos['Objetos_en_obra'] = titulo_objetos['Objetos_en_obra'].apply(lambda x: [o for o in x if o in selected_objetos])
+
+    # Creamos la matriz de correlaciones
+    correlation_matrix_objetos = pd.DataFrame(0, index=selected_objetos, columns=selected_objetos)
+
+    for objetos_en_obra in titulo_objetos['Objetos_en_obra']:
+        for i in range(len(objetos_en_obra)):
+            for j in range(i + 1, len(objetos_en_obra)):
+                objeto1 = objetos_en_obra[i]
+                objeto2 = objetos_en_obra[j]
+
+                correlation_matrix_objetos.at[objeto1, objeto2] += 1
+                correlation_matrix_objetos.at[objeto2, objeto1] += 1
+
+    # Convertimos la matriz a un formato adecuado para Plotly
+    correlation_matrix_objetos_plotly = correlation_matrix_objetos.unstack().reset_index()
+    correlation_matrix_objetos_plotly.columns = ['Objeto1', 'Objeto2', 'Frecuencia']
+
+    # Pivot the DataFrame to create a 2D matrix
+    correlation_matrix_objetos_2d = correlation_matrix_objetos_plotly.pivot(index='Objeto1', columns='Objeto2', values='Frecuencia').fillna(0)
+
+    # Convert to NumPy array
+    correlation_matrix_objetos_array = correlation_matrix_objetos_2d.values
+
+    # Creamos el heatmap interactivo con Plotly Express
+    fig_objetos = px.imshow(correlation_matrix_objetos_array,
+                            x=correlation_matrix_objetos_2d.columns, 
+                            y=correlation_matrix_objetos_2d.index,
+                            labels=dict(color="Frecuencia"),
+                            title='Mapa de Correlaciones entre los Objetos Seleccionados',
+                            color_continuous_scale="Viridis",
+                            width=800, height=600)
+
+    # Añadimos el texto de frecuencia a la matriz de correlaciones
+    annotations_objetos = []
+    for i, objeto1 in enumerate(correlation_matrix_objetos_2d.index):
+        for j, objeto2 in enumerate(correlation_matrix_objetos_2d.columns):
+            value = correlation_matrix_objetos_2d.at[objeto1, objeto2]
+            annotations_objetos.append(dict(text=str(value), x=objeto2, y=objeto1,
+                                            xref='x1', yref='y1', showarrow=False, font=dict(color='white')))
+
+    fig_objetos.update_layout(annotations=annotations_objetos, width=1000, height=600 )
+
+    st.plotly_chart(fig_objetos)
+
+    
+
+
 
 
 # Crear la subpágina "Personajes"
@@ -244,43 +311,98 @@ elif page == "Personajes":
         f"Seleccionar Personajes", top_10_personajes, default=top_10_personajes, key=key_personajes_filter
     )
 
-    # Filtrar el DataFrame para los personajes seleccionados
-    df_personajes_comunes = personajes_streamlit[personajes_streamlit['Personajes'].isin(selected_personajes)]
+    # Crear un diccionario con colores RGB aleatorios para los top 10 elementos de flora
+    color_dict_personajes = {personajes: f'rgb({random.randint(0, 255)}, {random.randint(0, 255)}, {random.randint(0, 255)})' for personajes in top_10_personajes}
+
+        # Filtrar el DataFrame solo para los elementos más comunes
+    df_personajes_comunes = personajes_streamlit[personajes_streamlit['Personajes'].isin(top_10_personajes)]
 
     # Calcular la frecuencia y agregarla al DataFrame
     df_personajes_comunes['Frecuencia'] = df_personajes_comunes.groupby('Personajes')['Personajes'].transform('count')
 
     # Calcular la frecuencia total
-    frecuencia_total = df_personajes_comunes['Frecuencia'].sum()
+    frecuencia_total_personajes = df_personajes_comunes['Frecuencia'].sum()
 
-    # Crear el gráfico de pastel
-    pie_chart = (
-        Pie(init_opts=opts.InitOpts(theme=ThemeType.WONDERLAND))
-        .add(
-            series_name="Personajes",
-            data_pair=[(personaje, personaje_total['Frecuencia'].sum() / frecuencia_total * 100) 
-                    for personaje, personaje_total in df_personajes_comunes.groupby('Personajes')],
-            radius=["30%", "75%"],
-            center=["50%", "50%"],
-            label_opts=opts.LabelOpts(is_show=False, position="center"),
-        )
-        .set_global_opts(
-            title_opts=opts.TitleOpts(title="Distribución de Frecuencia de Personajes"),
-            
-            legend_opts=opts.LegendOpts(pos_left="80%", orient="vertical"),
-        )
+    # Crear el gráfico de pastel con Plotly Express
+    pie_chart_personajes = px.pie(
+        df_personajes_comunes,
+        names='Personajes',
+        values='Frecuencia',
+        title='Distribución de Frecuencia de Personajes',
+        hover_data=['Personajes', 'Frecuencia'],
+        labels={'Frecuencia': 'Porcentaje'},
+        color_discrete_map=color_dict_personajes,
+        hole=0.4
     )
 
-            
+    # Establecer dimensiones del gráfico
+    pie_chart_personajes.update_layout(width=1000, height=600)
+
+    # Mostrar el gráfico de pastel en Streamlit
+    st.plotly_chart(pie_chart_personajes)
+    
+    # Convertir la columna 'Año' a tipo datetime
+    personajes_streamlit['Año'] = pd.to_datetime(personajes_streamlit['Año'], format='%Y', errors='coerce', infer_datetime_format=True, yearfirst=True)
+
+    # Crear una nueva columna 'Década'
+    personajes_streamlit['Década'] = personajes_streamlit['Año'].dt.year // 10 * 10
+
+    # Filtro deslizable para seleccionar rango de décadas
+    decadas_range = st.sidebar.slider(
+        "Seleccionar Rango de Décadas",
+        min_value=personajes_streamlit['Década'].min(),
+        max_value=personajes_streamlit['Década'].max(),
+        value=(personajes_streamlit['Década'].min(), personajes_streamlit['Década'].max())
+    )
 
 
+    # Filtrar el DataFrame para los personajes seleccionados y rango de décadas
+    df_filtrado_decadas = personajes_streamlit[
+        (personajes_streamlit['Personajes'].isin(selected_personajes)) &
+        (personajes_streamlit['Década'].between(*decadas_range))
+    ]
 
-    # Guardar el gráfico PyEcharts como un archivo HTML
-    pie_chart.render("pie_chart.html")
+    # Calcular la frecuencia de personajes por década
+    df_frecuencia_decadas = df_filtrado_decadas.groupby(['Década', 'Personajes']).size().reset_index(name='Frecuencia')
 
+    # Crear el gráfico de líneas con Plotly Express
+    line_chart = px.line(df_frecuencia_decadas, x='Década', y='Frecuencia', color='Personajes',
+                        labels={'Frecuencia': 'Número de Apariciones'}, title='Desarrollo de Personajes a lo largo del Tiempo')
+
+    # Ocultar la leyenda
+    line_chart.update_layout(width=1000, height=600)
 
     # Mostrar el gráfico en Streamlit
-    st.components.v1.html(open("pie_chart.html", "r").read(), height=600)
+    st.plotly_chart(line_chart)
+
+    # Obtener valores únicos de la columna 'Escuela'
+    unique_escuelas_personajes = personajes_streamlit['Escuela'].unique()
+
+    # Filtro para seleccionar escuelas
+    selected_escuelas_personajes = st.sidebar.multiselect(
+        "Seleccionar Escuelas", unique_escuelas_personajes, default=unique_escuelas_personajes, key="escuelas_filter_personajes"
+    )
+
+    # Obtener los 10 elementos más comunes de la columna 'Personajes'
+    top10_personajes = personajes_streamlit['Personajes'].value_counts().nlargest(10).index
+
+    # Filtrar el DataFrame para incluir solo los 10 elementos más comunes
+    personajes_top10 = personajes_streamlit[personajes_streamlit['Personajes'].isin(top10_personajes)]
+
+    # Calcular la frecuencia de los top 10 elementos de la columna 'Personajes' por 'Escuela'
+    top10_personajes_by_escuela = personajes_top10.groupby('Escuela')['Personajes'].value_counts().groupby(level=0, group_keys=False).nlargest(10).reset_index(name='Frecuencia')
+
+    # Crear el gráfico de barras con Plotly Express
+    bar_chart_personajes_by_escuela = px.bar(top10_personajes_by_escuela, x='Escuela', y='Frecuencia', color='Personajes',
+                                        labels={'Frecuencia': 'Número de Apariciones'}, title='Top 10 Personajes por Escuela',
+                                        color_discrete_sequence=px.colors.qualitative.Set3,
+                                        width=1000, height=600,
+                                        )
+
+    # Mostrar el gráfico de barras en Streamlit
+    st.plotly_chart(bar_chart_personajes_by_escuela)
+
+
 
 
     # Calculo cuantos personajes tiene cada obra:
@@ -318,7 +440,7 @@ elif page == "Personajes":
     fig = px.imshow(correlation_matrix_array,
                     x=correlation_matrix_2d.columns, 
                     y=correlation_matrix_2d.index,
-                    labels=dict(x="Personaje 1", y="Personaje 2", color="Frecuencia"),
+                    labels=dict(color="Frecuencia"),
                     title='Mapa de Correlaciones entre los Personajes Seleccionados',
                     color_continuous_scale="Viridis",
                     width=800, height=600)
@@ -331,91 +453,27 @@ elif page == "Personajes":
             annotations.append(dict(text=str(value), x=personaje2, y=personaje1,
                                     xref='x1', yref='y1', showarrow=False, font=dict(color='white')))
 
-    fig.update_layout(annotations=annotations)
+    fig.update_layout(annotations=annotations, width=1000, height=600)
 
     st.plotly_chart(fig)
-
-    
-    
-        # Convertir la columna 'Año' a tipo datetime
-    personajes_streamlit['Año'] = pd.to_datetime(personajes_streamlit['Año'], format='%Y', errors='coerce', infer_datetime_format=True, yearfirst=True)
-
-    # Crear una nueva columna 'Década'
-    personajes_streamlit['Década'] = personajes_streamlit['Año'].dt.year // 10 * 10
-
-    # Filtro deslizable para seleccionar rango de décadas
-    decadas_range = st.sidebar.slider(
-        "Seleccionar Rango de Décadas",
-        min_value=personajes_streamlit['Década'].min(),
-        max_value=personajes_streamlit['Década'].max(),
-        value=(personajes_streamlit['Década'].min(), personajes_streamlit['Década'].max())
-    )
-
-
-    # Filtrar el DataFrame para los personajes seleccionados y rango de décadas
-    df_filtrado_decadas = personajes_streamlit[
-        (personajes_streamlit['Personajes'].isin(selected_personajes)) &
-        (personajes_streamlit['Década'].between(*decadas_range))
-    ]
-
-    # Calcular la frecuencia de personajes por década
-    df_frecuencia_decadas = df_filtrado_decadas.groupby(['Década', 'Personajes']).size().reset_index(name='Frecuencia')
-
-    # Crear el gráfico de líneas con Plotly Express
-    line_chart = px.line(df_frecuencia_decadas, x='Década', y='Frecuencia', color='Personajes',
-                        labels={'Frecuencia': 'Número de Apariciones'}, title='Desarrollo de Personajes a lo largo del Tiempo')
-
-    # Mostrar el gráfico en Streamlit
-    st.plotly_chart(line_chart)
-
-
-
-
-
 
 
 
 elif page == "Fauna":
     st.markdown("Analytical study of Fauna")
         
-    # Filtrar el DataFrame solo para los personajes más comunes
-    df_fauna_comunes = fauna_streamlit[fauna_streamlit['Fauna'].isin(top_10_fauna)]
+    # Definir una clave única para el filtro de fauna
+    key_fauna_filter = "fauna_filter"
 
-    # Calcular la frecuencia y agregarla al DataFrame
-    df_fauna_comunes['Frecuencia'] = df_fauna_comunes.groupby('Fauna')['Fauna'].transform('count')
-
-    # Calcular la frecuencia total
-    frecuencia_total_fauna = df_fauna_comunes['Frecuencia'].sum()
-
-    # Crear el gráfico de pastel para objetos
-    pie_chart_fauna = (
-        Pie(init_opts=opts.InitOpts(theme=ThemeType.LIGHT))
-        .add(
-            series_name="Fauna",
-            data_pair=[(fauna, fauna_total['Frecuencia'].sum() / frecuencia_total_fauna * 100) 
-                    for fauna, fauna_total in df_fauna_comunes.groupby('Fauna')],
-            radius=["30%", "75%"],
-            center=["50%", "50%"],
-            label_opts=opts.LabelOpts(is_show=False, position="center"),
-        )
-        .set_global_opts(
-            title_opts=opts.TitleOpts(title="Distribución de Frecuencia de Fauna"),
-            legend_opts=opts.LegendOpts(pos_left="80%", orient="vertical"),
-        )
+    # Filtro para seleccionar personajes
+    selected_fauna = st.sidebar.multiselect(
+        f"Seleccionar Fauna", top_10_fauna, default=top_10_fauna, key=key_fauna_filter
     )
 
-    # Guardar el gráfico PyEcharts para objetos como un archivo HTML
-    pie_chart_fauna.render("pie_chart_fauna.html")
+    # Crear un diccionario con colores RGB aleatorios para los top 10 elementos de flora
+    color_dict_flora = {flora: f'rgb({random.randint(0, 255)}, {random.randint(0, 255)}, {random.randint(0, 255)})' for flora in top_10_flora}
 
-    # Mostrar el gráfico en Streamlit
-    st.components.v1.html(open("pie_chart_fauna.html", "r").read(), height=600)
-        
-
-
-elif page == "Flora":
-    st.markdown("Analytical study of Flora")
-        
-    # Filtrar el DataFrame solo para los personajes más comunes
+        # Filtrar el DataFrame solo para los elementos más comunes
     df_flora_comunes = flora_streamlit[flora_streamlit['Flora'].isin(top_10_flora)]
 
     # Calcular la frecuencia y agregarla al DataFrame
@@ -424,29 +482,313 @@ elif page == "Flora":
     # Calcular la frecuencia total
     frecuencia_total_flora = df_flora_comunes['Frecuencia'].sum()
 
-    # Crear el gráfico de pastel para objetos
-    pie_chart_flora = (
-        Pie(init_opts=opts.InitOpts(theme=ThemeType.LIGHT))
-        .add(
-            series_name="Flora",
-            data_pair=[(flora, flora_total['Frecuencia'].sum() / frecuencia_total_flora * 100) 
-                    for flora, flora_total in df_flora_comunes.groupby('Flora')],
-            radius=["30%", "75%"],
-            center=["50%", "50%"],
-            label_opts=opts.LabelOpts(is_show=False, position="center"),
-        )
-        .set_global_opts(
-            title_opts=opts.TitleOpts(title="Distribución de Frecuencia de Flora"),
-            legend_opts=opts.LegendOpts(pos_left="80%", orient="vertical"),
-        )
+    # Crear el gráfico de pastel con Plotly Express
+    pie_chart_flora = px.pie(
+        df_flora_comunes,
+        names='Flora',
+        values='Frecuencia',
+        title='Distribución de Frecuencia de Flora',
+        hover_data=['Flora', 'Frecuencia'],
+        labels={'Frecuencia': 'Porcentaje'},
+        color_discrete_map=color_dict_flora,
+        hole=0.4
     )
 
-    # Guardar el gráfico PyEcharts para objetos como un archivo HTML
-    pie_chart_flora.render("pie_chart_flora.html")
+    # Establecer dimensiones del gráfico
+    pie_chart_flora.update_layout(width=1000, height=600)
+
+    # Mostrar el gráfico de pastel en Streamlit
+    st.plotly_chart(pie_chart_flora)
+        
+    # Convertir la columna 'Año' a tipo datetime
+    fauna_streamlit['Año'] = pd.to_datetime(fauna_streamlit['Año'], format='%Y', errors='coerce', infer_datetime_format=True, yearfirst=True)
+
+    # Crear una nueva columna 'Década'
+    fauna_streamlit['Década'] = fauna_streamlit['Año'].dt.year // 10 * 10
+
+    # Filtro deslizable para seleccionar rango de décadas
+    decadas_range_fauna = st.sidebar.slider(
+        "Seleccionar Rango de Décadas",
+        min_value=fauna_streamlit['Década'].min(),
+        max_value=fauna_streamlit['Década'].max(),
+        value=(fauna_streamlit['Década'].min(), fauna_streamlit['Década'].max())
+    )
+
+
+
+    # Filtrar el DataFrame para la fauna seleccionada y rango de décadas
+    df_filtrado_decadas_fauna = fauna_streamlit[
+        (fauna_streamlit['Fauna'].isin(selected_fauna)) &
+        (fauna_streamlit['Década'].between(*decadas_range_fauna))
+    ]
+
+    # Calcular la frecuencia de fauna por década
+    df_frecuencia_decadas_fauna = df_filtrado_decadas_fauna.groupby(['Década', 'Fauna']).size().reset_index(name='Frecuencia')
+
+    # Crear el gráfico de líneas con Plotly Express
+    line_chart_fauna = px.line(df_frecuencia_decadas_fauna, x='Década', y='Frecuencia', color='Fauna',
+                                labels={'Frecuencia': 'Número de Apariciones'}, title='Desarrollo de Fauna a lo largo del Tiempo')
+
+    # Ocultar la leyenda
+    line_chart_fauna.update_layout(width=1000, height=600)
 
     # Mostrar el gráfico en Streamlit
-    st.components.v1.html(open("pie_chart_flora.html", "r").read(), height=600)
+    st.plotly_chart(line_chart_fauna)
+
+   
+   
+   # Obtener valores únicos de la columna 'Escuela'
+    unique_escuelas = flora_streamlit['Escuela'].unique()
+
+    # Filtro para seleccionar escuelas
+    selected_escuelas = st.sidebar.multiselect(
+        "Seleccionar Escuelas", unique_escuelas, default=unique_escuelas, key="escuelas_filter"
+    )
+    
+    
+
+    # Obtener los 10 elementos más comunes de la columna 'Fauna'
+    top10_fauna = fauna_streamlit['Fauna'].value_counts().nlargest(10).index
+
+    # Filtrar el DataFrame para incluir solo los 10 elementos más comunes
+    fauna_top10 = fauna_streamlit[fauna_streamlit['Fauna'].isin(top10_fauna)]
+
+    # Calcular la frecuencia de los top 10 elementos de la columna 'Fauna' por 'Escuela'
+    top10_fauna_by_escuela = fauna_top10.groupby('Escuela')['Fauna'].value_counts().groupby(level=0, group_keys=False).nlargest(10).reset_index(name='Frecuencia')
+
+    # Crear el gráfico de barras con Plotly Express
+    bar_chart_fauna_by_escuela = px.bar(top10_fauna_by_escuela, x='Escuela', y='Frecuencia', color='Fauna',
+                                        labels={'Frecuencia': 'Número de Apariciones'}, title='Top 10 Fauna por Escuela',
+                                        color_discrete_sequence=px.colors.qualitative.Set3,
+                                        width=1000, height=600, 
+                                        )
+
+    # Mostrar el gráfico de barras en Streamlit
+    st.plotly_chart(bar_chart_fauna_by_escuela)
+   
+
+
+    # Calculo cuánta fauna aparece en cada obra:
+    titulo_fauna_frecuencia = fauna_streamlit.groupby(['Título', 'Fauna']).size().reset_index(name='Frecuencia')
+
+    # Agrupo por el título para obtener la lista de fauna representada en cada una de las obras:
+    titulo_fauna = titulo_fauna_frecuencia.groupby('Título')['Fauna'].unique().reset_index(name='Fauna_en_obra')
+
+    # Filtrar por fauna seleccionada
+    titulo_fauna['Fauna_en_obra'] = titulo_fauna['Fauna_en_obra'].apply(lambda x: [f for f in x if f in selected_fauna])
+
+    # Creamos la matriz de correlaciones
+    correlation_matrix_fauna = pd.DataFrame(0, index=selected_fauna, columns=selected_fauna)
+
+    for fauna_en_obra in titulo_fauna['Fauna_en_obra']:
+        for i in range(len(fauna_en_obra)):
+            for j in range(i + 1, len(fauna_en_obra)):
+                fauna1 = fauna_en_obra[i]
+                fauna2 = fauna_en_obra[j]
+
+                correlation_matrix_fauna.at[fauna1, fauna2] += 1
+                correlation_matrix_fauna.at[fauna2, fauna1] += 1
+
+    # Convertimos la matriz a un formato adecuado para Plotly
+    correlation_matrix_plotly_fauna = correlation_matrix_fauna.unstack().reset_index()
+    correlation_matrix_plotly_fauna.columns = ['Fauna1', 'Fauna2', 'Frecuencia']
+
+    # Pivot the DataFrame to create a 2D matrix
+    correlation_matrix_2d_fauna = correlation_matrix_plotly_fauna.pivot(index='Fauna1', columns='Fauna2', values='Frecuencia').fillna(0)
+
+    # Convert to NumPy array
+    correlation_matrix_array_fauna = correlation_matrix_2d_fauna.values
+
+    # Creamos el heatmap interactivo con Plotly Express
+    fig_fauna = px.imshow(correlation_matrix_array_fauna,
+                        x=correlation_matrix_2d_fauna.columns, 
+                        y=correlation_matrix_2d_fauna.index,
+                        labels=dict(color="Frecuencia"),
+                        title='Mapa de Correlaciones entre la Fauna Seleccionada',
+                        color_continuous_scale="Viridis",
+                        width=800, height=600)
+
+    # Añadimos el texto de frecuencia a la matriz de correlaciones
+    annotations_fauna = []
+    for i, fauna1 in enumerate(correlation_matrix_2d_fauna.index):
+        for j, fauna2 in enumerate(correlation_matrix_2d_fauna.columns):
+            value = correlation_matrix_2d_fauna.at[fauna1, fauna2]
+            annotations_fauna.append(dict(text=str(value), x=fauna2, y=fauna1,
+                                        xref='x1', yref='y1', showarrow=False, font=dict(color='white')))
+
+    fig_fauna.update_layout(annotations=annotations_fauna, width=1000, height=600)
+
+    st.plotly_chart(fig_fauna)
+
+
+
+
+elif page == "Flora":
+    st.markdown("Analytical study of Flora")
         
+    # Definir una clave única para el filtro de fauna
+    key_flora_filter = "flora_filter"
+
+    # Filtro para seleccionar personajes
+    selected_flora = st.sidebar.multiselect(
+        f"Seleccionar Flora", top_10_flora, default=top_10_flora, key=key_flora_filter
+    )
+
+    # Crear un diccionario con colores RGB aleatorios para los top 10 elementos de flora
+    color_dict_flora = {flora: f'rgb({random.randint(0, 255)}, {random.randint(0, 255)}, {random.randint(0, 255)})' for flora in top_10_flora}
+
+    # Filtrar el DataFrame solo para los elementos más comunes
+    df_flora_comunes = flora_streamlit[flora_streamlit['Flora'].isin(top_10_flora)]
+
+    # Calcular la frecuencia y agregarla al DataFrame
+    df_flora_comunes['Frecuencia'] = df_flora_comunes.groupby('Flora')['Flora'].transform('count')
+
+    # Calcular la frecuencia total
+    frecuencia_total_flora = df_flora_comunes['Frecuencia'].sum()
+
+    # Crear el gráfico de pastel con Plotly Express
+    pie_chart_flora = px.pie(
+        df_flora_comunes,
+        names='Flora',
+        values='Frecuencia',
+        title='Distribución de Frecuencia de Flora',
+        hover_data=['Flora', 'Frecuencia'],
+        labels={'Frecuencia': 'Porcentaje'},
+        color_discrete_map=color_dict_flora,
+        hole=0.4
+    )
+
+    # Establecer dimensiones del gráfico
+    pie_chart_flora.update_layout(width=1000, height=600)
+
+    # Mostrar el gráfico de pastel en Streamlit
+    st.plotly_chart(pie_chart_flora)
+        
+# Convertir la columna 'Año' a tipo datetime
+    flora_streamlit['Año'] = pd.to_datetime(flora_streamlit['Año'], format='%Y', errors='coerce', infer_datetime_format=True, yearfirst=True)
+
+    # Crear una nueva columna 'Década'
+    flora_streamlit['Década'] = flora_streamlit['Año'].dt.year // 10 * 10
+
+    # Filtro deslizable para seleccionar rango de décadas
+    decadas_range_flora = st.sidebar.slider(
+        "Seleccionar Rango de Décadas",
+        min_value=flora_streamlit['Década'].min(),
+        max_value=flora_streamlit['Década'].max(),
+        value=(flora_streamlit['Década'].min(), flora_streamlit['Década'].max())
+    )
+
+    # Filtrar el DataFrame para la flora seleccionada y rango de décadas
+    df_filtrado_decadas_flora = flora_streamlit[
+        (flora_streamlit['Flora'].isin(selected_flora)) &
+        (flora_streamlit['Década'].between(*decadas_range_flora))
+    ]
+
+    # Calcular la frecuencia de flora por década
+    df_frecuencia_decadas_flora = df_filtrado_decadas_flora.groupby(['Década', 'Flora']).size().reset_index(name='Frecuencia')
+
+    # Crear el gráfico de líneas con Plotly Express
+    line_chart_flora = px.line(df_frecuencia_decadas_flora, x='Década', y='Frecuencia', color='Flora',
+                                labels={'Frecuencia': 'Número de Apariciones'}, title='Desarrollo de Flora a lo largo del Tiempo',
+                                color_discrete_map=color_dict_flora
+    )
+
+    # Ocultar la leyenda
+    line_chart_flora.update_layout(width=1000, height=600)
+
+    # Mostrar el gráfico en Streamlit
+    st.plotly_chart(line_chart_flora)
+
+    
+    
+    # Obtener valores únicos de la columna 'Escuela'
+    unique_escuelas = flora_streamlit['Escuela'].unique()
+
+    # Filtro para seleccionar escuelas
+    selected_escuelas = st.sidebar.multiselect(
+        "Seleccionar Escuelas", unique_escuelas, default=unique_escuelas, key="escuelas_filter"
+    )
+    
+    
+    
+    # Obtener los 10 elementos más comunes de la columna 'Flora'
+    top10_flora = flora_streamlit['Flora'].value_counts().nlargest(10).index
+
+    # Filtrar el DataFrame para incluir solo los 10 elementos más comunes
+    flora_top10 = flora_streamlit[flora_streamlit['Flora'].isin(top10_flora)]
+
+    # Calcular la frecuencia de los top 10 elementos de la columna 'Flora' por 'Escuela'
+    top10_flora_by_escuela = flora_top10.groupby('Escuela')['Flora'].value_counts().groupby(level=0, group_keys=False).nlargest(10).reset_index(name='Frecuencia')
+
+    # Crear el gráfico de barras con Plotly Express
+    bar_chart_flora_by_escuela = px.bar(top10_flora_by_escuela, x='Escuela', y='Frecuencia', color='Flora',
+                                        labels={'Frecuencia': 'Número de Apariciones'}, title='Top 10 Flora por Escuela',
+                                        color_discrete_sequence=px.colors.qualitative.Set3,
+                                        width=1000, height=600, 
+                                        )
+
+    # Mostrar el gráfico de barras en Streamlit
+    st.plotly_chart(bar_chart_flora_by_escuela)
+
+
+
+
+    # Calculo cuánta flora aparece en cada obra:
+    titulo_flora_frecuencia = flora_streamlit.groupby(['Título', 'Flora']).size().reset_index(name='Frecuencia')
+
+    # Agrupo por el título para obtener la lista de flora representada en cada una de las obras:
+    titulo_flora = titulo_flora_frecuencia.groupby('Título')['Flora'].unique().reset_index(name='Flora_en_obra')
+
+    # Filtrar por flora seleccionada
+    titulo_flora['Flora_en_obra'] = titulo_flora['Flora_en_obra'].apply(lambda x: [f for f in x if f in selected_flora])
+
+    # Creamos la matriz de correlaciones
+    correlation_matrix_flora = pd.DataFrame(0, index=selected_flora, columns=selected_flora)
+
+    for flora_en_obra in titulo_flora['Flora_en_obra']:
+        for i in range(len(flora_en_obra)):
+            for j in range(i + 1, len(flora_en_obra)):
+                flora1 = flora_en_obra[i]
+                flora2 = flora_en_obra[j]
+
+                correlation_matrix_flora.at[flora1, flora2] += 1
+                correlation_matrix_flora.at[flora2, flora1] += 1
+
+    # Convertimos la matriz a un formato adecuado para Plotly
+    correlation_matrix_plotly_flora = correlation_matrix_flora.unstack().reset_index()
+    correlation_matrix_plotly_flora.columns = ['Flora1', 'Flora2', 'Frecuencia']
+
+    # Pivot the DataFrame to create a 2D matrix
+    correlation_matrix_2d_flora = correlation_matrix_plotly_flora.pivot(index='Flora1', columns='Flora2', values='Frecuencia').fillna(0)
+
+    # Convert to NumPy array
+    correlation_matrix_array_flora = correlation_matrix_2d_flora.values
+
+    # Creamos el heatmap interactivo con Plotly Express
+    fig_flora = px.imshow(correlation_matrix_array_flora,
+                        x=correlation_matrix_2d_flora.columns, 
+                        y=correlation_matrix_2d_flora.index,
+                        labels=dict(color="Frecuencia"),
+                        title='Mapa de Correlaciones entre la Flora Seleccionada',
+                        color_continuous_scale="Viridis",
+                        width=800, height=600)
+
+    # Añadimos el texto de frecuencia a la matriz de correlaciones
+    annotations_flora = []
+    for i, flora1 in enumerate(correlation_matrix_2d_flora.index):
+        for j, flora2 in enumerate(correlation_matrix_2d_flora.columns):
+            value = correlation_matrix_2d_flora.at[flora1, flora2]
+            annotations_flora.append(dict(text=str(value), x=flora2, y=flora1,
+                                        xref='x1', yref='y1', showarrow=False, font=dict(color='white')))
+
+    fig_flora.update_layout(annotations=annotations_flora, width=1000, height=600)
+
+    st.plotly_chart(fig_flora)
+
+
+
+
+
 
 elif page == "Lugar":
     st.markdown("Analytical study of Places")
@@ -483,4 +825,5 @@ elif page == "Lugar":
     # Mostrar el gráfico en Streamlit
     st.components.v1.html(open("pie_chart_lugar.html", "r").read(), height=600)
 
-    print(personajes_comunes)
+    
+    
