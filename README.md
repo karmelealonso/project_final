@@ -6,7 +6,7 @@ PERSONAJES, LUGARES, OBJETOS, FAUNA Y FLORA
 
 
 
-![](/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/imagenes/portada_readme.png)
+![](https://github.com/karmelealonso/project_final/blob/main/imagenes/portada_readme.png)
 
 # Introducción.
 ArtEye posibilita un viaje personal por el universo del Arte. Esta diseñado para explorar el mundo de la Iconografía Artística de un modo dinámico y enlazado sobre la base de la colección del Museo del Prado. ArtEye permite profundizar en un conjunto de datos completo y expresivo que abarca toda la historia del arte de Occidente: más de 20.000 obras de arte, desde la antigüedad hasta el siglo XIX y facilita el descubrimiento de las narrativas que hay detrás de cada obra, cada siglo, cada tema, cada personaje, lugar, objeto, animal, flor…
