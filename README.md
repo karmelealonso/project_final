@@ -45,7 +45,7 @@ Hay muchas representaciones por hacer, pero fundamentalmente dos:
 
 Resulta sencillo predecir cuales pueden llegar a ser las configuraciones e incluso los formatos de las obras de arte que pintara…una determinada escuela que ya no existe. Lo que muestra ArtEye es algo que tiene mucho interés: que el futuro no está escrito totalmente en el pasado, que con el tiempo patrones y temas son cambiados por otros, que existe la transformación y el cambio.
 
-# ArtEye: el ojo del halcón del arte que permite una experiencia absorbente y seductora y un viaje infinito de conocimiento por los paisajes del arte occidental.
+# ArtEye: el ojo del halcón del arte que permite un viaje infinito de conocimiento por los paisajes del arte occidental.
 
 ArtEye es el ojo de halcón del arte que permite disfrutar de una experiencia fascinante y de un viaje infinito por sus paisajes. Permite un experiencia de conocimiento absorbente e inmersiva, una experiencia fascinante en la que los datos del arte que representan sus iconografías se entrelazan con las historias de su tiempo y cada obra de arte revela una narrativa propia en sus relaciones con los temas, con otras obras, con su tiempo y con otras épocas.... enlazando internamente sus imágenes y enlazándose con otras formaciones iconográficas, que hacen posible entender el arte de un modo más hipnóticoy refinado. 
 
@@ -56,7 +56,7 @@ Más allá de los gráficos, patrones, regularidades, clústeres… ArtEye nos p
 
 # Pasos a seguir: 
 
-- # Extración, Transformación, Limpieza.
+- ## Extración, Transformación y Limpieza.
 
 ArtEye ofrece una ventana dinámica al mundo del arte occidental a través del análisis iconográfico. 
 
@@ -64,11 +64,11 @@ Esto ha sido posible, en primer lugar, gracias a un proceso ETL que, originalmen
 
 Finalmente, se importaron los datos de las obras de la colección del Museo del Prado de forma directa, para pasar al proceso de limpieza, transformación y normalización de cara a nuestro propósito final. 
 
-- # Carga de los datos en MongoDB.Construcción de la Base de Datos.
+- ## Carga de los datos en MongoDB.Construcción de la Base de Datos.
 
 Una vez estuvieran listos, se pasó a la construcción de la base de datos mediante MongoDB. Este proceso fue- # esencial para garantizar la organización y accesibilidad de los datos.
 
-- # Visualización de los datos. 
+- ## Visualización de los datos. 
 
 Por último, pudieron ser explorados con técnicas y bibliotecas  de visualización como seaborn o plotlib, para a continuación pasar a hacerlos "funcionales" ,ediante la creación de un Streamlit. 
 

@@ -79,7 +79,7 @@ def apartado1():
         """, 
         unsafe_allow_html=True)
     
-    # Mostrar imagen en la segunda columna
+    
     with col2:
         st.image(leon_lobos, caption='"Un león y tres lobos"; Vos, Paul de (Siglo XVII)')
 
@@ -87,7 +87,7 @@ def apartado1():
 
 # Función para el segundo apartado
 def apartado2():
-    # Mostrar imagen en la primera columna
+    
     
     col1, col2 = st.columns(2)
     with col1:

@@ -10,7 +10,6 @@ import numpy as np
 import random
 
 
-
 # Cargar los nuevos DataFrames
 obras_completo = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/obras_completo.csv")
 personajes_streamlit = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/personajes_streamlit.csv")
@@ -57,7 +56,11 @@ flora_list = obras_completo["Flora"].unique().tolist()
 page = st.sidebar.radio("Selecciona un elemento iconográfico", ["¿Qué podemos encontrar?", "Objetos", "Personajes", "Fauna", "Flora", "Lugar"])
 
 
+
 st.title("Análisis sobre la iconografía del Museo del Prado")
+
+
+#SUBPÁGINA 1.
 
 if page == "¿Qué podemos encontrar?":
 
@@ -106,51 +109,54 @@ if page == "¿Qué podemos encontrar?":
             (obras_completo["Año"].between(selector_año_rango[0], selector_año_rango[1]))
         ]
 
-        # Reemplazar valores nulos con una cadena vacía
+        # Reemplazar valores nulos
         obras_completo_sin_nulos = obras_completo_sin_nulos.fillna("Desconocido")
 
         # Convertir la columna "Año" a enteros para quitar la coma
         obras_completo_sin_nulos["Año"] = obras_completo_sin_nulos["Año"].astype(int)
         
-        # Mostrar la tabla filtrada
+        
         st.title("Tabla Filtrada")
     
-        # Seleccionar las columnas específicas que deseas mostrar
+        # Seleccionar las columnas específicas a mostrar
         columnas_mostrar = ["Título", "Autor", "Objetos", "Personajes", "Escuela", "Fauna", "Lugar", "Año"]
         st.dataframe(obras_completo_sin_nulos[columnas_mostrar])
 
+
+#SUBPÁGINA 2.
 
 elif page == "Objectos":
     st.title("Objetos")
     
 
-    # Definir una clave única para el sin_nulos de personajes
+    # Definir una clave única
     key_objetos_filter = "objetos_filter"
 
-    # Filtro para seleccionar personajes
+    # Filtro para seleccionar objetos
     selector_objetos = st.sidebar.multiselect(
         f"Seleccionar Objetos", top_10_objetos, default=top_10_objetos, key=key_objetos_filter
     )
 
-    # Ordenar las edades de manera lógica
+    # Ordenar objetos
     orden_objetos = ['Enseres domésticos', 'Florero', 'Cestería', 'Objetos artísticos', 'Pintura', 'Cuadro dentro de cuadro', 'Jardín', 'Elementos de arquitectura', 'Objeto de adorno o servicio de mesa', 'Objeto uso individual']
 
-    # Elegimos los colores:
+    # Elegir colores
     color = ['#117A65  ', '#f26722', '#cd2027', '#139b48', '#04B4A2', '#f1eb1f', '#4c2600', '#0a3452', '#259E04',
              '#4554a5']
    
 
 
+
     # Filtrar el DataFrame solo para los elementos más comunes
     df_objetos_comunes = objetos_streamlit[objetos_streamlit['Objetos'].isin(top_10_objetos)]
 
-    # Calcular la frecuencia y agregarla al DataFrame
+    # Calcular la frecuencia
     df_objetos_comunes['Frecuencia'] = df_objetos_comunes.groupby('Objetos')['Objetos'].transform('count')
 
     # Calcular la frecuencia total
     frecuencia_total_objetos = df_objetos_comunes['Frecuencia'].sum()
 
-    # Crear el gráfico de pastel con Plotly Express
+    # Crear el gráfico pie:
     pie_chart_objetos = px.pie(
         df_objetos_comunes,
         names='Objetos',
@@ -166,10 +172,11 @@ elif page == "Objectos":
     # Establecer dimensiones del gráfico
     pie_chart_objetos.update_layout(width=1000, height=600)
 
-    # Mostrar el gráfico de pastel en Streamlit
+    # Mostrar el gráfico
     st.plotly_chart(pie_chart_objetos)
 
-    
+
+
             
     # Convertir la columna 'Año' a tipo datetime
     objetos_streamlit['Año'] = pd.to_datetime(objetos_streamlit['Año'], format='%Y', errors='coerce', infer_datetime_format=True, yearfirst=True)
@@ -194,7 +201,7 @@ elif page == "Objectos":
     # Calcular la frecuencia de objetos por década
     df_frecuencia_decadas_objetos = df_filtrado_decadas_objetos.groupby(['Década', 'Objetos']).size().reset_index(name='Frecuencia')
 
-    # Crear el gráfico de líneas con Plotly Express
+    # Crear el gráfico de líneas
     line_chart_objetos = px.line(df_frecuencia_decadas_objetos, 
                                  x='Década', 
                                  y='Frecuencia', 
@@ -204,11 +211,12 @@ elif page == "Objectos":
                                  labels={'Frecuencia': 'Número de Apariciones'}, 
                                  title='Desarrollo de Objetos a lo largo del Tiempo')
     
-    # Ocultar la leyenda
+    
     line_chart_objetos.update_layout(width=1000, height=600)
 
-    # Mostrar el gráfico en Streamlit
+    
     st.plotly_chart(line_chart_objetos)
+
 
 
 
@@ -229,7 +237,7 @@ elif page == "Objectos":
     # Calcular la frecuencia de los top 10 elementos de la columna 'Objetos' por 'Escuela'
     top10_objetos_by_escuela = objetos_top10.groupby('Escuela')['Objetos'].value_counts().groupby(level=0, group_keys=False).nlargest(10).reset_index(name='Frecuencia')
 
-    # Crear el gráfico de barras con Plotly Express
+    # Crear el gráfico de barras
     bar_chart_objetos_by_escuela = px.bar(top10_objetos_by_escuela, x='Escuela', y='Frecuencia', color='Objetos',
                                         labels={'Frecuencia': 'Número de Apariciones'}, title='Top 10 Objetos por Escuela',
                                         category_orders={'Objetos': orden_objetos},
@@ -237,10 +245,11 @@ elif page == "Objectos":
                                         width=1000, height=600, 
                                         )
 
-    # Mostrar el gráfico de barras en Streamlit
+    
     st.plotly_chart(bar_chart_objetos_by_escuela)
 
     
+
 
 
     # Calculo cuántos objetos tiene cada obra:
@@ -250,10 +259,10 @@ elif page == "Objectos":
     titulo_objetos = titulo_objetos_frecuencia.groupby('Título')['Objetos'].unique().reset_index(name='Objetos_en_obra')
 
     # Filtrar por objetos seleccionados
-    titulo_objetos['Objetos_en_obra'] = titulo_objetos['Objetos_en_obra'].apply(lambda x: [o for o in x if o in selector_objetos])
+    titulo_objetos['Objetos_en_obra'] = titulo_objetos['Objetos_en_obra'].apply(lambda x: [obj for obj in x if obj in selector_objetos])
 
     # Creamos la matriz de correlaciones
-    correlation_matrix_objetos = pd.DataFrame(0, index=selector_objetos, columns=selector_objetos)
+    matriz_relacion_objetos = pd.DataFrame(0, index=selector_objetos, columns=selector_objetos)
 
     for objetos_en_obra in titulo_objetos['Objetos_en_obra']:
         for i in range(len(objetos_en_obra)):
@@ -261,25 +270,23 @@ elif page == "Objectos":
                 objeto1 = objetos_en_obra[i]
                 objeto2 = objetos_en_obra[j]
 
-                correlation_matrix_objetos.at[objeto1, objeto2] += 1
-                correlation_matrix_objetos.at[objeto2, objeto1] += 1
+                matriz_relacion_objetos.at[objeto1, objeto2] += 1
+                matriz_relacion_objetos.at[objeto2, objeto1] += 1
 
     # Convertimos la matriz a un formato adecuado para Plotly
-    correlation_matrix_objetos_plotly = correlation_matrix_objetos.unstack().reset_index()
-    correlation_matrix_objetos_plotly.columns = ['Objeto1', 'Objeto2', 'Frecuencia']
+    matriz_relacion_objetos_plotly = matriz_relacion_objetos.unstack().reset_index()
+    matriz_relacion_objetos_plotly.columns = ['Objeto1', 'Objeto2', 'Frecuencia']
 
     # Pivot the DataFrame to create a 2D matrix
-    correlation_matrix_objetos_2d = correlation_matrix_objetos_plotly.pivot(index='Objeto1', columns='Objeto2', values='Frecuencia').fillna(0)
+    matriz_relacion_objetos_2d = matriz_relacion_objetos_plotly.pivot(index='Objeto1', columns='Objeto2', values='Frecuencia').fillna(0)
 
     # Convert to NumPy array
-    correlation_matrix_objetos_array = correlation_matrix_objetos_2d.values
+    matriz_relacion_objetos_array = matriz_relacion_objetos_2d.values
     
-    
-    
-    # Creamos el heatmap interactivo con Plotly Express
-    fig_objetos = px.imshow(correlation_matrix_objetos_array,
-                            x=correlation_matrix_objetos_2d.columns, 
-                            y=correlation_matrix_objetos_2d.index,
+    # Creamos el heatmap interactivo
+    fig_objetos = px.imshow(matriz_relacion_objetos_array,
+                            x=matriz_relacion_objetos_2d.columns, 
+                            y=matriz_relacion_objetos_2d.index,
                             labels=dict(color="Frecuencia"),
                             title='Relaciones regulares entre los objetos representados en el Museo del Prado',
                             color_continuous_scale = 'viridis',
@@ -288,11 +295,11 @@ elif page == "Objectos":
                             
                             width=800, height=600)
 
-    # Añadimos el texto de frecuencia a la matriz de correlaciones
+    # Añadimos el texto de frecuencia a la matriz 
     annotations_objetos = []
-    for i, objeto1 in enumerate(correlation_matrix_objetos_2d.index):
-        for j, objeto2 in enumerate(correlation_matrix_objetos_2d.columns):
-            value = correlation_matrix_objetos_2d.at[objeto1, objeto2]
+    for i, objeto1 in enumerate(matriz_relacion_objetos_2d.index):
+        for j, objeto2 in enumerate(matriz_relacion_objetos_2d.columns):
+            value = matriz_relacion_objetos_2d.at[objeto1, objeto2]
             annotations_objetos.append(dict(text=str(value), x=objeto2, y=objeto1,
                                             xref='x1', yref='y1', showarrow=False, font=dict(color='white')))
 
@@ -303,13 +310,12 @@ elif page == "Objectos":
 
 
 
-
-# Crear la subpágina "Personajes"
+#SUBPÁGINA 3.
 elif page == "Personajes":
     st.title("Personajes")
     
 
-    # Definir una clave única para el sin_nulos de personajes
+    # Definir una clave única 
     key_personajes_filter = "personajes_filter"
 
     # Filtro para seleccionar personajes
@@ -335,7 +341,7 @@ elif page == "Personajes":
     # Calcular la frecuencia total
     frecuencia_total_personajes = df_personajes_comunes['Frecuencia'].sum()
 
-    # Crear el gráfico de pastel con Plotly Express
+    # Crear el gráfico de pastel
     pie_chart_personajes = px.pie(
         df_personajes_comunes,
         names='Personajes',
@@ -348,10 +354,10 @@ elif page == "Personajes":
         hole=0.4
     )
 
-    # Establecer dimensiones del gráfico
+    # Establecer dimensiones 
     pie_chart_personajes.update_layout(width=1000, height=600)
 
-    # Mostrar el gráfico de pastel en Streamlit
+    
     st.plotly_chart(pie_chart_personajes)
 
     
@@ -390,11 +396,12 @@ elif page == "Personajes":
                         color_discrete_sequence=color,
                         title='Desarrollo de Personajes a lo largo del Tiempo')
 
-    # Ocultar la leyenda
+    
     line_chart.update_layout(width=1000, height=600)
 
-    # Mostrar el gráfico en Streamlit
+    
     st.plotly_chart(line_chart)
+
 
 
     
@@ -415,17 +422,18 @@ elif page == "Personajes":
     # Calcular la frecuencia de los top 10 elementos de la columna 'Personajes' por 'Escuela'
     top10_personajes_by_escuela = personajes_top10.groupby('Escuela')['Personajes'].value_counts().groupby(level=0, group_keys=False).nlargest(10).reset_index(name='Frecuencia')
 
-    # Crear el gráfico de barras con Plotly Express
+    # Crear el gráfico de barras 
     bar_chart_personajes_by_escuela = px.bar(top10_personajes_by_escuela, x='Escuela', y='Frecuencia', color='Personajes',
                                         labels={'Frecuencia': 'Número de Apariciones'}, title='Top 10 Personajes por Escuela',
                                         color_discrete_sequence=color,
                                         width=1000, height=600,
                                         )
 
-    # Mostrar el gráfico de barras en Streamlit
+    
     st.plotly_chart(bar_chart_personajes_by_escuela)
 
     
+
 
 
     # Calculo cuantos personajes tiene cada obra:
@@ -437,8 +445,8 @@ elif page == "Personajes":
     # Filtrar por personajes seleccionados
     titulo_personajes['Personajes_en_obra'] = titulo_personajes['Personajes_en_obra'].apply(lambda x: [p for p in x if p in selector_personajes])
 
-    # Creamos la matriz de correlaciones
-    correlation_matrix = pd.DataFrame(0, index=selector_personajes, columns=selector_personajes)
+    # Creamos la matriz
+    matriz_relacion_personajes = pd.DataFrame(0, index=selector_personajes, columns=selector_personajes)
 
     for personajes_en_obra in titulo_personajes['Personajes_en_obra']:
         for i in range(len(personajes_en_obra)):
@@ -446,33 +454,33 @@ elif page == "Personajes":
                 personaje1 = personajes_en_obra[i]
                 personaje2 = personajes_en_obra[j]
 
-                correlation_matrix.at[personaje1, personaje2] += 1
-                correlation_matrix.at[personaje2, personaje1] += 1
+                matriz_relacion_personajes.at[personaje1, personaje2] += 1
+                matriz_relacion_personajes.at[personaje2, personaje1] += 1
 
     # Convertimos la matriz a un formato adecuado para Plotly
-    correlation_matrix_plotly = correlation_matrix.unstack().reset_index()
-    correlation_matrix_plotly.columns = ['Personaje1', 'Personaje2', 'Frecuencia']
+    matriz_relacion_personajes_plotly = matriz_relacion_personajes.unstack().reset_index()
+    matriz_relacion_personajes_plotly.columns = ['Personaje1', 'Personaje2', 'Frecuencia']
 
-    # Pivot the DataFrame to create a 2D matrix
-    correlation_matrix_2d = correlation_matrix_plotly.pivot(index='Personaje1', columns='Personaje2', values='Frecuencia').fillna(0)
+    # Pivot the DataFrame para crear matriz 2d
+    matriz_relacion_personajes_2d = matriz_relacion_personajes_plotly.pivot(index='Personaje1', columns='Personaje2', values='Frecuencia').fillna(0)
 
-    # Convert to NumPy array
-    correlation_matrix_array = correlation_matrix_2d.values
+    # Convertirlo a NumPy array
+    matriz_relacion_personajes_array = matriz_relacion_personajes_2d.values
 
-    # Creamos el heatmap interactivo con Plotly Express
-    fig = px.imshow(correlation_matrix_array,
-                    x=correlation_matrix_2d.columns, 
-                    y=correlation_matrix_2d.index,
+    # Creamos el heatmap interactivo
+    fig = px.imshow(matriz_relacion_personajes_array,
+                    x=matriz_relacion_personajes_2d.columns, 
+                    y=matriz_relacion_personajes_2d.index,
                     labels=dict(color="Frecuencia"),
                     title='Relaciones regulares entre los personajes representados en el Museo del Prado',
                     color_continuous_scale="Viridis",
                     width=800, height=600)
 
-    # Añadimos el texto de frecuencia a la matriz de correlaciones
+    # Añadimos el texto de frecuencia
     annotations = []
-    for i, personaje1 in enumerate(correlation_matrix_2d.index):
-        for j, personaje2 in enumerate(correlation_matrix_2d.columns):
-            value = correlation_matrix_2d.at[personaje1, personaje2]
+    for i, personaje1 in enumerate(matriz_relacion_personajes_2d.index):
+        for j, personaje2 in enumerate(matriz_relacion_personajes_2d.columns):
+            value = matriz_relacion_personajes_2d.at[personaje1, personaje2]
             annotations.append(dict(text=str(value), x=personaje2, y=personaje1,
                                     xref='x1', yref='y1', showarrow=False, font=dict(color='white')))
 
@@ -482,27 +490,27 @@ elif page == "Personajes":
 
     
 
-
+#SUBPÁGINA 4.
 
 elif page == "Fauna":
-    st.markdown("Analytical study of Fauna")
+    
         
-    # Definir una clave única para el sin_nulos de fauna
+    # Definir una clave única 
     key_fauna_filter = "fauna_filter"
 
-    # Filtro para seleccionar personajes
+    # Filtro para seleccionar 
     selector_fauna = st.sidebar.multiselect(
         f"Seleccionar Fauna", top_10_fauna, default=top_10_fauna, key=key_fauna_filter
     )
 
-    # Ordenar loa fauna de manera lógica
+    # Ordenar la fauna de manera lógica
     orden_fauna = ['Antrópodos', 'Perro', 'Paloma', 'Oveja', 'Cobaya Común', 'Caballo', 'Mono', 'Jilguero', 'Pavo Real', 'Conejo']
 
     # Elegimos los colores:
     color = ['#117A65  ', '#f26722', '#cd2027', '#139b48', '#04B4A2', '#f1eb1f', '#4c2600', '#0a3452', '#259E04',
              '#4554a5']
 
-        # Filtrar el DataFrame solo para los elementos más comunes
+    # Filtrar el DataFrame solo para los elementos más comunes
     df_fauna_comunes = fauna_streamlit[fauna_streamlit['Fauna'].isin(top_10_fauna)]
 
     # Calcular la frecuencia y agregarla al DataFrame
@@ -511,7 +519,7 @@ elif page == "Fauna":
     # Calcular la frecuencia total
     frecuencia_total_fauna = df_fauna_comunes['Frecuencia'].sum()
 
-    # Crear el gráfico de pastel con Plotly Express
+    # Crear el gráfico de pastel 
     pie_chart_fauna = px.pie(
         df_fauna_comunes,
         names='Fauna',
@@ -527,8 +535,9 @@ elif page == "Fauna":
     # Establecer dimensiones del gráfico
     pie_chart_fauna.update_layout(width=1000, height=600)
 
-    # Mostrar el gráfico de pastel en Streamlit
+    
     st.plotly_chart(pie_chart_fauna)
+
 
 
     # Convertir la columna 'Año' a tipo datetime
@@ -546,7 +555,6 @@ elif page == "Fauna":
     )
 
 
-
     # Filtrar el DataFrame para la fauna seleccionada y rango de décadas
     df_filtrado_decadas_fauna = fauna_streamlit[
         (fauna_streamlit['Fauna'].isin(selector_fauna)) &
@@ -556,7 +564,7 @@ elif page == "Fauna":
     # Calcular la frecuencia de fauna por década
     df_frecuencia_decadas_fauna = df_filtrado_decadas_fauna.groupby(['Década', 'Fauna']).size().reset_index(name='Frecuencia')
 
-    # Crear el gráfico de líneas con Plotly Express
+    # Crear el gráfico de líneas 
     line_chart_fauna = px.line(df_frecuencia_decadas_fauna, 
                                x='Década', 
                                y='Frecuencia', 
@@ -566,13 +574,15 @@ elif page == "Fauna":
                                 color_discrete_sequence=color, 
                                 title='Desarrollo de Fauna a lo largo del Tiempo')
 
-    # Ocultar la leyenda
+    
     line_chart_fauna.update_layout(width=1000, height=600)
 
-    # Mostrar el gráfico en Streamlit
+    
     st.plotly_chart(line_chart_fauna)
    
    
+
+
    # Obtener valores únicos de la columna 'Escuela'
     unique_escuelas = flora_streamlit['Escuela'].unique()
 
@@ -583,7 +593,7 @@ elif page == "Fauna":
     
     
 
-    # Obtener los 10 elementos más comunes de la columna 'Fauna'
+    # Obtener los 10 elementos más comunes 
     top10_fauna = fauna_streamlit['Fauna'].value_counts().nlargest(10).index
 
     # Filtrar el DataFrame para incluir solo los 10 elementos más comunes
@@ -592,14 +602,14 @@ elif page == "Fauna":
     # Calcular la frecuencia de los top 10 elementos de la columna 'Fauna' por 'Escuela'
     top10_fauna_by_escuela = fauna_top10.groupby('Escuela')['Fauna'].value_counts().groupby(level=0, group_keys=False).nlargest(10).reset_index(name='Frecuencia')
 
-    # Crear el gráfico de barras con Plotly Express
+    # Crear el gráfico de barras
     bar_chart_fauna_by_escuela = px.bar(top10_fauna_by_escuela, x='Escuela', y='Frecuencia', color='Fauna',
                                         labels={'Frecuencia': 'Número de Apariciones'}, title='Top 10 Fauna por Escuela',
                                         color_discrete_sequence=color,
                                         width=1000, height=600, 
                                         )
 
-    # Mostrar el gráfico de barras en Streamlit
+    
     st.plotly_chart(bar_chart_fauna_by_escuela)
 
  
@@ -615,8 +625,8 @@ elif page == "Fauna":
     # Filtrar por fauna seleccionada
     titulo_fauna['Fauna_en_obra'] = titulo_fauna['Fauna_en_obra'].apply(lambda x: [f for f in x if f in selector_fauna])
 
-    # Creamos la matriz de correlaciones
-    correlation_matrix_fauna = pd.DataFrame(0, index=selector_fauna, columns=selector_fauna)
+    # Creamos la matriz 
+    matriz_relacion_personajes_fauna = pd.DataFrame(0, index=selector_fauna, columns=selector_fauna)
 
     for fauna_en_obra in titulo_fauna['Fauna_en_obra']:
         for i in range(len(fauna_en_obra)):
@@ -624,23 +634,23 @@ elif page == "Fauna":
                 fauna1 = fauna_en_obra[i]
                 fauna2 = fauna_en_obra[j]
 
-                correlation_matrix_fauna.at[fauna1, fauna2] += 1
-                correlation_matrix_fauna.at[fauna2, fauna1] += 1
+                matriz_relacion_personajes_fauna.at[fauna1, fauna2] += 1
+                matriz_relacion_personajes_fauna.at[fauna2, fauna1] += 1
 
     # Convertimos la matriz a un formato adecuado para Plotly
-    correlation_matrix_plotly_fauna = correlation_matrix_fauna.unstack().reset_index()
-    correlation_matrix_plotly_fauna.columns = ['Fauna1', 'Fauna2', 'Frecuencia']
+    matriz_relacion_personajes_plotly_fauna = matriz_relacion_personajes_fauna.unstack().reset_index()
+    matriz_relacion_personajes_plotly_fauna.columns = ['Fauna1', 'Fauna2', 'Frecuencia']
 
     # Pivot the DataFrame to create a 2D matrix
-    correlation_matrix_2d_fauna = correlation_matrix_plotly_fauna.pivot(index='Fauna1', columns='Fauna2', values='Frecuencia').fillna(0)
+    matriz_relacion_personajes_2d_fauna = matriz_relacion_personajes_plotly_fauna.pivot(index='Fauna1', columns='Fauna2', values='Frecuencia').fillna(0)
 
     # Convert to NumPy array
-    correlation_matrix_array_fauna = correlation_matrix_2d_fauna.values
+    matriz_relacion_personajes_array_fauna = matriz_relacion_personajes_2d_fauna.values
 
     # Creamos el heatmap interactivo con Plotly Express
-    fig_fauna = px.imshow(correlation_matrix_array_fauna,
-                        x=correlation_matrix_2d_fauna.columns, 
-                        y=correlation_matrix_2d_fauna.index,
+    fig_fauna = px.imshow(matriz_relacion_personajes_array_fauna,
+                        x=matriz_relacion_personajes_2d_fauna.columns, 
+                        y=matriz_relacion_personajes_2d_fauna.index,
                         labels=dict(color="Frecuencia"),
                         title='Relaciones regulares entre la fauna representada en el Museo del Prado',
                         color_continuous_scale="Viridis",
@@ -648,9 +658,9 @@ elif page == "Fauna":
 
     # Añadimos el texto de frecuencia a la matriz de correlaciones
     annotations_fauna = []
-    for i, fauna1 in enumerate(correlation_matrix_2d_fauna.index):
-        for j, fauna2 in enumerate(correlation_matrix_2d_fauna.columns):
-            value = correlation_matrix_2d_fauna.at[fauna1, fauna2]
+    for i, fauna1 in enumerate(matriz_relacion_personajes_2d_fauna.index):
+        for j, fauna2 in enumerate(matriz_relacion_personajes_2d_fauna.columns):
+            value = matriz_relacion_personajes_2d_fauna.at[fauna1, fauna2]
             annotations_fauna.append(dict(text=str(value), x=fauna2, y=fauna1,
                                         xref='x1', yref='y1', showarrow=False, font=dict(color='white')))
 
@@ -784,7 +794,7 @@ elif page == "Flora":
     titulo_flora['Flora_en_obra'] = titulo_flora['Flora_en_obra'].apply(lambda x: [f for f in x if f in selector_flora])
 
     # Creamos la matriz de correlaciones
-    correlation_matrix_flora = pd.DataFrame(0, index=selector_flora, columns=selector_flora)
+    matriz_relacion_personajes_flora = pd.DataFrame(0, index=selector_flora, columns=selector_flora)
 
     for flora_en_obra in titulo_flora['Flora_en_obra']:
         for i in range(len(flora_en_obra)):
@@ -792,23 +802,23 @@ elif page == "Flora":
                 flora1 = flora_en_obra[i]
                 flora2 = flora_en_obra[j]
 
-                correlation_matrix_flora.at[flora1, flora2] += 1
-                correlation_matrix_flora.at[flora2, flora1] += 1
+                matriz_relacion_personajes_flora.at[flora1, flora2] += 1
+                matriz_relacion_personajes_flora.at[flora2, flora1] += 1
 
     # Convertimos la matriz a un formato adecuado para Plotly
-    correlation_matrix_plotly_flora = correlation_matrix_flora.unstack().reset_index()
-    correlation_matrix_plotly_flora.columns = ['Flora1', 'Flora2', 'Frecuencia']
+    matriz_relacion_personajes_plotly_flora = matriz_relacion_personajes_flora.unstack().reset_index()
+    matriz_relacion_personajes_plotly_flora.columns = ['Flora1', 'Flora2', 'Frecuencia']
 
     # Pivot the DataFrame to create a 2D matrix
-    correlation_matrix_2d_flora = correlation_matrix_plotly_flora.pivot(index='Flora1', columns='Flora2', values='Frecuencia').fillna(0)
+    matriz_relacion_personajes_2d_flora = matriz_relacion_personajes_plotly_flora.pivot(index='Flora1', columns='Flora2', values='Frecuencia').fillna(0)
 
     # Convert to NumPy array
-    correlation_matrix_array_flora = correlation_matrix_2d_flora.values
+    matriz_relacion_personajes_array_flora = matriz_relacion_personajes_2d_flora.values
 
     # Creamos el heatmap interactivo con Plotly Express
-    fig_flora = px.imshow(correlation_matrix_array_flora,
-                        x=correlation_matrix_2d_flora.columns, 
-                        y=correlation_matrix_2d_flora.index,
+    fig_flora = px.imshow(matriz_relacion_personajes_array_flora,
+                        x=matriz_relacion_personajes_2d_flora.columns, 
+                        y=matriz_relacion_personajes_2d_flora.index,
                         labels=dict(color="Frecuencia"),
                         title='Relaciones regulares entre la flora representada en el Museo del Prado',
                         color_continuous_scale="Viridis",
@@ -816,9 +826,9 @@ elif page == "Flora":
 
     # Añadimos el texto de frecuencia a la matriz de correlaciones
     annotations_flora = []
-    for i, flora1 in enumerate(correlation_matrix_2d_flora.index):
-        for j, flora2 in enumerate(correlation_matrix_2d_flora.columns):
-            value = correlation_matrix_2d_flora.at[flora1, flora2]
+    for i, flora1 in enumerate(matriz_relacion_personajes_2d_flora.index):
+        for j, flora2 in enumerate(matriz_relacion_personajes_2d_flora.columns):
+            value = matriz_relacion_personajes_2d_flora.at[flora1, flora2]
             annotations_flora.append(dict(text=str(value), x=flora2, y=flora1,
                                         xref='x1', yref='y1', showarrow=False, font=dict(color='white')))
 

@@ -30,14 +30,10 @@ unique_anio_rango = personajes_streamlit['Año_rango'].dropna().unique().tolist(
 min_year = personajes_streamlit['Año'].min()
 max_year = personajes_streamlit['Año'].max()
 
-# ESTILO DE LA APLICACIÓN
 
-CSS_STYLE_ = """
-"""
 floreros = Image.open("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/imagenes/Floreros, Nuzzi, Mario (1640-1642).png")
 la_virgen = Image.open("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/imagenes/La Virgen con el Niño, Santa Dorotea y San Jorge, Tiziano, Vecellido di Gregorio (1515-1518).png") 
-# Aplicar el estilo a la aplicación
-st.markdown(CSS_STYLE_, unsafe_allow_html=True)
+
 
 
 st.title("Planteamiento del proyecto: una visión analítica de la iconografía representada en la colección del Museo del Prado.")
@@ -142,7 +138,7 @@ st.markdown(
         del anterior.
         </h6>
         <h6 style='font-size: 18px;font-weight: normal; color: #545458;'> ¿Por qué razón se empezó a dejar de pintar a la Virgen con rosas
-en el   siglo XVIII?”?
+        en el   siglo XVIII?”?
         </h6>
         <h6 style='font-size: 16px;font-weight: normal; color: #545458;'> Esto lo tendrán que responder los historiadores del arte u
         otros estudiosos, pero el caso es que esto es así, al menos en la colección del
