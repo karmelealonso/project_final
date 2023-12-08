@@ -1,9 +1,8 @@
-# ArtEye: El Ojo de Halcón del Arte (un viaje infinito por los paisajes del arte)
+### ArtEye: EL OJO DE HALCÓN DEL ARTE.
 
 # UN ANÁLISIS ICONOGRÁFICO DE LA COLECCIÓN DEL MUSEO DEL PRADO
 
-PERSONAJES, LUGARES, OBJETOS, FAUNA Y FLORA
-
+# PERSONAJES, LUGARES, OBJETOS, FAUNA Y FLORA
 
 
 ![](https://github.com/karmelealonso/project_final/blob/main/imagenes/portada_readme.png)
@@ -27,9 +26,6 @@ La iconografía es un término que resulta etimológicamente de la unión de los
 
 La Iconografía Analítica busca aplicar los métodos del Análisis de Datos a las representaciones de personajes, lugares, objetos, fauna y flora de las obras de arte, con el fin de descubrir las relaciones regulares, los patrones iconográficos, las narrativas detrás de cada obra, conjunto de obras, tema…así como toda clase de correlaciones menos evidentes u ocultas entre todo ello, con el fin de posibilitar interpretaciones nuevas de la colección, descubrir las relaciones entre ellas y entre las obras y sus épocas.
 
-ArtEye ofrece una ventana dinámica al mundo del arte occidental a través del análisis iconográfico. 
-
-ArtEye ha sido posible gracias a un complejo proceso ETL que, originalmente, quiso partir de los datos muy expresivos contenidos en los archivos RDF (archivos semánticos) que publica el Prado con cada una de sus páginas, lo que resultó ser una tarea de extracción demasiado compleja para la que se precisa conocimiento muy especializado. Finalmente, integramos perfectamente los datos muy expresivos de más de 20.000 obras de la colección del Museo del Prado, los limpiamos y normalizamos para nuestro propósito y los transformamos para poder explorarlos con técnicas y bibliotecas  de visualización.
 
 Todas las obras de la colección del Prado están muy ricamente descritas con datos que precisan el autor, la técnica, la época, los temas, el soporte, la materia, su ubicación y todos los elementos iconográficos que contiene: objetos, personajes, lugares, fauna y flora. Cada obra está, por tanto, estrechamente vinculada a las condiciones de su época, el lugar donde se produjo, el estilo de su autor o la escuela a la que pertenecía, que preceden a su producción. Así, lo que se pretendía con este proyecto era ofrecer una comprensión integral de la interacción entre todas esas condiciones y las imágenes y símbolos que el autor utilizó para decir lo que quería.
 
@@ -55,80 +51,46 @@ ArtEye es el ojo de halcón del arte que permite disfrutar de una experiencia fa
 
 Más allá de los gráficos, patrones, regularidades, clústeres… ArtEye nos permite vivir el arte desde su mismo centro, alienta la curiosidad, convierte una pequeña anécdota en una aventura, hace posible sumergirse en los detalles dotando a cada uno de ellos de un propósito y sentido, nos permite caer, como a Alicia, en el agujero del conejo en el que no dejamos de caer y caer. ArteEye hace posible viajar por el arte de un modo innovador. Conecta datos con datos y descubre y crea nuevas historias sobre el arte y su devenir. ArtEye abre una puerta a lo desconocido del arte occidental y extiende el modo en el que lo podemos disfrutar y entender. ArtEye: puerta de entrada a un viaje ilimitado de conocimiento por los paisajes del arte.
 
-
-# 3. Pasos a seguir: 
-
-- # Paso 1: Extración de los datos. Materiales y métodos utilizados.
-
-**3.1. DataFrame 1:**
-El primer DataFrame utilizado en el estudio consiste en un archivo CSV que contiene datos de 258,931 trabajadores (103,427 mujeres y 155,504 hombres) de diversas regiones de España, incluyendo Baleares, Andalucía, Canarias, Comunidad Valenciana, Cataluña, Madrid, Castilla La Mancha, Castilla León y País Vasco. Estos trabajadores pertenecen a una amplia variedad de sectores laborales, como hostelería, construcción, comercio, sanidad, administración pública, transporte, educación, industria y limpieza.
-
--El estudio se realizó entre enero de 2004 y junio de 2006 y se basó en datos clínicos y personales recopilados de una base de datos anonimizada de trabajadores mantenida por la Escuela Universitaria ADEMA-UIB (Universidad de las Islas Baleares). Todos los parámetros se expresan en miligramos por decilitro.
-
--En cuanto a la definición de fumadores, se consideró a alguien fumador si había consumido al menos un cigarrillo diariamente (o su equivalente en otras formas de consumo) en los últimos treinta días o si había dejado de fumar hace menos de 12 meses.
-
--La clasificación de la clase social se dividió en tres categorías, siguiendo los datos de la Clasificación Nacional de Ocupaciones 2011 (CNO-11) y aplicando los criterios establecidos por la Sociedad Española de Epidemiología:
-
-- Clase I: Incluye a personal directivo, profesionales universitarios, deportistas y artistas.
-
-- Clase II: Engloba a trabajadores con cualificación en ocupaciones intermedias y autónomos.
-
-- Clase III: Comprende a trabajadores no cualificados.
-
-![](https://github.com/karmelealonso/3.-project_etl/blob/main/imagenes/df_clean_imagenes/df_clean.png)
+![](https://github.com/karmelealonso/project_final/blob/main/imagenes/En%20vue.png)
 
 
-**3.2. DataFrame 2:**
+# Pasos a seguir: 
 
-El segundo DataFrame se originó a partir de un archivo CSV descargado del INE. Contiene información acerca de la población total española, diferenciando por edades y sexo.
+- # Extración, Transformación, Limpieza.
 
-El objetivo final que se pretende con esta tabla, en la que contamos con la información sobre la población total en España, es el de, combinando los valores de esta con los de la tabla anterior y posterior, poder estimar el número real de personas afectadas en España, y no tan solo un porcentaje, del cual no obtenemos un numero concreto. 
-Es decir, tras obtener un resultado porcentual, ajustarlo al número concreto que equivaldría con respecto a la población total española.
+ArtEye ofrece una ventana dinámica al mundo del arte occidental a través del análisis iconográfico. 
 
-![](https://github.com/karmelealonso/3.-project_etl/blob/main/imagenes/df_clean_imagenes/df2_clean.png)
+Esto ha sido posible, en primer lugar, gracias a un proceso ETL que, originalmente, quiso partir de los datos contenidos en los archivos RDF (archivos semánticos) que publica el Prado con cada una de sus páginas, lo que resultó ser una tarea de extracción demasiado compleja para la que se precisa conocimiento muy especializado. 
 
+Finalmente, se importaron los datos de las obras de la colección del Museo del Prado de forma directa, para pasar al proceso de limpieza, transformación y normalización de cara a nuestro propósito final. 
 
-**3.3. DataFrames 3, 4 y 5:**
+- # Carga de los datos en MongoDB.Construcción de la Base de Datos.
 
-Los DataFrames 3, 4 y 5 han sido obtenidos a través del scrapeo, por Beautiful Soup, de un artículo publicado por "Elsevier". Las tres tablas tienen un denominador común, a saber: el estudio de la resistencia a la insulina en la población española.
+Una vez estuvieran listos, se pasó a la construcción de la base de datos mediante MongoDB. Este proceso fue- # esencial para garantizar la organización y accesibilidad de los datos.
 
-![](https://github.com/karmelealonso/3.-project_etl/blob/main/imagenes/df_clean_imagenes/df3_clean.png)
+- # Visualización de los datos. 
 
-![](https://github.com/karmelealonso/3.-project_etl/blob/main/imagenes/df_clean_imagenes/df4_clean.png)
+Por último, pudieron ser explorados con técnicas y bibliotecas  de visualización como seaborn o plotlib, para a continuación pasar a hacerlos "funcionales" ,ediante la creación de un Streamlit. 
 
-![](https://github.com/karmelealonso/3.-project_etl/blob/main/imagenes/df_clean_imagenes/df5_clean.png)
-
-
-- # Paso 2: Transformación de los datos. Exploración y Limpieza.
-
-En el segundo paso de nuestro proyecto, nos sumergimos en la transformación de los datos, incluyendo exploración y limpieza de los mismos también. A lo largo de esta fase, analizaremos los datos e identificaremos posibles inconsistencias para asegurarnos que los datos sean coherentes y estén listos para su posterior uso. 
-
-
-Nuestra primera tarea consiste en realizar una exploración exhaustiva de estos archivos utilizando el módulo Pandas de Python. 
-
-En resumen, el enfoque de esta fase es explorar los datos contenidos en los archivos con el fin de garantizar que estén preparados para ser transformados y a continuación cargados en una base de datos sólida y lista para su uso en la toma de decisiones y análisis posteriores.
-
-- # Paso 3: Carga de los datos en MongoDB.Construcción de la Base de Datos
-
-Una vez que los datos han sido limpiados y transformados, pasamos a la construcción de la base de datos mediante MongoDB. Este proceso es esencial para garantizar la organización y accesibilidad de los datos.
-
-![](https://github.com/karmelealonso/3.-project_etl/blob/main/imagenes/colecciones_MongoDB.png)
-
-- # Paso 4: Carga de los datos en MongoDB.Construcción de la Base de Datos
 
 # Contenido del repositorio. 
 
-- notebook: contiene tres archivos jupyter notebook.
-    1. main.ipynb: contiene la extracción y posterior limpieza y transformación de los diferentes archivos. 
-    2. Desarrollo.ipynb:: contiene el desarrollo del proyecto de forma explicativa y algún cambio añadido para tener las diferentes tablas listas para su posterior estudio.
-    3. Carga de los datos a MongoDB.ipynb: contiene la carga de los datos a MongoDB.
-- data: contiene tres archivos con las tablas. 
-    1. data_raw: contiene los archivos recién extraídos, en crudo.
+- notebooks: contiene cinco archivos Jupyter Notebook.
+    1. scrapeo_flora_cuadros.ipynb: contiene la primera extracción mediante técnicas de scrapeo de la iconografía perteneciente a la flora en las obras del Museo del Prado. 
+    2. limpieza_obras.ipynb: contiene la limpieza general del DataFrame original.
+    3. carga_datos_MongoDB.ipynb: contiene la carga de los datos a MongoDB.
+    4. Estudio_analitico_iconografia_personajes.ipynb: contiene el estudio y visualización de la iconografía perteneciente a "personajes" en las obras del Museo del Prado.
+    5. mapa_obras_de_arte.html: contiene un mapa para poder ubicar la iconografía perteneciente a "lugar" dentro de las obras del Museo del Prado.
+- data: contiene tres archivos con las tablas necesarias para el estudio. 
+    1. data: contiene el archivo original.
     2. data_clean: contiene los archivos limpios.
-    3. data_def: contiene los archivos con algunas modificaciones que se hicieron más adelante de cara al estudio planteado al comienzo.
+    3. data_streamlit: contiene los archivos utilizados en la construcción del streamlit. 
 - imágenes: contienen las imágenes utilizadas a lo largo del proyecto.
+- streamlit: contiene tres archivos (páginas que conforman el Streamlit).
 
 # Next steps. 
+
+- Realizar este mismo análisis pero de forma más exhaustiva y con la totalidad de los ejemplares encontrados en la iconografía, creando así una herramienta real para todo aquel que quiera aprender, comprender y verse involucrado en este maravilloso universo del arte.
 
 
 
