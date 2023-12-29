@@ -4,35 +4,6 @@ from PIL import Image
 
 
 
-# Cargar los nuevos DataFrames
-obras_completo = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/obras_completo.csv")
-personajes_streamlit = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/personajes_streamlit.csv")
-objetos_streamlit = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/objetos_streamlit.csv")
-fauna_streamlit = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/fauna_streamlit.csv")
-flora_streamlit = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/flora_streamlit.csv")
-lugar_streamlit = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/lugar_streamlit.csv")
-
-# Función para obtener los top 10 elementos según la categoría seleccionada
-def get_top_10_elements(category_df):
-    return ["Seleccionar Todas"] + category_df.iloc[:, 0].value_counts().head(10).index.tolist()
-
-# Cargar los top 10 elementos iniciales y valores únicos de rango de años para cada categoría
-top_10_personajes = get_top_10_elements(personajes_streamlit)
-top_10_objetos = get_top_10_elements(objetos_streamlit)
-top_10_fauna = get_top_10_elements(fauna_streamlit)
-top_10_flora = get_top_10_elements(flora_streamlit)
-top_10_lugar = get_top_10_elements(lugar_streamlit)
-
-
-# Obtener todos los valores únicos en las categorías de Escuela y Año_rango
-unique_escuelas = personajes_streamlit['Escuela'].dropna().unique()
-unique_anio_rango = personajes_streamlit['Año_rango'].dropna().unique().tolist()
-
-# Establecer los años mínimo y máximo
-min_year = personajes_streamlit['Año'].min()
-max_year = personajes_streamlit['Año'].max()
-
-
 st.markdown("## Home")
 
 st.text('   ')
