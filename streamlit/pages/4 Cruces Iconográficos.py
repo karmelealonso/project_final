@@ -12,25 +12,45 @@ obras_estudio = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYE
 # BARRA LATERAL
 st.sidebar.header("Selección de Valores")
 
-# Crear un multiselect en la barra lateral para las 5 columnas
-columnas_interes = ["Objetos", "Personajes", "Flora", "Fauna", "Lugar"]
-valores_seleccionados = {}
-for columna in columnas_interes:
-    valores = obras_estudio[columna].unique()
-    valores_seleccionados[columna] = st.sidebar.multiselect(
-        f'Selecciona valores de {columna}',
-        valores
-    )
+# Obtener valores únicos para cada selector
+objetos_list = obras_estudio["Objetos"].unique().tolist()
+personajes_list = obras_estudio["Personajes"].unique().tolist()
+flora_list = obras_estudio["Flora"].unique().tolist()
+fauna_list = obras_estudio["Fauna"].unique().tolist()
+lugar_list = obras_estudio["Lugar"].unique().tolist()
 
-# Filtrar el DataFrame según los valores seleccionados
-condiciones = [
-    obras_estudio[columna].isin(valores)
-    for columna, valores in valores_seleccionados.items()
+# Selector de Objetos
+selector_objetos = st.sidebar.multiselect("Objetos", objetos_list)
+
+# Selector de Personajes
+selector_personajes = st.sidebar.multiselect("Personajes", personajes_list)
+
+# Selector de Flora
+selector_flora = st.sidebar.multiselect("Flora", flora_list)
+
+# Selector de Fauna
+selector_fauna = st.sidebar.multiselect("Fauna", fauna_list)
+
+# Selector de Lugar
+selector_lugar = st.sidebar.multiselect("Lugar", lugar_list)
+
+# Filtrar el DataFrame basado en los filtrados seleccionados
+df_filtrado = obras_estudio[
+    obras_estudio["Objetos"].isin(selector_objetos) &
+    obras_estudio["Personajes"].isin(selector_personajes) &
+    obras_estudio["Flora"].isin(selector_flora) &
+    obras_estudio["Fauna"].isin(selector_fauna) &
+    obras_estudio["Lugar"].isin(selector_lugar)
 ]
-condicion_final = pd.concat(condiciones, axis=1).all(axis=1)
-df_filtrado = obras_estudio[condicion_final]
 
-# Calcular la frecuencia de cada combinación de categorías por TítuloID
+# Calcular el número de veces que aparecen juntos bajo el mismo TituloID
+conteo_juntos = df_filtrado.groupby("TituloID").size().reset_index(name='Apariciones')
+
+# Mostrar el resultado
+st.title("Número de veces que aparecen juntos:")
+st.dataframe(conteo_juntos)
+
+"""# Calcular la frecuencia de cada combinación de categorías por TítuloID
 df_frecuencias = df_filtrado.groupby(['TituloID'] + columnas_interes).size().reset_index(name='Frecuencia')
 
 # Crear la matriz de relaciones
@@ -74,4 +94,33 @@ st.plotly_chart(fig_relaciones)
 
 
 
+# Selector de elementos
+selected_objects = st.multiselect('Selecciona elementos de Objetos', obras_estudio['Objetos'].unique())
+selected_characters = st.multiselect('Selecciona elementos de Personajes', obras_estudio['Personajes'].unique())
+selected_fauna = st.multiselect('Selecciona elementos de Fauna', obras_estudio['Fauna'].unique())
+selected_flora = st.multiselect('Selecciona elementos de Flora', obras_estudio['Flora'].unique())
+selected_places = st.multiselect('Selecciona elementos de Lugar', obras_estudio['Lugar'].unique())
 
+
+# Filtrar el DataFrame según los elementos seleccionados
+filtered_obras_estudio = obras_estudio[obras_estudio['Objetos'].isin(selected_objects) &
+                     obras_estudio['Personajes'].isin(selected_characters) &
+                     obras_estudio['Fauna'].isin(selected_fauna) &
+                     obras_estudio['Flora'].isin(selected_flora) &
+                     obras_estudio['Lugar'].isin(selected_places)]
+
+# Contar las apariciones conjuntas
+counted_obras_estudio = filtered_obras_estudio.groupby('TituloID').size().reset_index(name='Apariciones')
+
+# Filtrar el DataFrame según los elementos seleccionados
+filtered_obras_estudio = obras_estudio[obras_estudio['Objetos'].isin(selected_objects) &
+                     obras_estudio['Personajes'].isin(selected_characters) &
+                     obras_estudio['Fauna'].isin(selected_fauna) &
+                     obras_estudio['Flora'].isin(selected_flora) &
+                     obras_estudio['Lugar'].isin(selected_places)]
+
+# Contar las apariciones conjuntas
+counted_obras_estudio = filtered_obras_estudio.groupby('TituloID').size().reset_index(name='Apariciones')
+
+st.write(counted_obras_estudio)
+"""

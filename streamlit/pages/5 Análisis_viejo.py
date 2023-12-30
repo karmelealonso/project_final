@@ -9,7 +9,6 @@ from pyecharts.globals import ThemeType
 import numpy as np
 import random
 
-
 # Cargar los nuevos DataFrames
 obras_completo = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/obras_completo.csv")
 personajes_streamlit = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_clean/data_streamlit/personajes_streamlit.csv")

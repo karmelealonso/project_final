@@ -47,16 +47,19 @@ decadas_range = st.sidebar.slider(
 )
 
 # Mostrar la lista de elementos únicos o top 10 según la iconografía seleccionada
+
+elementos_seleccionados = []
+
 if filtro_elementos == "Seleccionar elementos específicos":
     st.sidebar.subheader(f"Seleccionar {iconografia_seleccionada}")
     opciones_elementos = obras_estudio[iconografia_seleccionada].unique()
     
     # Asegurarse de que los valores predeterminados estén en las opciones
-    default_values = st.sidebar.multiselect(
+    valores_predeterminados = st.sidebar.multiselect(
         f"Seleccionar {iconografia_seleccionada}", opciones_elementos
     )
 
-    elementos_seleccionados = default_values if default_values else opciones_elementos
+    elementos_seleccionados = valores_predeterminados if valores_predeterminados else opciones_elementos
 
 elif filtro_elementos == "Top 10 elementos más frecuentes":
     st.sidebar.subheader(f"Top 10 {iconografia_seleccionada}")
@@ -69,7 +72,7 @@ elif filtro_elementos == "Top 10 elementos más frecuentes":
 
 # Aplicar los filtros seleccionados para ambos gráficos
 df_filtrado = obras_estudio[
-    obras_estudio[iconografia_seleccionada].isin(elementos_seleccionados) &
+    obras_estudio[iconografia_seleccionada].isin(elementos_seleccionados)&
     obras_estudio['Año'].between(*decadas_range)
 ]
 
