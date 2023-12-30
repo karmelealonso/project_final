@@ -1,38 +1,10 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-
-from pyecharts import options as opts
-from pyecharts.charts import Line
-import plotly.express as px
-from pyecharts.globals import ThemeType
-
-
-import random
-
+from PIL import Image
 
 #Cargar DataFrames
 obras_completo = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_def/obras_completo.csv")
 obras_estudio = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_def/obras_estudio.csv")
-
-
-
-"""
-# Función para obtener los top 10 elementos según la categoría seleccionada
-def get_top_10_elements(category_df):
-    return category_df.iloc[:, 0].value_counts().head(10).index.tolist()
-
-
-# Cargar los top 10 elementos iniciales y valores únicos de rango de años para cada categoría
-top_10_personajes = get_top_10_elements(obras_estudio)
-top_10_objetos = get_top_10_elements(objetos_streamlit)
-top_10_fauna = get_top_10_elements(fauna_streamlit)
-top_10_flora = get_top_10_elements(flora_streamlit)
-top_10_lugar = get_top_10_elements(lugar_streamlit)
-
-"""
-
 
 # Establecer los años mínimo y máximo
 min_year = obras_estudio['Año'].min()
@@ -47,6 +19,14 @@ personajes_list = obras_estudio["Personajes"].unique().tolist()
 flora_list = obras_estudio["Flora"].unique().tolist()
 fauna_list = obras_estudio["Fauna"].unique().tolist()
 lugar_list = obras_estudio["Lugar"].unique().tolist()
+
+
+
+st.title("¿Qué podemos encontrarnos?")
+        
+st.text('   ')
+
+st.markdown("---")
 
 
 
