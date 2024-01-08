@@ -11,7 +11,7 @@ st.text('   ')
 
 st.markdown("---")
 
-st.title("Art Eye: El Ojo de Halcón del Arte")
+st.title("ArtEye: El Ojo de Halcón del Arte")
 
 st.markdown("## Un análisis iconográfico de la colección del Museo Del Prado")
 

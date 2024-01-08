@@ -87,5 +87,5 @@ if boton_filtrado:
     st.title("Tabla Filtrada")
 
     # Seleccionar las columnas específicas a mostrar
-    columnas_mostrar = ["Titulo", "Autor", "Objetos", "Personajes", "Escuela", "Fauna", "Lugar", "Año"]
+    columnas_mostrar = ["Titulo", "Autor", "Objetos", "Personajes", "Escuela", "Flora", "Fauna", "Lugar", "Año"]
     st.dataframe(obras_estudio_filtrado[columnas_mostrar])
