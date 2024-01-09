@@ -82,7 +82,7 @@ df_filtrado = obras_estudio[
 # 1. PIE CHART
 
 # Calcular la frecuencia
-df_filtrado['Frecuencia'] = df_filtrado.groupby(iconografia_seleccionada)[iconografia_seleccionada].transform('count')
+df_filtrado['Frecuencia'] = df_filtrado.groupby(iconografia_seleccionada)[iconografia_seleccionada].transform('count') #Para cada fila en el df original, esta parte devuelve la cantidad de elementos en el grupo al que pertenece esa fila.
 
 # Calcular la frecuencia total
 frecuencia_total = df_filtrado['Frecuencia'].sum()
@@ -144,36 +144,6 @@ bar_chart.update_layout(width=1000, height=600)
 
 # Mostrar el gráfico de barras
 st.plotly_chart(bar_chart)
-
-
-
-
-heatmap_chart = px.imshow(
-    df_filtrado_line_chart.pivot_table(
-        values='Frecuencia',
-        index='Año',
-        columns=iconografia_seleccionada,
-        aggfunc='sum',
-    ),
-    labels={'color': 'Frecuencia'},
-    title=f'Mapa de Calor de Frecuencia de {iconografia_seleccionada} a lo largo de los Años',
-)
-heatmap_chart.update_layout(width=1000, height=600)
-st.plotly_chart(heatmap_chart)
-
-
-# CREACIÓN DEL GRÁFICO DE BARRAS DE FRECUENCIA ACUMULADA
-bar_chart_cumsum = px.bar(
-    df_filtrado,
-    x=iconografia_seleccionada,
-    y=df_filtrado.groupby(iconografia_seleccionada)['Frecuencia'].cumsum(),
-    color='Año',  # Puedes ajustar esto según tus necesidades o eliminarlo
-    labels={'y': 'Frecuencia Acumulada'},
-    title=f'Frecuencia Acumulada de {iconografia_seleccionada}',
-)
-
-bar_chart_cumsum.update_layout(width=1000, height=600)
-st.plotly_chart(bar_chart_cumsum)
 
 
 

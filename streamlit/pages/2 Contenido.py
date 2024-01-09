@@ -1,24 +1,36 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
+from pymongo import MongoClient
 
-#Cargar DataFrames
-obras_completo = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_def/obras_completo.csv")
-obras_estudio = pd.read_csv("/Users/karmelealonsoaia/Desktop/ironhack_labs/PROYECTOS/project_final/data/data_def/obras_estudio.csv")
+
+#Enlazar con la Base de Datos creada en Mongo
+client = MongoClient("mongodb://localhost:27017/")
+db = client.icongrafia_cuadros_prado
+collection = db.cuadros_estudio 
+
+query = collection.find()
+cuadros_estudio = pd.DataFrame(query)
+
+
+# Filtrar las filas que contienen "Desconocido" en la columna "Fecha"
+cuadros_estudio = cuadros_estudio[cuadros_estudio["Fecha"] != "Desconocido"]
 
 # Establecer los años mínimo y máximo
-min_year = obras_estudio['Año'].min()
-max_year = obras_estudio['Año'].max()
+min_year = pd.to_numeric(cuadros_estudio['Fecha'].min(), errors="coerce")
+max_year = pd.to_numeric(cuadros_estudio['Fecha'].max(), errors="coerce")
 
 # Obtener valores únicos para cada selector
-titulo_list = obras_estudio["Titulo"].unique().tolist()
-autor_list = obras_estudio["Autor"].unique().tolist()
-escuela_list = obras_estudio["Escuela"].unique().tolist()
-objetos_list = obras_estudio["Objetos"].unique().tolist()
-personajes_list = obras_estudio["Personajes"].unique().tolist()
-flora_list = obras_estudio["Flora"].unique().tolist()
-fauna_list = obras_estudio["Fauna"].unique().tolist()
-lugar_list = obras_estudio["Lugar"].unique().tolist()
+titulo_list = cuadros_estudio["Titulo"].unique().tolist()
+autor_list = cuadros_estudio["Autor"].unique().tolist()
+escuela_list = cuadros_estudio["Escuela"].unique().tolist()
+objetos_list = cuadros_estudio["Objetos"].unique().tolist()
+personajes_list = cuadros_estudio["Personajes"].unique().tolist()
+flora_list = cuadros_estudio["Flora"].unique().tolist()
+fauna_list = cuadros_estudio["Fauna"].unique().tolist()
+geografico_list = cuadros_estudio["Geografico"].unique().tolist()
+soporte_list = cuadros_estudio["Soporte"].unique().tolist()
+ubicacion_list = cuadros_estudio["Ubicacion"].unique().tolist()
 
 
 
@@ -31,7 +43,7 @@ st.markdown("---")
 
 
 # Selector de rango de años
-selector_año_rango = st.slider("Selecciona Rango de Años", min_value=obras_estudio["Año"].min(), max_value=obras_estudio["Año"].max(), value=(obras_estudio["Año"].min(), obras_estudio["Año"].max()))
+selector_año_rango = st.slider("Selecciona Rango de Fechas", min_value=min_year, max_value=max_year, value=(min_year, max_year))
 
 # Selector de Título
 selector_titulos = st.multiselect("Título", titulo_list)
@@ -54,8 +66,14 @@ selector_flora = st.multiselect("Flora", flora_list)
 # Selector de Fauna
 selector_fauna = st.multiselect("Fauna", fauna_list)
 
-# Selector de Lugar
-selector_lugar = st.multiselect("Lugar", lugar_list)
+# Selector de Soporte
+selector_soporte = st.multiselect("Soporte", soporte_list)
+
+# Selector de Geografico
+selector_geografico = st.multiselect("Geografico", geografico_list)
+
+# Selector de Ubicacion
+selector_ubicacion = st.multiselect("Ubicacion", ubicacion_list)
 
 
 # Botón
@@ -64,28 +82,30 @@ boton_filtrado = st.button("Filtrar")
 # Aplicar el filtrado cuando se presiona el botón
 if boton_filtrado:
     # Filtrar el DataFrame basado en los filtrados seleccionados
-    obras_estudio_filtrado = obras_estudio[
-        (obras_estudio["Titulo"].isin(selector_titulos) if selector_titulos else True) &
-        (obras_estudio["Autor"].isin(selector_autores) if selector_autores else True) &
-        (obras_estudio["Escuela"].isin(selector_escuelas) if selector_escuelas else True) &
-        (obras_estudio["Objetos"].isin(selector_objetos) if selector_objetos else True) &
-        (obras_estudio["Personajes"].isin(selector_personajes) if selector_personajes else True) &
-        (obras_estudio["Flora"].isin(selector_flora) if selector_flora else True) &
-        (obras_estudio["Fauna"].isin(selector_fauna) if selector_fauna else True) &
-        (obras_estudio["Lugar"].isin(selector_lugar) if selector_lugar else True) &
-        (obras_estudio["Año"].between(selector_año_rango[0], selector_año_rango[1]))
+    cuadros_estudio_filtrado = cuadros_estudio[
+        (cuadros_estudio["Titulo"].isin(selector_titulos) if selector_titulos else True) &
+        (cuadros_estudio["Autor"].isin(selector_autores) if selector_autores else True) &
+        (cuadros_estudio["Escuela"].isin(selector_escuelas) if selector_escuelas else True) &
+        (cuadros_estudio["Objetos"].isin(selector_objetos) if selector_objetos else True) &
+        (cuadros_estudio["Personajes"].isin(selector_personajes) if selector_personajes else True) &
+        (cuadros_estudio["Flora"].isin(selector_flora) if selector_flora else True) &
+        (cuadros_estudio["Fauna"].isin(selector_fauna) if selector_fauna else True) &
+        (cuadros_estudio["Soporte"].isin(selector_soporte) if selector_soporte else True) &
+        (cuadros_estudio["Ubicacion"].isin(selector_ubicacion) if selector_ubicacion else True) &
+        (cuadros_estudio["Geografico"].isin(selector_geografico) if selector_geografico else True) &
+        (cuadros_estudio["Fecha"].between(selector_año_rango[0], selector_año_rango[1]))
     ]
 
     # Reemplazar valores nulos
-    obras_estudio_filtrado = obras_estudio_filtrado.fillna("Desconocido")
+    cuadros_estudio_filtrado = cuadros_estudio_filtrado.fillna("Desconocido")
 
-    # Convertir la columna "Año" a enteros para quitar la coma
-    obras_estudio_filtrado["Año"] = obras_estudio_filtrado["Año"].astype(int)
+    # Convertir la columna "Fecha" a enteros 
+    cuadros_estudio_filtrado["Fecha"] = cuadros_estudio_filtrado["Fecha"].astype(int)
 
     
     
     st.title("Tabla Filtrada")
 
     # Seleccionar las columnas específicas a mostrar
-    columnas_mostrar = ["Titulo", "Autor", "Objetos", "Personajes", "Escuela", "Flora", "Fauna", "Lugar", "Año"]
-    st.dataframe(obras_estudio_filtrado[columnas_mostrar])
+    columnas_mostrar = ["Titulo", "Autor", "Objetos", "Personajes", "Escuela", "Flora", "Fauna", "Geografico", "Soporte", "Fecha", "Ubicacion"]
+    st.dataframe(cuadros_estudio_filtrado[columnas_mostrar])
